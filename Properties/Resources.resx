@@ -121,4 +121,34 @@
   <data name="WhatsApp Image 2024-01-22 at 23.02.24_a0c65718" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2024-01-22 at 23.02.24_a0c65718.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Designer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Designer2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A simple profile icon using blue and white color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A simple profile icon using blue and white color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Designer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lolo-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lolo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-circle-silhouette-logo-user-user-profile-green-facial-expression-nose-cartoon-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-circle-silhouette-logo-user-user-profile-green-facial-expression-nose-cartoon-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Designer4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Designer4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

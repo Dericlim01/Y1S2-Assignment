@@ -108,6 +108,16 @@
     <None Include="Resources\WhatsApp Image 2024-01-22 at 23.02.24_a0c65718.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lolo-removebg-preview.png" />
+    <None Include="Resources\logo 2.png" />
+    <None Include="Resources\png-transparent-circle-silhouette-logo-user-user-profile-green-facial-expression-nose-cartoon-removebg-preview.png" />
+    <None Include="Resources\profile 1.png" />
+    <None Include="Resources\A simple profile icon using blue and white color.png" />
+    <None Include="Resources\profile2.png" />
+    <None Include="Resources\profile3.png" />
+    <None Include="Resources\Designer.png" />
+    <None Include="Resources\Designer2.png" />
+    <None Include="Resources\Designer4.png" />
     <Content Include="swimmingclubdb.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
