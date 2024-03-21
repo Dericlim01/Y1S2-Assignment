@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.username_txtbx = new System.Windows.Forms.TextBox();
+            this.password_txtbx = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
@@ -54,7 +54,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "APU Swimming Club";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -67,26 +66,26 @@
             this.label2.Text = "Username / Email :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // username_txtbx
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.textBox1.Location = new System.Drawing.Point(464, 264);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 26);
-            this.textBox1.TabIndex = 1;
+            this.username_txtbx.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.username_txtbx.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_txtbx.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.username_txtbx.Location = new System.Drawing.Point(464, 264);
+            this.username_txtbx.Name = "username_txtbx";
+            this.username_txtbx.Size = new System.Drawing.Size(232, 26);
+            this.username_txtbx.TabIndex = 1;
             // 
-            // textBox2
+            // password_txtbx
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 12.25F);
-            this.textBox2.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.textBox2.Location = new System.Drawing.Point(464, 332);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 27);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.password_txtbx.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.password_txtbx.Font = new System.Drawing.Font("Consolas", 12.25F);
+            this.password_txtbx.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.password_txtbx.Location = new System.Drawing.Point(464, 332);
+            this.password_txtbx.Name = "password_txtbx";
+            this.password_txtbx.Size = new System.Drawing.Size(232, 27);
+            this.password_txtbx.TabIndex = 2;
+            this.password_txtbx.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -97,7 +96,6 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 
@@ -114,7 +112,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Consolas", 12.25F);
             this.button2.Location = new System.Drawing.Point(640, 387);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 39);
             this.button2.TabIndex = 5;
@@ -134,7 +132,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Y1S2.Properties.Resources.logo_2;
             this.pictureBox1.Location = new System.Drawing.Point(483, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(246, 91);
@@ -144,7 +141,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Y1S2.Properties.Resources.Designer4;
             this.pictureBox2.Location = new System.Drawing.Point(-222, -24);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(610, 482);
@@ -173,8 +169,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password_txtbx);
+            this.Controls.Add(this.username_txtbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -193,8 +189,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox username_txtbx;
+        private System.Windows.Forms.TextBox password_txtbx;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button2;
