@@ -12,9 +12,23 @@ namespace Y1S2
 {
     public partial class Member : Form
     {
+        // Create a field for name
+        public static string name;
         public Member()
         {
             InitializeComponent();
+        }
+
+        public Member(string n)
+        {
+            InitializeComponent();
+            name = n;
+        }
+
+        private void Member_Load(object sender, EventArgs e)
+        {
+            lblname.Text = name;
+            lbltype.Text = "Member";
         }
     }
 }

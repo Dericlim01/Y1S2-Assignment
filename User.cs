@@ -46,10 +46,14 @@ namespace Y1S2
                 if (user_role == "admin")
                 {
                     // Redirect to Admin Page
+                    Admin admin = new Admin(un);
+                    admin.ShowDialog();
                 } 
-                else if (user_role == "student") // Login as student
+                else if (user_role == "member") // Login as member
                 {
                     // Redirect to Student Page
+                    Member member = new Member(un);
+                    member.ShowDialog();
                 }
             } else
             {

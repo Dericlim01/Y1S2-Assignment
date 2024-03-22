@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbltype = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -57,15 +57,15 @@
             this.label1.Text = "The Wave";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbltype
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(464, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Type:";
+            this.lbltype.AutoSize = true;
+            this.lbltype.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltype.Location = new System.Drawing.Point(464, 113);
+            this.lbltype.Name = "lbltype";
+            this.lbltype.Size = new System.Drawing.Size(65, 23);
+            this.lbltype.TabIndex = 4;
+            this.lbltype.Text = "Type:";
             // 
             // button1
             // 
@@ -78,15 +78,15 @@
             this.button1.Text = "Log Out";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lblname
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(464, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 23);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Name:";
+            this.lblname.AutoSize = true;
+            this.lblname.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Location = new System.Drawing.Point(464, 56);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(65, 23);
+            this.lblname.TabIndex = 6;
+            this.lblname.Text = "Name:";
             // 
             // groupBox1
             // 
@@ -114,7 +114,7 @@
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.button7.FlatAppearance.BorderSize = 3;
             this.button7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(60, 120);
+            this.button7.Location = new System.Drawing.Point(60, 129);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(184, 58);
             this.button7.TabIndex = 7;
@@ -215,11 +215,12 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblname);
+            this.Controls.Add(this.lbltype);
             this.Controls.Add(this.pictureBox3);
             this.Name = "Member";
             this.Text = "Member";
+            this.Load += new System.EventHandler(this.Member_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -231,10 +232,10 @@
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button7;
