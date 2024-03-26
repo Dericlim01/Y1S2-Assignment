@@ -82,7 +82,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suggestion.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="ViewSuggestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSuggestion.Designer.cs">
+      <DependentUpon>ViewSuggestion.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +109,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewSuggestion.resx">
+      <DependentUpon>ViewSuggestion.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

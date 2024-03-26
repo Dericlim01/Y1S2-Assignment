@@ -24,3 +24,5 @@ D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.csproj.GenerateResource.cache
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.csproj.CoreCompileInputs.cache
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.exe
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.pdb
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Admin.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.ViewSuggestion.resources

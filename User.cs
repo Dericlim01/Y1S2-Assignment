@@ -23,7 +23,7 @@ namespace Y1S2
         {
             string status = null;
 
-            SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+            SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
             connect.Open();
 
             // SQL command match user
