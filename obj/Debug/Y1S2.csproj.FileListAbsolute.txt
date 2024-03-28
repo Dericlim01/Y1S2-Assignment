@@ -24,3 +24,8 @@ D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.csproj.GenerateResource.cache
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.csproj.CoreCompileInputs.cache
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.exe
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.pdb
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Admin.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Manager.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.AddCompetition.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.ManagerCompetition.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Edit_Competition.resources

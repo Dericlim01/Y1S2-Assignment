@@ -141,6 +141,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Y1S2.Properties.Resources.Designer4;
             this.pictureBox2.Location = new System.Drawing.Point(-222, -24);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(610, 482);
