@@ -21,6 +21,7 @@ namespace Y1S2
         {
             // Create a status field
             string status;
+            this.Hide();
             User login = new User(username_txtbx.Text, password_txtbx.Text);
             status = login.login(username_txtbx.Text);
 
@@ -29,6 +30,7 @@ namespace Y1S2
             {
                 MessageBox.Show(status);
             }
+            this.Show();
 
             // Set textbox to empty
             username_txtbx.Text = String.Empty;

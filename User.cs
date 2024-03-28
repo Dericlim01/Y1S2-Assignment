@@ -42,13 +42,24 @@ namespace Y1S2
                 // Execute the SQL command to return a value
                 string user_role = cmd2.ExecuteScalar().ToString();
 
-                // Login as admin
-                if (user_role == "admin")
+                if (user_role == "admin") // Login as admin
                 {
                     // Redirect to Admin Page
                     Admin admin = new Admin(un);
                     admin.ShowDialog();
                 } 
+                else if (user_role == "coach") // Login as coach
+                {
+                    // Redirect to Coach Page
+                    Coach coach = new Coach();
+                    coach.ShowDialog();
+                }
+                else if (user_role == "manager") // Login as manager
+                {
+                    // Redirect to Manager Page
+                    Manager manager = new Manager();
+                    manager.ShowDialog();
+                }
                 else if (user_role == "member") // Login as member
                 {
                     // Redirect to Student Page
