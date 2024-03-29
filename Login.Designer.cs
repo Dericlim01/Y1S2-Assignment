@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.username_txtbx = new System.Windows.Forms.TextBox();
             this.password_txtbx = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.login_btn = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -87,15 +87,15 @@
             this.password_txtbx.TabIndex = 2;
             this.password_txtbx.UseSystemPasswordChar = true;
             // 
-            // button1
+            // login_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Consolas", 12.25F);
-            this.button1.Location = new System.Drawing.Point(443, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 38);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.login_btn.Font = new System.Drawing.Font("Consolas", 12.25F);
+            this.login_btn.Location = new System.Drawing.Point(443, 387);
+            this.login_btn.Name = "login_btn";
+            this.login_btn.Size = new System.Drawing.Size(86, 38);
+            this.login_btn.TabIndex = 3;
+            this.login_btn.Text = "Login";
+            this.login_btn.UseVisualStyleBackColor = true;
             // 
             // linkLabel1
             // 
@@ -169,7 +169,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.login_btn);
             this.Controls.Add(this.password_txtbx);
             this.Controls.Add(this.username_txtbx);
             this.Controls.Add(this.label2);
@@ -192,7 +192,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox username_txtbx;
         private System.Windows.Forms.TextBox password_txtbx;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -29,3 +29,15 @@ D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\ob
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.AddCompetition.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.ManagerCompetition.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Edit_Competition.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.AddCoach.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.AddCompetition.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.AddMember.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Admin_Suggestion.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Coach.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Delete_User.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Edit_Competition.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Edit_Profile.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.ManagerCompetition.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Admin.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Manager.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Member_Suggestion.resources

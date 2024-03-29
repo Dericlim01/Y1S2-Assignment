@@ -45,7 +45,7 @@ namespace Y1S2
                 if (user_role == "admin") // Login as admin
                 {
                     // Redirect to Admin Page
-                    Admin admin = new Admin(un);
+                    Admin admin = new Admin(un, user_role);
                     admin.ShowDialog();
                 } 
                 else if (user_role == "coach") // Login as coach
