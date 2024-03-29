@@ -48,13 +48,13 @@ namespace Y1S2
             lblCompName.Text = "Competition Name: " + comp_name;
             lblCompDate.Text = "Competition Date: " + comp_date;
             lblDueDate.Text = "Due Date: " + comp_due_date;
-            lblCompVenue.Text = "Competition Venue: " + comp_venue;
+            lblCompVenue.Text = "Venue: " + comp_venue;
             lblCompDetails.Text = "Details: " + comp_details;
         }
 
         private void editBtn_Click(object sender, EventArgs e)
         {
-            if (comp_id != null)
+            if (comp_id != null && comp_id != "" && comp_id != " ")
             {
                 Edit_Competition edit = new Edit_Competition(comp_id, comp_name, comp_date, comp_due_date,comp_venue,comp_details);
                 edit.Show();
@@ -93,7 +93,7 @@ namespace Y1S2
 
         private void bckBtn_Click(object sender, EventArgs e)
         {
-            ManagerCompetition back = new ManagerCompetition();
+            Manager back = new Manager();
             back.Show();
             this.Close();
         }

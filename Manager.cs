@@ -20,6 +20,10 @@ namespace Y1S2
             name = n;
             role = r;
         }
+        public Manager()
+        {
+            InitializeComponent();
+        }
 
         private void profileBtn_Click(object sender, EventArgs e)
         {
