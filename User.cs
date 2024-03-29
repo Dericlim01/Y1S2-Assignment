@@ -27,17 +27,17 @@ namespace Y1S2
             connect.Open();
 
             // SQL command match user
-            SqlCommand cmd = new SqlCommand("select count(*) from users where username = un and password = ps", connect);
-            cmd.Parameters.AddWithValue("un", username);
-            cmd.Parameters.AddWithValue("ps", password);
+            SqlCommand cmd = new SqlCommand("select count(*) from users where username = @un and password = @ps", connect);
+            cmd.Parameters.AddWithValue("@un", username);
+            cmd.Parameters.AddWithValue("@ps", password);
 
             int count = Convert.ToInt32(cmd.ExecuteScalar());
             if (count > 0) // If login success
             {
                 // Check role
-                SqlCommand cmd2 = new SqlCommand("select role from users where username = un and password = ps", connect);
-                cmd2.Parameters.AddWithValue("un", username);
-                cmd2.Parameters.AddWithValue("ps", password);
+                SqlCommand cmd2 = new SqlCommand("select role from users where username = @un and password = @ps", connect);
+                cmd2.Parameters.AddWithValue("@un", username);
+                cmd2.Parameters.AddWithValue("@ps", password);
 
                 // Execute the SQL command to return a value
                 string user_role = cmd2.ExecuteScalar().ToString();
@@ -45,7 +45,7 @@ namespace Y1S2
                 if (user_role == "admin") // Login as admin
                 {
                     // Redirect to Admin Page
-                    Admin admin = new Admin(un);
+                    Admin admin = new Admin(un, user_role);
                     admin.ShowDialog();
                 } 
                 else if (user_role == "coach") // Login as coach

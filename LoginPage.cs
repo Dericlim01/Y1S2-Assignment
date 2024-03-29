@@ -17,7 +17,7 @@ namespace Y1S2
             InitializeComponent();
         }
 
-        private void login_btn(object sender, EventArgs e)
+        private void login_btn_Click(object sender, EventArgs e)
         {
             // Create a status field
             string status;

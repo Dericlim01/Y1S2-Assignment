@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Y1S2
+{
+    public partial class AddMember : Form
+    {
+        public AddMember()
+        {
+            InitializeComponent();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Member_c obj1 = new Member_c(txtName.Text, txtEmail.Text, txtPhone.Text);
+            MessageBox.Show(obj1.addMember());
+        }
+    }
+}

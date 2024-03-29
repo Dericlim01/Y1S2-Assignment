@@ -16,7 +16,7 @@ namespace Y1S2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManagerCompetition());
+            Application.Run(new LoginPage());
         }
     }
 }
