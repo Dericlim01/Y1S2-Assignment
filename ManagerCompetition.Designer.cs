@@ -32,8 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Topic = new System.Windows.Forms.Label();
-            this.lblname = new System.Windows.Forms.Label();
-            this.lbltype = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.competitionView = new System.Windows.Forms.DataGridView();
             this.competitionidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,9 +77,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.bckBtn);
             this.panel1.Controls.Add(this.Topic);
-            this.panel1.Controls.Add(this.lblname);
-            this.panel1.Controls.Add(this.lbltype);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-9, 3);
@@ -98,26 +95,6 @@
             this.Topic.Size = new System.Drawing.Size(254, 32);
             this.Topic.TabIndex = 16;
             this.Topic.Text = "Competition Page";
-            // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.lblname.Location = new System.Drawing.Point(619, 23);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(48, 17);
-            this.lblname.TabIndex = 15;
-            this.lblname.Text = "Name:";
-            // 
-            // lbltype
-            // 
-            this.lbltype.AutoSize = true;
-            this.lbltype.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.lbltype.Location = new System.Drawing.Point(619, 54);
-            this.lbltype.Name = "lbltype";
-            this.lbltype.Size = new System.Drawing.Size(48, 17);
-            this.lbltype.TabIndex = 13;
-            this.lbltype.Text = "Type:";
             // 
             // pictureBox1
             // 
@@ -205,13 +182,14 @@
             // 
             // dltBtn
             // 
+            this.dltBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.dltBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold);
             this.dltBtn.Location = new System.Drawing.Point(283, 368);
             this.dltBtn.Name = "dltBtn";
             this.dltBtn.Size = new System.Drawing.Size(109, 50);
             this.dltBtn.TabIndex = 14;
             this.dltBtn.Text = "Delete";
-            this.dltBtn.UseVisualStyleBackColor = true;
+            this.dltBtn.UseVisualStyleBackColor = false;
             this.dltBtn.Click += new System.EventHandler(this.dltBtn_Click);
             // 
             // lblCompId
@@ -276,35 +254,39 @@
             // 
             // AddBtn
             // 
+            this.AddBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.AddBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddBtn.Location = new System.Drawing.Point(33, 368);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(109, 50);
             this.AddBtn.TabIndex = 13;
             this.AddBtn.Text = "Add";
-            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // editBtn
             // 
+            this.editBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.editBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold);
             this.editBtn.Location = new System.Drawing.Point(159, 368);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(109, 50);
             this.editBtn.TabIndex = 21;
             this.editBtn.Text = "Edit";
-            this.editBtn.UseVisualStyleBackColor = true;
+            this.editBtn.UseVisualStyleBackColor = false;
             this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
             // bckBtn
             // 
+            this.bckBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.bckBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bckBtn.Location = new System.Drawing.Point(714, 411);
+            this.bckBtn.Location = new System.Drawing.Point(682, 30);
             this.bckBtn.Name = "bckBtn";
-            this.bckBtn.Size = new System.Drawing.Size(74, 29);
+            this.bckBtn.Size = new System.Drawing.Size(89, 37);
             this.bckBtn.TabIndex = 22;
             this.bckBtn.Text = "Back";
-            this.bckBtn.UseVisualStyleBackColor = true;
+            this.bckBtn.UseVisualStyleBackColor = false;
+            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
             // 
             // ManagerCompetition
             // 
@@ -312,7 +294,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bckBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.lblCompDetails);
             this.Controls.Add(this.lblCompVenue);
@@ -344,8 +325,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.DataGridView competitionView;
         private System.Windows.Forms.BindingSource swimmingclubdbDataSetBindingSource;
         private swimmingclubdbDataSet swimmingclubdbDataSet;

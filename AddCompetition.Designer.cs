@@ -34,8 +34,6 @@
             this.swimmingclubdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.competitionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Topic = new System.Windows.Forms.Label();
-            this.lblname = new System.Windows.Forms.Label();
-            this.lbltype = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,6 +51,7 @@
             this.addCompDate = new System.Windows.Forms.DateTimePicker();
             this.addDueDate = new System.Windows.Forms.DateTimePicker();
             this.addCompbtn = new System.Windows.Forms.Button();
+            this.bckBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).BeginInit();
@@ -90,32 +89,11 @@
             this.Topic.TabIndex = 16;
             this.Topic.Text = "Add Competition Page";
             // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold);
-            this.lblname.Location = new System.Drawing.Point(619, 23);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(48, 18);
-            this.lblname.TabIndex = 15;
-            this.lblname.Text = "Name:";
-            // 
-            // lbltype
-            // 
-            this.lbltype.AutoSize = true;
-            this.lbltype.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold);
-            this.lbltype.Location = new System.Drawing.Point(619, 54);
-            this.lbltype.Name = "lbltype";
-            this.lbltype.Size = new System.Drawing.Size(48, 18);
-            this.lbltype.TabIndex = 13;
-            this.lbltype.Text = "Type:";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.bckBtn);
             this.panel1.Controls.Add(this.Topic);
-            this.panel1.Controls.Add(this.lblname);
-            this.panel1.Controls.Add(this.lbltype);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-6, 8);
@@ -271,6 +249,18 @@
             this.addCompbtn.UseVisualStyleBackColor = false;
             this.addCompbtn.Click += new System.EventHandler(this.addCompbtn_Click);
             // 
+            // bckBtn
+            // 
+            this.bckBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.bckBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bckBtn.Location = new System.Drawing.Point(678, 40);
+            this.bckBtn.Name = "bckBtn";
+            this.bckBtn.Size = new System.Drawing.Size(89, 37);
+            this.bckBtn.TabIndex = 23;
+            this.bckBtn.Text = "Back";
+            this.bckBtn.UseVisualStyleBackColor = false;
+            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
+            // 
             // AddCompetition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,8 +301,6 @@
         private System.Windows.Forms.BindingSource swimmingclubdbDataSetBindingSource;
         private System.Windows.Forms.BindingSource competitionBindingSource;
         private System.Windows.Forms.Label Topic;
-        private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -330,5 +318,6 @@
         private System.Windows.Forms.DateTimePicker addCompDate;
         private System.Windows.Forms.DateTimePicker addDueDate;
         private System.Windows.Forms.Button addCompbtn;
+        private System.Windows.Forms.Button bckBtn;
     }
 }

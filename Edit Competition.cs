@@ -22,12 +22,12 @@ namespace Y1S2
         }
 
 
-        public Edit_Competition(string compId, string compName, string compDate, string dueDate,string venue, string details)
+        public Edit_Competition(string compId, string compName, string compDate, string dueDate, string venue, string details)
         {
             InitializeComponent();
             editCompIdLbl.Text = compId;
             editCompNameTB.Text = compName;
-            DateTime dateTime = DateTime.ParseExact(compDate, "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture); 
+            DateTime dateTime = DateTime.ParseExact(compDate, "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
             DateTime dateTime2 = DateTime.ParseExact(dueDate, "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
             editCompDate1.Value = dateTime;
             editDueDate.Value = dateTime2;
@@ -42,9 +42,15 @@ namespace Y1S2
         {
             string formattedCompDate = editCompDate1.Value.ToString("yyyy-MM-dd");
             string formattedDueDate = editDueDate.Value.ToString("yyyy-MM-dd");
-            Competition comp2 = new Competition(editCompIdLbl.Text,editCompNameTB.Text, formattedCompDate, formattedDueDate, editCompVenueTB.Text, editCompDetailTB.Text);
+            Competition comp2 = new Competition(editCompIdLbl.Text, editCompNameTB.Text, formattedCompDate, formattedDueDate, editCompVenueTB.Text, editCompDetailTB.Text);
             MessageBox.Show(comp2.editCompetition());
 
+        }
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            ManagerCompetition back = new ManagerCompetition();
+            back.Show();
+            this.Close();
         }
     }
 }

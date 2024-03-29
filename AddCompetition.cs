@@ -24,5 +24,12 @@ namespace Y1S2
             Competition comp1 = new Competition(addCompIdTB.Text, addCompNameTB.Text, formattedCompDate, formattedDueDate, addCompVenueTB.Text, addCompDetailTB.Text);
             MessageBox.Show(comp1.addCompetition());
         }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            ManagerCompetition back = new ManagerCompetition();
+            back.Show();
+            this.Close();
+        }
     }
 }

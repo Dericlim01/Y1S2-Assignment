@@ -71,8 +71,7 @@ namespace Y1S2
         {
             AddCompetition add = new AddCompetition();
             add.Show();
-            this.Hide();
-            add.FormClosed += (s, args) => this.Close();
+            this.Close();
         }
 
         private void dltBtn_Click(object sender, EventArgs e)
@@ -91,6 +90,13 @@ namespace Y1S2
             }
             
             
+        }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            ManagerCompetition back = new ManagerCompetition();
+            back.Show();
+            this.Close();
         }
     }
 }
