@@ -22,7 +22,7 @@ namespace Y1S2
         private string details;
         private string memberId;
         private int ranking;
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
         public Competition(string c_id, string c_name, string c_date, string d_d, string v, string dt)
         {

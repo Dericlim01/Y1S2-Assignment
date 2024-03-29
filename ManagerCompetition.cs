@@ -81,6 +81,9 @@ namespace Y1S2
             {
                 Competition comp3 = new Competition(comp_id);
                 MessageBox.Show(comp3.deleteCompetition());
+                ManagerCompetition Comp = new ManagerCompetition();
+                Comp.Show();
+                this.Close();
             }
             else
             {

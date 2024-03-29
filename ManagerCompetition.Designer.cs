@@ -55,6 +55,7 @@
             this.lblDueDate = new System.Windows.Forms.Label();
             this.AddBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
+            this.bckBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionView)).BeginInit();
@@ -143,7 +144,7 @@
             this.competitionView.DataSource = this.competitionBindingSource;
             this.competitionView.Location = new System.Drawing.Point(424, 115);
             this.competitionView.Name = "competitionView";
-            this.competitionView.Size = new System.Drawing.Size(364, 323);
+            this.competitionView.Size = new System.Drawing.Size(338, 290);
             this.competitionView.TabIndex = 12;
             this.competitionView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.competitionView_CellClick);
             // 
@@ -295,12 +296,23 @@
             this.editBtn.UseVisualStyleBackColor = true;
             this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
+            // bckBtn
+            // 
+            this.bckBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bckBtn.Location = new System.Drawing.Point(714, 411);
+            this.bckBtn.Name = "bckBtn";
+            this.bckBtn.Size = new System.Drawing.Size(74, 29);
+            this.bckBtn.TabIndex = 22;
+            this.bckBtn.Text = "Back";
+            this.bckBtn.UseVisualStyleBackColor = true;
+            // 
             // ManagerCompetition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bckBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.lblCompDetails);
             this.Controls.Add(this.lblCompVenue);
@@ -355,5 +367,6 @@
         private System.Windows.Forms.Label lblDueDate;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.Button bckBtn;
     }
 }

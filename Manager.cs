@@ -21,5 +21,13 @@ namespace Y1S2
         {
 
         }
+
+        private void compBtn_Click(object sender, EventArgs e)
+        {
+            ManagerCompetition Comp = new ManagerCompetition();
+            Comp.Show();
+            this.Hide();
+            Comp.FormClosed += (s, args) => this.Close();
+        }
     }
 }

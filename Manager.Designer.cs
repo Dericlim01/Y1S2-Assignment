@@ -130,6 +130,7 @@
             this.compBtn.TabIndex = 4;
             this.compBtn.Text = "Manage Competition";
             this.compBtn.UseVisualStyleBackColor = false;
+            this.compBtn.Click += new System.EventHandler(this.compBtn_Click);
             // 
             // assBtn
             // 
