@@ -28,7 +28,6 @@ namespace Y1S2
         {
             // TODO: This line of code loads data into the 'swimmingclubdbDataSet.Competition' table. You can move, or remove it, as needed.
             this.competitionTableAdapter.Fill(this.swimmingclubdbDataSet.Competition);
-
         }
 
         
@@ -37,18 +36,20 @@ namespace Y1S2
             int index = e.RowIndex;
             DataGridViewRow selectedRow = competitionView.Rows[index];
             
-                comp_id = $"{selectedRow.Cells[0].Value}";
-                comp_name = $"{selectedRow.Cells[1].Value}";
-                comp_date = $"{selectedRow.Cells[2].Value}";
-                comp_due_date = $"{selectedRow.Cells[3].Value}";
-                comp_venue = $"{selectedRow.Cells[4].Value}";
-                comp_details = $"{selectedRow.Cells[5].Value}";
-                lblCompId.Text = "Competition ID: "+ comp_id;
-                lblCompName.Text = "Competition Name: " + comp_name;
-                lblCompDate.Text = "Competition Date: " + comp_date;
-                lblDueDate.Text = "Due Date: " + comp_due_date;
-                lblCompVenue.Text = "Competition Venue: " + comp_venue;
-                lblCompDetails.Text = "Details: " + comp_details;
+            comp_id = $"{selectedRow.Cells[0].Value}";
+            comp_name = $"{selectedRow.Cells[1].Value}";
+            comp_date = $"{selectedRow.Cells[2].Value}";
+            comp_due_date = $"{selectedRow.Cells[3].Value}";
+            comp_venue = $"{selectedRow.Cells[4].Value}";
+            comp_details = $"{selectedRow.Cells[5].Value}";
+
+            // Display
+            lblCompId.Text = "Competition ID: "+ comp_id;
+            lblCompName.Text = "Competition Name: " + comp_name;
+            lblCompDate.Text = "Competition Date: " + comp_date;
+            lblDueDate.Text = "Due Date: " + comp_due_date;
+            lblCompVenue.Text = "Competition Venue: " + comp_venue;
+            lblCompDetails.Text = "Details: " + comp_details;
         }
 
         private void editBtn_Click(object sender, EventArgs e)
@@ -88,8 +89,6 @@ namespace Y1S2
             {
                 MessageBox.Show("Please Select A Row To Delete");
             }
-            
-            
         }
 
         private void bckBtn_Click(object sender, EventArgs e)

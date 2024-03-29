@@ -21,7 +21,6 @@ namespace Y1S2
             InitializeComponent();
         }
 
-
         public Edit_Competition(string compId, string compName, string compDate, string dueDate, string venue, string details)
         {
             InitializeComponent();
@@ -34,6 +33,7 @@ namespace Y1S2
             editCompVenueTB.Text = venue;
             editCompDetailTB.Text = details;
         }
+
         private void Edit_Competition_Load(object sender, EventArgs e)
         {
         }
@@ -46,6 +46,7 @@ namespace Y1S2
             MessageBox.Show(comp2.editCompetition());
 
         }
+
         private void bckBtn_Click(object sender, EventArgs e)
         {
             ManagerCompetition back = new ManagerCompetition();

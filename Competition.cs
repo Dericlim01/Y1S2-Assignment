@@ -32,14 +32,12 @@ namespace Y1S2
             dueDate = d_d;
             venue = v;
             details = dt;
-
         }
 
         public Competition(string c_id)
         {
             competitionId = c_id;
         }
-
 
         public string addCompetition()
         {
@@ -59,12 +57,14 @@ namespace Y1S2
                 cmd2.Parameters.AddWithValue("@dt", details);
                 int i = cmd2.ExecuteNonQuery();
                 if (i != 0)
+                {
                     status = "Registration Successful.";
+                }
                 else
+                {
                     status = "Adding Competition Fail\nReason:";
+                }
                 con.Close();
-
-
             }
             catch (SqlException ex)
             {
@@ -92,9 +92,6 @@ namespace Y1S2
             {
                 con.Open();
                 SqlCommand cmd = new SqlCommand("UPDATE Competition  SET competition_name = @name, due_date = @ddate, competition_date = @cdate,venue=@ven,details = @dt   WHERE competition_id = @id ", con);
-
-
-
                 cmd.Parameters.AddWithValue("@id", competitionId);
                 cmd.Parameters.AddWithValue("@name", competitionName);
                 cmd.Parameters.AddWithValue("@cdate", competitionDate);
@@ -103,12 +100,14 @@ namespace Y1S2
                 cmd.Parameters.AddWithValue("@dt", details);
                 int i = cmd.ExecuteNonQuery();
                 if (i != 0)
+                {
                     status = "Edit Successfully.";
+                }
                 else
+                {
                     status = "Edit Competition Fail\nReason:";
+                }
                 con.Close();
-
-
             }
             catch (SqlException ex)
             {
@@ -129,17 +128,18 @@ namespace Y1S2
             {
                 con.Open();
                 SqlCommand cmd = new SqlCommand("DELETE FROM Competition  WHERE competition_id = @id ", con);
-
                 cmd.Parameters.AddWithValue("@id", competitionId);
+
                 int i = cmd.ExecuteNonQuery();
                 if (i != 0)
+                {
                     status = "Delete Successfully.";
+                }
                 else
+                {
                     status = "Delete Competition Fail\nReason:";
+                }
                 con.Close();
-
-
-
             }
             catch (SqlException ex)
             {

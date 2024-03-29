@@ -15,10 +15,10 @@ namespace Y1S2
     public partial class Member : Form
     {
         // Create a field for name
-        public static string name;
+        public string name;
+        public string role;
 
-        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
-        public Member()
+        public Member(string n, string r)
         {
             InitializeComponent();
         }
@@ -37,32 +37,10 @@ namespace Y1S2
             lbltype.Text = "Member";
         }
 
-        private string password;
-
-        // Add member
-        private string add_member()
+        private void edit_profile_btn_Click(object sender, EventArgs e)
         {
-            string status;
-
-            connect.Open();
-            SqlCommand check = new SqlCommand("select count(*) from users where username = @name", connect);
-            check.Parameters.AddWithValue("@name", name);
-            int count = Convert.ToInt32(check.ExecuteScalar());
-            if (count > 0)
-            {
-                status = "This account already exist, pls create a new one or login instead.";
-            }
-            else
-            {
-                SqlCommand cmd = new SqlCommand("insert into users (username, password, role) values (@name, @password, member)", connect);
-                cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@password", password);
-                cmd.ExecuteNonQuery();
-
-                status = "Added Successfully.";
-            }
-            connect.Close();
-            return status;
+            Edit_Profile edit = new Edit_Profile(name, role);
+            edit.ShowDialog();
         }
     }
 }

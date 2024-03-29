@@ -77,7 +77,6 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Features";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // resultBtn
             // 
@@ -155,8 +154,9 @@
             this.profileBtn.Name = "profileBtn";
             this.profileBtn.Size = new System.Drawing.Size(184, 58);
             this.profileBtn.TabIndex = 2;
-            this.profileBtn.Text = "Profile";
+            this.profileBtn.Text = "Edit Profile";
             this.profileBtn.UseVisualStyleBackColor = false;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // button1
             // 

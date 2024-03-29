@@ -51,19 +51,19 @@ namespace Y1S2
                 else if (user_role == "coach") // Login as coach
                 {
                     // Redirect to Coach Page
-                    //Coach coach = new Coach();
-                  //  coach.ShowDialog();
+                    Coach coach = new Coach();
+                    coach.ShowDialog();
                 }
                 else if (user_role == "manager") // Login as manager
                 {
                     // Redirect to Manager Page
-                    Manager manager = new Manager();
+                    Manager manager = new Manager(un, user_role);
                     manager.ShowDialog();
                 }
                 else if (user_role == "member") // Login as member
                 {
                     // Redirect to Student Page
-                    Member member = new Member(un);
+                    Member member = new Member(un, user_role);
                     member.ShowDialog();
                 }
             } else

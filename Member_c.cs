@@ -16,17 +16,19 @@ namespace Y1S2
         private string memName;
         private string email;
         private string phoneNum;
-        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        private string lvl;
+        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
         public string Email { get => email; set => email = value; }
         public string PhoneNum { get => phoneNum; set => phoneNum = value; }
 
         // Create a constructor
-        public Member_c(string membername, string emailadd, string phonenumber)
+        public Member_c(string membername, string emailadd, string phonenumber, string level)
         {
             memName = membername;
             email = emailadd;
             phoneNum = phonenumber;
+            lvl = level;
         }
 
         // Create a constructor for login
@@ -41,20 +43,21 @@ namespace Y1S2
             string status;
             connect.Open();
             // Insert data into student
-            string query = "insert into member (name, email, phoneNumber) values (@name, @em, @num)";
+            string query = "insert into member (name, email, phoneNumber, level) values (@name, @em, @num, @lvl)";
             SqlCommand cmd = new SqlCommand(query, connect);
             cmd.Parameters.AddWithValue("@name", memName);
             cmd.Parameters.AddWithValue("@em", email);
             cmd.Parameters.AddWithValue("@num", phoneNum);
+            cmd.Parameters.AddWithValue("@lvl", lvl);
 
             // Insert data into users
             string query2 = "insert into users (username, password, role) values (@name, '123', 'member')";
             SqlCommand cmd2 = new SqlCommand(query2, connect);
             cmd2.Parameters.AddWithValue("@name", memName);
 
-            cmd2.ExecuteNonQuery();
             int i = cmd.ExecuteNonQuery();
-            if (i != 0)
+            int j = cmd2.ExecuteNonQuery();
+            if (i + j == 2)
             {
                 status = "Registration Successful.";
             }

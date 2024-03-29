@@ -19,7 +19,7 @@ namespace Y1S2
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            Member_c obj1 = new Member_c(txtName.Text, txtEmail.Text, txtPhone.Text);
+            Member_c obj1 = new Member_c(txtName.Text, txtEmail.Text, txtPhone.Text, txtLevel.Text);
             MessageBox.Show(obj1.addMember());
         }
     }
