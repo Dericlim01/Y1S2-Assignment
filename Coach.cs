@@ -21,7 +21,7 @@ namespace Y1S2
         private string level;
         private int salary;
 
-        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
         public Coach()
         {

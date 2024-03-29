@@ -63,6 +63,7 @@
             this.suggest_listbx.Name = "suggest_listbx";
             this.suggest_listbx.Size = new System.Drawing.Size(120, 95);
             this.suggest_listbx.TabIndex = 13;
+            this.suggest_listbx.SelectedIndexChanged += new System.EventHandler(this.suggest_listbx_SelectedIndexChanged);
             // 
             // member_listbx
             // 
@@ -71,6 +72,7 @@
             this.member_listbx.Name = "member_listbx";
             this.member_listbx.Size = new System.Drawing.Size(120, 95);
             this.member_listbx.TabIndex = 12;
+            this.member_listbx.SelectedIndexChanged += new System.EventHandler(this.member_listbx_SelectedIndexChanged);
             // 
             // suggestion_lbl
             // 
@@ -123,6 +125,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Admin_Suggestion";
             this.Text = "Admin_Suggestion";
+            this.Load += new System.EventHandler(this.Admin_Suggestion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

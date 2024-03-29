@@ -63,6 +63,7 @@
             this.manage_btn.TabIndex = 13;
             this.manage_btn.Text = "Manage";
             this.manage_btn.UseVisualStyleBackColor = true;
+            this.manage_btn.Click += new System.EventHandler(this.manage_btn_Click);
             // 
             // coach_p_edit_btn
             // 
@@ -72,6 +73,7 @@
             this.coach_p_edit_btn.TabIndex = 12;
             this.coach_p_edit_btn.Text = "Edit Coach Profile";
             this.coach_p_edit_btn.UseVisualStyleBackColor = true;
+            this.coach_p_edit_btn.Click += new System.EventHandler(this.coach_p_edit_btn_Click);
             // 
             // edit_profile_btn
             // 
@@ -81,6 +83,7 @@
             this.edit_profile_btn.TabIndex = 11;
             this.edit_profile_btn.Text = "Edit Profile";
             this.edit_profile_btn.UseVisualStyleBackColor = true;
+            this.edit_profile_btn.Click += new System.EventHandler(this.edit_profile_btn_Click);
             // 
             // couch_add_btn
             // 
@@ -90,6 +93,7 @@
             this.couch_add_btn.TabIndex = 10;
             this.couch_add_btn.Text = "Add Couch";
             this.couch_add_btn.UseVisualStyleBackColor = true;
+            this.couch_add_btn.Click += new System.EventHandler(this.couch_add_btn_Click);
             // 
             // btnAdd
             // 

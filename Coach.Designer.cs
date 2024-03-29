@@ -147,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Coach";
             this.Text = "Coach";
+            this.Load += new System.EventHandler(this.Coach_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

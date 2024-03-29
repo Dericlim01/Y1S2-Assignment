@@ -49,6 +49,7 @@
             this.Coach_listbx.Name = "Coach_listbx";
             this.Coach_listbx.Size = new System.Drawing.Size(120, 95);
             this.Coach_listbx.TabIndex = 18;
+            this.Coach_listbx.SelectedIndexChanged += new System.EventHandler(this.Coach_listbx_SelectedIndexChanged);
             // 
             // salary_txtbx
             // 

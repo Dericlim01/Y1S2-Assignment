@@ -75,6 +75,7 @@
             this.coach_rdbtn.TabStop = true;
             this.coach_rdbtn.Text = "Coach";
             this.coach_rdbtn.UseVisualStyleBackColor = true;
+            this.coach_rdbtn.CheckedChanged += new System.EventHandler(this.coach_rdbtn_CheckedChanged);
             // 
             // manager_rdbtn
             // 
@@ -86,6 +87,7 @@
             this.manager_rdbtn.TabStop = true;
             this.manager_rdbtn.Text = "Manager";
             this.manager_rdbtn.UseVisualStyleBackColor = true;
+            this.manager_rdbtn.CheckedChanged += new System.EventHandler(this.manager_rdbtn_CheckedChanged);
             // 
             // member_rdbtn
             // 
@@ -97,6 +99,7 @@
             this.member_rdbtn.TabStop = true;
             this.member_rdbtn.Text = "Member";
             this.member_rdbtn.UseVisualStyleBackColor = true;
+            this.member_rdbtn.CheckedChanged += new System.EventHandler(this.member_rdbtn_CheckedChanged);
             // 
             // user_listbx
             // 
@@ -105,6 +108,7 @@
             this.user_listbx.Name = "user_listbx";
             this.user_listbx.Size = new System.Drawing.Size(120, 95);
             this.user_listbx.TabIndex = 19;
+            this.user_listbx.SelectedIndexChanged += new System.EventHandler(this.user_listbx_SelectedIndexChanged);
             // 
             // phonenum_lbl
             // 
