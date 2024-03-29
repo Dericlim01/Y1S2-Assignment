@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,7 +34,7 @@ namespace Y1S2
             venue = v;
             details = dt;
         }
-
+        public Competition() { }
         public Competition(string c_id)
         {
             competitionId = c_id;
@@ -150,6 +151,37 @@ namespace Y1S2
                 status = "Delete Competition Fail\nReason:" + ex.Message;
             }
             return status;
+
+        }
+        
+        public IEnumerable<string> memberlist()
+        {
+            con.Open();
+            string query = $"select name from member";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                yield return rd.GetString(0);
+            }
+            con.Close();
+        }
+        public (string,string,string) findmember(string name)
+        {
+            con.Open();
+            string query = $"select * from member where name = @name";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@name", name);
+            SqlDataReader rd = cmd.ExecuteReader();
+            string n = "", lvl = "",  age = "";
+            while (rd.Read())
+            {
+                n = rd.GetString(1);
+                lvl = rd.GetString(2);
+                age = rd.GetString(3);
+            }
+            con.Close();
+            return(n,lvl, age);
 
         }
     }

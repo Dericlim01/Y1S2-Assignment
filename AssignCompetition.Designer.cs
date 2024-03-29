@@ -158,6 +158,7 @@
             this.memberListBox.Name = "memberListBox";
             this.memberListBox.Size = new System.Drawing.Size(124, 108);
             this.memberListBox.TabIndex = 55;
+            this.memberListBox.SelectedIndexChanged += new System.EventHandler(this.memberListBox_SelectedIndexChanged);
             // 
             // competitionListBox
             // 
@@ -267,6 +268,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AssignCompetition";
             this.Text = "AssignCompetition";
+            this.Load += new System.EventHandler(this.AssignCompetition_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
