@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Y1S2
 {
@@ -83,50 +85,72 @@ namespace Y1S2
         }
 
 
-        public string editCompetition() 
+        public string editCompetition()
         {
             string status;
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Competition WHERE competition_id = @id", con);
-                SqlCommand cmd2 = new SqlCommand("insert into competition(competition_id,competition_name,due_date,competition_date,venue,details) values(@id,@name,@cdate,@ddate,@ven,@dt)", con);
+                SqlCommand cmd = new SqlCommand("UPDATE Competition  SET competition_name = @name, due_date = @ddate, competition_date = @cdate,venue=@ven,details = @dt   WHERE competition_id = @id ", con);
+
+
 
                 cmd.Parameters.AddWithValue("@id", competitionId);
-                cmd2.Parameters.AddWithValue("@id", competitionId);
-                cmd2.Parameters.AddWithValue("@name", competitionName);
-                cmd2.Parameters.AddWithValue("@cdate", competitionDate);
-                cmd2.Parameters.AddWithValue("@ddate", dueDate);
-                cmd2.Parameters.AddWithValue("@ven", venue);
-                cmd2.Parameters.AddWithValue("@dt", details);
-                int i = cmd2.ExecuteNonQuery();
+                cmd.Parameters.AddWithValue("@name", competitionName);
+                cmd.Parameters.AddWithValue("@cdate", competitionDate);
+                cmd.Parameters.AddWithValue("@ddate", dueDate);
+                cmd.Parameters.AddWithValue("@ven", venue);
+                cmd.Parameters.AddWithValue("@dt", details);
+                int i = cmd.ExecuteNonQuery();
                 if (i != 0)
-                    status = "Registration Successful.";
+                    status = "Edit Successfully.";
                 else
-                    status = "Adding Competition Fail\nReason:";
+                    status = "Edit Competition Fail\nReason:";
                 con.Close();
 
 
             }
             catch (SqlException ex)
             {
-                if (ex.Number == 2627)
-                {
-                    status = "Adding Competition Failed, Competition ID exists.";
-                }
-                else
-                {
-                    status = "Adding Competition Fail\nReason:" + ex.Message;
-                }
+                status = "Edit Competition Fail\nReason:" + ex.Message;
             }
             catch (Exception ex)
             {
-                status = "Adding Competition Fail\nReason:" + ex.Message;
+                status = "Edit Competition Fail\nReason:" + ex.Message;
             }
             return status;
         }
+
+
+        public string deleteCompetition()
+        {
+            string status;
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM Competition  WHERE competition_id = @id ", con);
+
+                cmd.Parameters.AddWithValue("@id", competitionId);
+                int i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                    status = "Delete Successfully.";
+                else
+                    status = "Delete Competition Fail\nReason:";
+                con.Close();
+
+
+
+            }
+            catch (SqlException ex)
+            {
+                status = "Delete Competition Fail\nReason:" + ex.Message;
+            }
+            catch (Exception ex)
+            {
+                status = "Delete Competition Fail\nReason:" + ex.Message;
+            }
+            return status;
+
+        }
     }
-
-    
-
 }

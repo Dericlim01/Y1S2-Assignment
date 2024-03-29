@@ -49,10 +49,6 @@ namespace Y1S2
                 lblDueDate.Text = "Due Date: " + comp_due_date;
                 lblCompVenue.Text = "Competition Venue: " + comp_venue;
                 lblCompDetails.Text = "Details: " + comp_details;
-            
-
-
-                
         }
 
         private void editBtn_Click(object sender, EventArgs e)
@@ -76,13 +72,22 @@ namespace Y1S2
             AddCompetition add = new AddCompetition();
             add.Show();
             this.Hide();
-
             add.FormClosed += (s, args) => this.Close();
         }
 
         private void dltBtn_Click(object sender, EventArgs e)
         {
-
+            if (comp_id != null)
+            {
+                Competition comp3 = new Competition(comp_id);
+                MessageBox.Show(comp3.deleteCompetition());
+            }
+            else
+            {
+                MessageBox.Show("Please Select A Row To Delete");
+            }
+            
+            
         }
     }
 }

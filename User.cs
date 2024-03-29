@@ -51,8 +51,8 @@ namespace Y1S2
                 else if (user_role == "coach") // Login as coach
                 {
                     // Redirect to Coach Page
-                    Coach coach = new Coach();
-                    coach.ShowDialog();
+                    //Coach coach = new Coach();
+                  //  coach.ShowDialog();
                 }
                 else if (user_role == "manager") // Login as manager
                 {

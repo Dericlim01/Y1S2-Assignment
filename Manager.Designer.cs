@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.resultBtn = new System.Windows.Forms.Button();
+            this.listFromCoachBtn = new System.Windows.Forms.Button();
+            this.memberListBtn = new System.Windows.Forms.Button();
+            this.compBtn = new System.Windows.Forms.Button();
+            this.assBtn = new System.Windows.Forms.Button();
+            this.profileBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,12 +61,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.resultBtn);
+            this.groupBox1.Controls.Add(this.listFromCoachBtn);
+            this.groupBox1.Controls.Add(this.memberListBtn);
+            this.groupBox1.Controls.Add(this.compBtn);
+            this.groupBox1.Controls.Add(this.assBtn);
+            this.groupBox1.Controls.Add(this.profileBtn);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(-2, 216);
@@ -79,83 +79,83 @@
             this.groupBox1.Text = "Features";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button7
+            // resultBtn
             // 
-            this.button7.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button7.FlatAppearance.BorderSize = 3;
-            this.button7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(60, 129);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(184, 58);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Manage Competition Result";
-            this.button7.UseVisualStyleBackColor = false;
+            this.resultBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.resultBtn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.resultBtn.FlatAppearance.BorderSize = 3;
+            this.resultBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultBtn.Location = new System.Drawing.Point(60, 129);
+            this.resultBtn.Name = "resultBtn";
+            this.resultBtn.Size = new System.Drawing.Size(184, 58);
+            this.resultBtn.TabIndex = 7;
+            this.resultBtn.Text = "Manage Competition Result";
+            this.resultBtn.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // listFromCoachBtn
             // 
-            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button6.FlatAppearance.BorderSize = 3;
-            this.button6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(526, 129);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(184, 58);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "List From Coach";
-            this.button6.UseVisualStyleBackColor = false;
+            this.listFromCoachBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.listFromCoachBtn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.listFromCoachBtn.FlatAppearance.BorderSize = 3;
+            this.listFromCoachBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listFromCoachBtn.Location = new System.Drawing.Point(526, 129);
+            this.listFromCoachBtn.Name = "listFromCoachBtn";
+            this.listFromCoachBtn.Size = new System.Drawing.Size(184, 58);
+            this.listFromCoachBtn.TabIndex = 6;
+            this.listFromCoachBtn.Text = "List From Coach";
+            this.listFromCoachBtn.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // memberListBtn
             // 
-            this.button5.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button5.FlatAppearance.BorderSize = 3;
-            this.button5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(526, 50);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 58);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "View Member List";
-            this.button5.UseVisualStyleBackColor = false;
+            this.memberListBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.memberListBtn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.memberListBtn.FlatAppearance.BorderSize = 3;
+            this.memberListBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberListBtn.Location = new System.Drawing.Point(526, 50);
+            this.memberListBtn.Name = "memberListBtn";
+            this.memberListBtn.Size = new System.Drawing.Size(184, 58);
+            this.memberListBtn.TabIndex = 5;
+            this.memberListBtn.Text = "View Member List";
+            this.memberListBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // compBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatAppearance.BorderSize = 3;
-            this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(297, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 58);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Manage Competition";
-            this.button4.UseVisualStyleBackColor = false;
+            this.compBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.compBtn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.compBtn.FlatAppearance.BorderSize = 3;
+            this.compBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compBtn.Location = new System.Drawing.Point(297, 50);
+            this.compBtn.Name = "compBtn";
+            this.compBtn.Size = new System.Drawing.Size(184, 58);
+            this.compBtn.TabIndex = 4;
+            this.compBtn.Text = "Manage Competition";
+            this.compBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // assBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(297, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 58);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Assign Member ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.assBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.assBtn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.assBtn.FlatAppearance.BorderSize = 3;
+            this.assBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assBtn.Location = new System.Drawing.Point(297, 129);
+            this.assBtn.Name = "assBtn";
+            this.assBtn.Size = new System.Drawing.Size(184, 58);
+            this.assBtn.TabIndex = 3;
+            this.assBtn.Text = "Assign Member ";
+            this.assBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // profileBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(60, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 58);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Profile";
-            this.button2.UseVisualStyleBackColor = false;
+            this.profileBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.profileBtn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.profileBtn.FlatAppearance.BorderSize = 3;
+            this.profileBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileBtn.Location = new System.Drawing.Point(60, 50);
+            this.profileBtn.Name = "profileBtn";
+            this.profileBtn.Size = new System.Drawing.Size(184, 58);
+            this.profileBtn.TabIndex = 2;
+            this.profileBtn.Text = "Profile";
+            this.profileBtn.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -234,12 +234,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button resultBtn;
+        private System.Windows.Forms.Button listFromCoachBtn;
+        private System.Windows.Forms.Button memberListBtn;
+        private System.Windows.Forms.Button compBtn;
+        private System.Windows.Forms.Button assBtn;
+        private System.Windows.Forms.Button profileBtn;
         private System.Windows.Forms.Button button1;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.PictureBox pictureBox3;

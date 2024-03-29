@@ -5,9 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Y1S2
 {
@@ -31,14 +34,17 @@ namespace Y1S2
             editCompVenueTB.Text = venue;
             editCompDetailTB.Text = details;
         }
-
         private void Edit_Competition_Load(object sender, EventArgs e)
         {
         }
 
         private void editCompbtn_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            string formattedCompDate = editCompDate1.Value.ToString("yyyy-MM-dd");
+            string formattedDueDate = editDueDate.Value.ToString("yyyy-MM-dd");
+            Competition comp2 = new Competition(editCompIdLbl.Text,editCompNameTB.Text, formattedCompDate, formattedDueDate, editCompVenueTB.Text, editCompDetailTB.Text);
+            MessageBox.Show(comp2.editCompetition());
+
         }
     }
 }
