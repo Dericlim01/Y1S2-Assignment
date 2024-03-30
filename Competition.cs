@@ -249,8 +249,28 @@ namespace Y1S2
 
         return status;
         }
-              
-                
-        
+
+        public (string, string, string) findCompMember(string name,string id)
+        {
+            con.Open();
+            string query = $"select * from member where name = @name";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataReader rd = cmd.ExecuteReader();
+            string n = "", lvl = "", age = "";
+            while (rd.Read())
+            {
+                n = rd.GetString(1);
+                lvl = rd.GetString(4);
+                age = rd.GetString(3);
+            }
+            con.Close();
+            return (n, lvl, age);
+
+        }
+
+
+
     } 
 }
