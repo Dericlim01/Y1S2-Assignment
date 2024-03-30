@@ -56,3 +56,8 @@ D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.RecordResult.resources
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.ViewCompetitor.resources
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Enroll.resources
 D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Unenroll.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.AddManager.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Enroll.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Unenroll.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.sendRecommendation.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.getRecommendation.resources

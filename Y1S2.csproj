@@ -133,6 +133,12 @@
       <DependentUpon>Enroll.cs</DependentUpon>
     </Compile>
     <Compile Include="Enrollment.cs" />
+    <Compile Include="getRecommendation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getRecommendation.Designer.cs">
+      <DependentUpon>getRecommendation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerCompetition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recommendation.cs" />
     <Compile Include="RecordResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +245,9 @@
     <EmbeddedResource Include="Enroll.resx">
       <DependentUpon>Enroll.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="getRecommendation.resx">
+      <DependentUpon>getRecommendation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerCompetition.resx">
       <DependentUpon>ManagerCompetition.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +278,9 @@
     </Compile>
     <EmbeddedResource Include="RecordResult.resx">
       <DependentUpon>RecordResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendRecommendation.resx">
+      <DependentUpon>sendRecommendation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unenroll.resx">
       <DependentUpon>Unenroll.cs</DependentUpon>

@@ -301,7 +301,10 @@ namespace Y1S2
             {
                 status = "Update Result Fail\nReason:" + ex.Message;
             }
+            con.Close();
             return status;
         }
+
+        
     } 
 }           
