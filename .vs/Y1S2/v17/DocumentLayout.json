@@ -1,28 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|c:\\users\\xuan\\documents\\xuan apu\\year 1 sem 2\\(oop) object-oriented programming (c#)\\assignment\\y1s2-assignment\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|c:\\users\\xuan\\documents\\xuan apu\\year 1 sem 2\\(oop) object-oriented programming (c#)\\assignment\\y1s2-assignment\\addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|solutionrelative:addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|c:\\users\\xuan\\documents\\xuan apu\\year 1 sem 2\\(oop) object-oriented programming (c#)\\assignment\\y1s2-assignment\\addcoach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|solutionrelative:addcoach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|c:\\users\\xuan\\documents\\xuan apu\\year 1 sem 2\\(oop) object-oriented programming (c#)\\assignment\\y1s2-assignment\\edit_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|solutionrelative:edit_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\delete_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|solutionrelative:delete_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Github\\Assignment\\Y1S2\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,64 +28,8 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddMember.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\AddMember.cs",
-              "RelativeDocumentMoniker": "AddMember.cs",
-              "ToolTip": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\AddMember.cs [Design]",
-              "RelativeToolTip": "AddMember.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T16:24:50.974Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddCoach.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\AddCoach.cs",
-              "RelativeDocumentMoniker": "AddCoach.cs",
-              "ToolTip": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\AddCoach.cs [Design]",
-              "RelativeToolTip": "AddCoach.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T16:23:29.413Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit_Profile.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\Edit_Profile.cs",
-              "RelativeDocumentMoniker": "Edit_Profile.cs",
-              "ToolTip": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\Edit_Profile.cs [Design]",
-              "RelativeToolTip": "Edit_Profile.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T16:22:24.092Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete_User.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\Delete_User.cs",
-              "RelativeDocumentMoniker": "Delete_User.cs",
-              "ToolTip": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\Delete_User.cs [Design]",
-              "RelativeToolTip": "Delete_User.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T14:17:13.521Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\Admin.cs",
-              "RelativeDocumentMoniker": "Admin.cs",
-              "ToolTip": "C:\\Users\\Xuan\\Documents\\Xuan APU\\Year 1 Sem 2\\(OOP) Object-Oriented Programming (C#)\\Assignment\\Y1S2-Assignment\\Admin.cs [Design]",
-              "RelativeToolTip": "Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T13:55:41.021Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
