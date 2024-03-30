@@ -97,5 +97,10 @@ namespace Y1S2
             back.Show();
             this.Close();
         }
+
+        private void competitionView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

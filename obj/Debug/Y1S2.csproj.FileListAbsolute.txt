@@ -50,3 +50,4 @@ D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\ob
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Member_Suggestion.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.AssignCompetition.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.RecordResult.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.ViewCompetitor.resources

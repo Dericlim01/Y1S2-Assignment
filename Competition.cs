@@ -35,6 +35,15 @@ namespace Y1S2
             venue = v;
             details = dt;
         }
+
+        public Competition(string c_id, string mN, int rank)
+        {
+            competitionId = c_id;
+            memberName = mN;
+            ranking = rank;
+          
+        }
+
         public Competition() { }
         public Competition(string c_id)
         {
@@ -111,7 +120,7 @@ namespace Y1S2
                 }
                 else
                 {
-                    status = "Edit Competition Fail\nReason:";
+                    status = "Edit Competition Fail";
                 }
                 con.Close();
             }
@@ -143,7 +152,7 @@ namespace Y1S2
                 }
                 else
                 {
-                    status = "Delete Competition Fail\nReason:";
+                    status = "Delete Competition Fail";
                 }
                 con.Close();
             }
@@ -251,7 +260,7 @@ namespace Y1S2
         }
         public IEnumerable<string> compMemberList()
         {
-            con.Open();
+            con.Open(); 
             string query = $"select member_name from competition_attend WHERE competition_id = @id";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@id", competitionId);
@@ -261,6 +270,38 @@ namespace Y1S2
                 yield return rd.GetString(0);
             }
             con.Close();
+        }
+
+        public string recordCompResult()
+        {
+            string status;
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE competition_attend  SET ranking = @rank WHERE competition_id = @id AND member_name = @name ", con);
+                cmd.Parameters.AddWithValue("@id", competitionId);
+                cmd.Parameters.AddWithValue("@name", memberName);
+                cmd.Parameters.AddWithValue("@rank", ranking);
+                int i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    status = "Update Successfully.";
+                }
+                else
+                {
+                    status = "Update Result Fail";
+                }
+                con.Close();
+            }
+            catch (SqlException ex)
+            {
+                status = "Update Result Fail\nReason:" + ex.Message;
+            }
+            catch (Exception ex)
+            {
+                status = "Update Result Fail\nReason:" + ex.Message;
+            }
+            return status;
         }
 
 

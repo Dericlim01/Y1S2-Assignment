@@ -165,6 +165,18 @@
     <Compile Include="RecordResult.Designer.cs">
       <DependentUpon>RecordResult.cs</DependentUpon>
     </Compile>
+    <Compile Include="sendRecommendation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendRecommendation.Designer.cs">
+      <DependentUpon>sendRecommendation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompetitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCompetitor.Designer.cs">
+      <DependentUpon>ViewCompetitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Suggestions.cs" />
     <Compile Include="swimmingclubdbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -229,6 +241,9 @@
     </Compile>
     <EmbeddedResource Include="RecordResult.resx">
       <DependentUpon>RecordResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCompetitor.resx">
+      <DependentUpon>ViewCompetitor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

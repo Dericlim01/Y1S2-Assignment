@@ -29,94 +29,244 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.competitionTableAdapter = new Y1S2.swimmingclubdbDataSetTableAdapters.CompetitionTableAdapter();
-            this.competitionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.swimmingclubdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.swimmingclubdbDataSet = new Y1S2.swimmingclubdbDataSet();
-            this.competitionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Topic = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bckBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.assignCompIdlbl = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.assignCompVenuelbl = new System.Windows.Forms.Label();
-            this.assignCompDatelbl = new System.Windows.Forms.Label();
-            this.assignCompNamelbl = new System.Windows.Forms.Label();
-            this.competitionListBox = new System.Windows.Forms.ListBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.viewCompVenuelbl = new System.Windows.Forms.Label();
-            this.viewCompDatelbl = new System.Windows.Forms.Label();
-            this.viewComNamelbl = new System.Windows.Forms.Label();
-            this.viewCompIdlbl = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.compMemberListBox = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.assignMembAgelbl = new System.Windows.Forms.Label();
             this.assignMembLevellbl = new System.Windows.Forms.Label();
             this.assignMembNamelbl = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.viewCompMemberName = new System.Windows.Forms.Label();
-            this.viewCompMemberAge = new System.Windows.Forms.Label();
-            this.compMemberListBox = new System.Windows.Forms.ListBox();
-            this.viewCompMemberLvl = new System.Windows.Forms.Label();
-            this.viewCompMemberRank = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).BeginInit();
+            this.recordMemberRank = new System.Windows.Forms.Label();
+            this.recordMemberName = new System.Windows.Forms.Label();
+            this.recordCompNamelbl = new System.Windows.Forms.Label();
+            this.recordResultIdlbl = new System.Windows.Forms.Label();
+            this.assignCompIdlbl = new System.Windows.Forms.Label();
+            this.competitionListBox = new System.Windows.Forms.ListBox();
+            this.assignCompVenuelbl = new System.Windows.Forms.Label();
+            this.assignCompDatelbl = new System.Windows.Forms.Label();
+            this.assignCompNamelbl = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.bckBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Topic = new System.Windows.Forms.Label();
+            this.competitionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.swimmingclubdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.swimmingclubdbDataSet = new Y1S2.swimmingclubdbDataSet();
+            this.competitionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.competitionTableAdapter = new Y1S2.swimmingclubdbDataSetTableAdapters.CompetitionTableAdapter();
+            this.recordRankTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.updateBtn = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // competitionTableAdapter
+            // label45
             // 
-            this.competitionTableAdapter.ClearBeforeFill = true;
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(27, 186);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(104, 18);
+            this.label45.TabIndex = 87;
+            this.label45.Text = "Member Name:";
             // 
-            // competitionBindingSource1
+            // compMemberListBox
             // 
-            this.competitionBindingSource1.DataMember = "Competition";
-            this.competitionBindingSource1.DataSource = this.swimmingclubdbDataSetBindingSource;
+            this.compMemberListBox.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.compMemberListBox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compMemberListBox.FormattingEnabled = true;
+            this.compMemberListBox.ItemHeight = 18;
+            this.compMemberListBox.Location = new System.Drawing.Point(44, 32);
+            this.compMemberListBox.Name = "compMemberListBox";
+            this.compMemberListBox.Size = new System.Drawing.Size(286, 130);
+            this.compMemberListBox.TabIndex = 55;
+            this.compMemberListBox.SelectedIndexChanged += new System.EventHandler(this.compMemberListBox_SelectedIndexChanged);
             // 
-            // swimmingclubdbDataSetBindingSource
+            // label15
             // 
-            this.swimmingclubdbDataSetBindingSource.DataSource = this.swimmingclubdbDataSet;
-            this.swimmingclubdbDataSetBindingSource.Position = 0;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(27, 228);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(72, 18);
+            this.label15.TabIndex = 86;
+            this.label15.Text = "Ranking:";
             // 
-            // swimmingclubdbDataSet
+            // assignMembAgelbl
             // 
-            this.swimmingclubdbDataSet.DataSetName = "swimmingclubdbDataSet";
-            this.swimmingclubdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.assignMembAgelbl.AutoSize = true;
+            this.assignMembAgelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignMembAgelbl.Location = new System.Drawing.Point(671, 354);
+            this.assignMembAgelbl.Name = "assignMembAgelbl";
+            this.assignMembAgelbl.Size = new System.Drawing.Size(0, 18);
+            this.assignMembAgelbl.TabIndex = 101;
             // 
-            // competitionBindingSource
+            // assignMembLevellbl
             // 
-            this.competitionBindingSource.DataMember = "Competition";
-            this.competitionBindingSource.DataSource = this.swimmingclubdbDataSetBindingSource;
+            this.assignMembLevellbl.AutoSize = true;
+            this.assignMembLevellbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignMembLevellbl.Location = new System.Drawing.Point(687, 321);
+            this.assignMembLevellbl.Name = "assignMembLevellbl";
+            this.assignMembLevellbl.Size = new System.Drawing.Size(0, 18);
+            this.assignMembLevellbl.TabIndex = 100;
             // 
-            // Topic
+            // assignMembNamelbl
             // 
-            this.Topic.AutoSize = true;
-            this.Topic.Font = new System.Drawing.Font("Consolas", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.Topic.Location = new System.Drawing.Point(317, 45);
-            this.Topic.Name = "Topic";
-            this.Topic.Size = new System.Drawing.Size(254, 32);
-            this.Topic.TabIndex = 16;
-            this.Topic.Text = "View Competitor ";
+            this.assignMembNamelbl.AutoSize = true;
+            this.assignMembNamelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignMembNamelbl.Location = new System.Drawing.Point(676, 286);
+            this.assignMembNamelbl.Name = "assignMembNamelbl";
+            this.assignMembNamelbl.Size = new System.Drawing.Size(0, 18);
+            this.assignMembNamelbl.TabIndex = 99;
             // 
-            // panel1
+            // groupBox1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.bckBtn);
-            this.panel1.Controls.Add(this.Topic);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-11, 7);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(822, 93);
-            this.panel1.TabIndex = 73;
+            this.groupBox1.Controls.Add(this.recordMemberRank);
+            this.groupBox1.Controls.Add(this.recordMemberName);
+            this.groupBox1.Controls.Add(this.label45);
+            this.groupBox1.Controls.Add(this.compMemberListBox);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(436, 100);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(350, 263);
+            this.groupBox1.TabIndex = 102;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Member Info";
+            // 
+            // recordMemberRank
+            // 
+            this.recordMemberRank.AutoSize = true;
+            this.recordMemberRank.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordMemberRank.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recordMemberRank.Location = new System.Drawing.Point(105, 228);
+            this.recordMemberRank.Name = "recordMemberRank";
+            this.recordMemberRank.Size = new System.Drawing.Size(0, 18);
+            this.recordMemberRank.TabIndex = 91;
+            // 
+            // recordMemberName
+            // 
+            this.recordMemberName.AutoSize = true;
+            this.recordMemberName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordMemberName.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recordMemberName.Location = new System.Drawing.Point(137, 186);
+            this.recordMemberName.Name = "recordMemberName";
+            this.recordMemberName.Size = new System.Drawing.Size(0, 18);
+            this.recordMemberName.TabIndex = 88;
+            // 
+            // recordCompNamelbl
+            // 
+            this.recordCompNamelbl.AutoSize = true;
+            this.recordCompNamelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordCompNamelbl.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recordCompNamelbl.Location = new System.Drawing.Point(172, 228);
+            this.recordCompNamelbl.Name = "recordCompNamelbl";
+            this.recordCompNamelbl.Size = new System.Drawing.Size(0, 18);
+            this.recordCompNamelbl.TabIndex = 77;
+            // 
+            // recordResultIdlbl
+            // 
+            this.recordResultIdlbl.AutoSize = true;
+            this.recordResultIdlbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordResultIdlbl.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recordResultIdlbl.Location = new System.Drawing.Point(156, 186);
+            this.recordResultIdlbl.Name = "recordResultIdlbl";
+            this.recordResultIdlbl.Size = new System.Drawing.Size(0, 18);
+            this.recordResultIdlbl.TabIndex = 76;
+            // 
+            // assignCompIdlbl
+            // 
+            this.assignCompIdlbl.AutoSize = true;
+            this.assignCompIdlbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignCompIdlbl.Location = new System.Drawing.Point(192, 244);
+            this.assignCompIdlbl.Name = "assignCompIdlbl";
+            this.assignCompIdlbl.Size = new System.Drawing.Size(0, 18);
+            this.assignCompIdlbl.TabIndex = 97;
+            // 
+            // competitionListBox
+            // 
+            this.competitionListBox.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.competitionListBox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.competitionListBox.FormattingEnabled = true;
+            this.competitionListBox.ItemHeight = 18;
+            this.competitionListBox.Location = new System.Drawing.Point(46, 32);
+            this.competitionListBox.Name = "competitionListBox";
+            this.competitionListBox.Size = new System.Drawing.Size(284, 130);
+            this.competitionListBox.TabIndex = 75;
+            this.competitionListBox.SelectedIndexChanged += new System.EventHandler(this.competitionListBox_SelectedIndexChanged);
+            // 
+            // assignCompVenuelbl
+            // 
+            this.assignCompVenuelbl.AutoSize = true;
+            this.assignCompVenuelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignCompVenuelbl.Location = new System.Drawing.Point(218, 345);
+            this.assignCompVenuelbl.Name = "assignCompVenuelbl";
+            this.assignCompVenuelbl.Size = new System.Drawing.Size(0, 18);
+            this.assignCompVenuelbl.TabIndex = 96;
+            // 
+            // assignCompDatelbl
+            // 
+            this.assignCompDatelbl.AutoSize = true;
+            this.assignCompDatelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignCompDatelbl.Location = new System.Drawing.Point(205, 312);
+            this.assignCompDatelbl.Name = "assignCompDatelbl";
+            this.assignCompDatelbl.Size = new System.Drawing.Size(0, 18);
+            this.assignCompDatelbl.TabIndex = 95;
+            // 
+            // assignCompNamelbl
+            // 
+            this.assignCompNamelbl.AutoSize = true;
+            this.assignCompNamelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignCompNamelbl.Location = new System.Drawing.Point(205, 277);
+            this.assignCompNamelbl.Name = "assignCompNamelbl";
+            this.assignCompNamelbl.Size = new System.Drawing.Size(0, 18);
+            this.assignCompNamelbl.TabIndex = 94;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.recordCompNamelbl);
+            this.groupBox2.Controls.Add(this.recordResultIdlbl);
+            this.groupBox2.Controls.Add(this.competitionListBox);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(32, 100);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(358, 263);
+            this.groupBox2.TabIndex = 98;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Competition Info";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(22, 186);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(128, 18);
+            this.label10.TabIndex = 83;
+            this.label10.Text = "Competition ID:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(22, 228);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 18);
+            this.label7.TabIndex = 80;
+            this.label7.Text = "Competition Name:";
             // 
             // bckBtn
             // 
@@ -152,246 +302,83 @@
             this.label1.Text = "The Wave";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // assignCompIdlbl
+            // panel1
             // 
-            this.assignCompIdlbl.AutoSize = true;
-            this.assignCompIdlbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignCompIdlbl.Location = new System.Drawing.Point(178, 250);
-            this.assignCompIdlbl.Name = "assignCompIdlbl";
-            this.assignCompIdlbl.Size = new System.Drawing.Size(0, 18);
-            this.assignCompIdlbl.TabIndex = 84;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.bckBtn);
+            this.panel1.Controls.Add(this.Topic);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(-11, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(836, 93);
+            this.panel1.TabIndex = 93;
             // 
-            // label10
+            // Topic
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 144);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(128, 18);
-            this.label10.TabIndex = 83;
-            this.label10.Text = "Competition ID:";
+            this.Topic.AutoSize = true;
+            this.Topic.Font = new System.Drawing.Font("Consolas", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Topic.Location = new System.Drawing.Point(317, 45);
+            this.Topic.Name = "Topic";
+            this.Topic.Size = new System.Drawing.Size(209, 32);
+            this.Topic.TabIndex = 16;
+            this.Topic.Text = "Record Result";
             // 
-            // label9
+            // competitionBindingSource
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 245);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 18);
-            this.label9.TabIndex = 82;
-            this.label9.Text = "Competition Venue:";
+            this.competitionBindingSource.DataMember = "Competition";
+            this.competitionBindingSource.DataSource = this.swimmingclubdbDataSetBindingSource;
             // 
-            // label8
+            // swimmingclubdbDataSetBindingSource
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 212);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 18);
-            this.label8.TabIndex = 81;
-            this.label8.Text = "Competition Date:";
+            this.swimmingclubdbDataSetBindingSource.DataSource = this.swimmingclubdbDataSet;
+            this.swimmingclubdbDataSetBindingSource.Position = 0;
             // 
-            // label7
+            // swimmingclubdbDataSet
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 177);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 18);
-            this.label7.TabIndex = 80;
-            this.label7.Text = "Competition Name:";
+            this.swimmingclubdbDataSet.DataSetName = "swimmingclubdbDataSet";
+            this.swimmingclubdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // assignCompVenuelbl
+            // competitionBindingSource1
             // 
-            this.assignCompVenuelbl.AutoSize = true;
-            this.assignCompVenuelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignCompVenuelbl.Location = new System.Drawing.Point(204, 351);
-            this.assignCompVenuelbl.Name = "assignCompVenuelbl";
-            this.assignCompVenuelbl.Size = new System.Drawing.Size(0, 18);
-            this.assignCompVenuelbl.TabIndex = 79;
+            this.competitionBindingSource1.DataMember = "Competition";
+            this.competitionBindingSource1.DataSource = this.swimmingclubdbDataSetBindingSource;
             // 
-            // assignCompDatelbl
+            // competitionTableAdapter
             // 
-            this.assignCompDatelbl.AutoSize = true;
-            this.assignCompDatelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignCompDatelbl.Location = new System.Drawing.Point(191, 318);
-            this.assignCompDatelbl.Name = "assignCompDatelbl";
-            this.assignCompDatelbl.Size = new System.Drawing.Size(0, 18);
-            this.assignCompDatelbl.TabIndex = 78;
+            this.competitionTableAdapter.ClearBeforeFill = true;
             // 
-            // assignCompNamelbl
+            // recordRankTxt
             // 
-            this.assignCompNamelbl.AutoSize = true;
-            this.assignCompNamelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignCompNamelbl.Location = new System.Drawing.Point(191, 283);
-            this.assignCompNamelbl.Name = "assignCompNamelbl";
-            this.assignCompNamelbl.Size = new System.Drawing.Size(0, 18);
-            this.assignCompNamelbl.TabIndex = 77;
+            this.recordRankTxt.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordRankTxt.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recordRankTxt.Location = new System.Drawing.Point(290, 388);
+            this.recordRankTxt.Name = "recordRankTxt";
+            this.recordRankTxt.Size = new System.Drawing.Size(100, 25);
+            this.recordRankTxt.TabIndex = 103;
             // 
-            // competitionListBox
+            // label2
             // 
-            this.competitionListBox.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.competitionListBox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.competitionListBox.FormattingEnabled = true;
-            this.competitionListBox.ItemHeight = 18;
-            this.competitionListBox.Location = new System.Drawing.Point(50, 34);
-            this.competitionListBox.Name = "competitionListBox";
-            this.competitionListBox.Size = new System.Drawing.Size(225, 94);
-            this.competitionListBox.TabIndex = 75;
-            this.competitionListBox.SelectedIndexChanged += new System.EventHandler(this.competitionListBox_SelectedIndexChanged);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(214, 388);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 18);
+            this.label2.TabIndex = 92;
+            this.label2.Text = "Ranking:";
             // 
-            // groupBox2
+            // updateBtn
             // 
-            this.groupBox2.Controls.Add(this.viewCompVenuelbl);
-            this.groupBox2.Controls.Add(this.viewCompDatelbl);
-            this.groupBox2.Controls.Add(this.viewComNamelbl);
-            this.groupBox2.Controls.Add(this.viewCompIdlbl);
-            this.groupBox2.Controls.Add(this.competitionListBox);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(18, 106);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(358, 284);
-            this.groupBox2.TabIndex = 85;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Competition Info";
-            // 
-            // viewCompVenuelbl
-            // 
-            this.viewCompVenuelbl.AutoSize = true;
-            this.viewCompVenuelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompVenuelbl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.viewCompVenuelbl.Location = new System.Drawing.Point(180, 245);
-            this.viewCompVenuelbl.Name = "viewCompVenuelbl";
-            this.viewCompVenuelbl.Size = new System.Drawing.Size(0, 18);
-            this.viewCompVenuelbl.TabIndex = 79;
-            // 
-            // viewCompDatelbl
-            // 
-            this.viewCompDatelbl.AutoSize = true;
-            this.viewCompDatelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompDatelbl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.viewCompDatelbl.Location = new System.Drawing.Point(171, 212);
-            this.viewCompDatelbl.Name = "viewCompDatelbl";
-            this.viewCompDatelbl.Size = new System.Drawing.Size(0, 18);
-            this.viewCompDatelbl.TabIndex = 78;
-            // 
-            // viewComNamelbl
-            // 
-            this.viewComNamelbl.AutoSize = true;
-            this.viewComNamelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewComNamelbl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.viewComNamelbl.Location = new System.Drawing.Point(171, 177);
-            this.viewComNamelbl.Name = "viewComNamelbl";
-            this.viewComNamelbl.Size = new System.Drawing.Size(0, 18);
-            this.viewComNamelbl.TabIndex = 77;
-            // 
-            // viewCompIdlbl
-            // 
-            this.viewCompIdlbl.AutoSize = true;
-            this.viewCompIdlbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompIdlbl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.viewCompIdlbl.Location = new System.Drawing.Point(156, 144);
-            this.viewCompIdlbl.Name = "viewCompIdlbl";
-            this.viewCompIdlbl.Size = new System.Drawing.Size(0, 18);
-            this.viewCompIdlbl.TabIndex = 76;
-            // 
-            // assignMembAgelbl
-            // 
-            this.assignMembAgelbl.AutoSize = true;
-            this.assignMembAgelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignMembAgelbl.Location = new System.Drawing.Point(657, 360);
-            this.assignMembAgelbl.Name = "assignMembAgelbl";
-            this.assignMembAgelbl.Size = new System.Drawing.Size(0, 18);
-            this.assignMembAgelbl.TabIndex = 88;
-            // 
-            // assignMembLevellbl
-            // 
-            this.assignMembLevellbl.AutoSize = true;
-            this.assignMembLevellbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignMembLevellbl.Location = new System.Drawing.Point(673, 327);
-            this.assignMembLevellbl.Name = "assignMembLevellbl";
-            this.assignMembLevellbl.Size = new System.Drawing.Size(0, 18);
-            this.assignMembLevellbl.TabIndex = 87;
-            // 
-            // assignMembNamelbl
-            // 
-            this.assignMembNamelbl.AutoSize = true;
-            this.assignMembNamelbl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assignMembNamelbl.Location = new System.Drawing.Point(662, 292);
-            this.assignMembNamelbl.Name = "assignMembNamelbl";
-            this.assignMembNamelbl.Size = new System.Drawing.Size(0, 18);
-            this.assignMembNamelbl.TabIndex = 86;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.viewCompMemberName);
-            this.groupBox1.Controls.Add(this.viewCompMemberAge);
-            this.groupBox1.Controls.Add(this.compMemberListBox);
-            this.groupBox1.Controls.Add(this.viewCompMemberLvl);
-            this.groupBox1.Controls.Add(this.viewCompMemberRank);
-            this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(422, 106);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(350, 284);
-            this.groupBox1.TabIndex = 92;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Member Info";
-            // 
-            // viewCompMemberName
-            // 
-            this.viewCompMemberName.AutoSize = true;
-            this.viewCompMemberName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompMemberName.Location = new System.Drawing.Point(31, 149);
-            this.viewCompMemberName.Name = "viewCompMemberName";
-            this.viewCompMemberName.Size = new System.Drawing.Size(104, 18);
-            this.viewCompMemberName.TabIndex = 87;
-            this.viewCompMemberName.Text = "Member Name:";
-            // 
-            // viewCompMemberAge
-            // 
-            this.viewCompMemberAge.AutoSize = true;
-            this.viewCompMemberAge.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompMemberAge.Location = new System.Drawing.Point(31, 221);
-            this.viewCompMemberAge.Name = "viewCompMemberAge";
-            this.viewCompMemberAge.Size = new System.Drawing.Size(96, 18);
-            this.viewCompMemberAge.TabIndex = 84;
-            this.viewCompMemberAge.Text = "Member Age:";
-            // 
-            // compMemberListBox
-            // 
-            this.compMemberListBox.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.compMemberListBox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compMemberListBox.FormattingEnabled = true;
-            this.compMemberListBox.ItemHeight = 18;
-            this.compMemberListBox.Location = new System.Drawing.Point(34, 34);
-            this.compMemberListBox.Name = "compMemberListBox";
-            this.compMemberListBox.Size = new System.Drawing.Size(217, 94);
-            this.compMemberListBox.TabIndex = 55;
-            this.compMemberListBox.SelectedIndexChanged += new System.EventHandler(this.compMemberListBox_SelectedIndexChanged);
-            // 
-            // viewCompMemberLvl
-            // 
-            this.viewCompMemberLvl.AutoSize = true;
-            this.viewCompMemberLvl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompMemberLvl.Location = new System.Drawing.Point(31, 186);
-            this.viewCompMemberLvl.Name = "viewCompMemberLvl";
-            this.viewCompMemberLvl.Size = new System.Drawing.Size(112, 18);
-            this.viewCompMemberLvl.TabIndex = 85;
-            this.viewCompMemberLvl.Text = "Member Level:";
-            // 
-            // viewCompMemberRank
-            // 
-            this.viewCompMemberRank.AutoSize = true;
-            this.viewCompMemberRank.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompMemberRank.Location = new System.Drawing.Point(31, 250);
-            this.viewCompMemberRank.Name = "viewCompMemberRank";
-            this.viewCompMemberRank.Size = new System.Drawing.Size(72, 18);
-            this.viewCompMemberRank.TabIndex = 86;
-            this.viewCompMemberRank.Text = "Ranking:";
+            this.updateBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.updateBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.updateBtn.Location = new System.Drawing.Point(436, 379);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(99, 35);
+            this.updateBtn.TabIndex = 104;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.UseVisualStyleBackColor = false;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // RecordResult
             // 
@@ -399,6 +386,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.updateBtn);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.recordRankTxt);
             this.Controls.Add(this.assignMembAgelbl);
             this.Controls.Add(this.assignMembLevellbl);
             this.Controls.Add(this.assignMembNamelbl);
@@ -412,55 +402,55 @@
             this.Name = "RecordResult";
             this.Text = "RecordResult";
             this.Load += new System.EventHandler(this.RecordResult_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private swimmingclubdbDataSetTableAdapters.CompetitionTableAdapter competitionTableAdapter;
-        private System.Windows.Forms.BindingSource competitionBindingSource1;
-        private System.Windows.Forms.BindingSource swimmingclubdbDataSetBindingSource;
-        private swimmingclubdbDataSet swimmingclubdbDataSet;
-        private System.Windows.Forms.BindingSource competitionBindingSource;
-        private System.Windows.Forms.Label Topic;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button bckBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label assignCompIdlbl;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label assignCompVenuelbl;
-        private System.Windows.Forms.Label assignCompDatelbl;
-        private System.Windows.Forms.Label assignCompNamelbl;
-        private System.Windows.Forms.ListBox competitionListBox;
-        private System.Windows.Forms.GroupBox groupBox2;
+
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.ListBox compMemberListBox;
+        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label assignMembAgelbl;
         private System.Windows.Forms.Label assignMembLevellbl;
         private System.Windows.Forms.Label assignMembNamelbl;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox compMemberListBox;
-        private System.Windows.Forms.Label viewCompVenuelbl;
-        private System.Windows.Forms.Label viewCompDatelbl;
-        private System.Windows.Forms.Label viewComNamelbl;
-        private System.Windows.Forms.Label viewCompIdlbl;
-        private System.Windows.Forms.Label viewCompMemberName;
-        private System.Windows.Forms.Label viewCompMemberAge;
-        private System.Windows.Forms.Label viewCompMemberLvl;
-        private System.Windows.Forms.Label viewCompMemberRank;
+        private System.Windows.Forms.Label recordCompNamelbl;
+        private System.Windows.Forms.Label recordResultIdlbl;
+        private System.Windows.Forms.Label assignCompIdlbl;
+        private System.Windows.Forms.ListBox competitionListBox;
+        private System.Windows.Forms.Label assignCompVenuelbl;
+        private System.Windows.Forms.Label assignCompDatelbl;
+        private System.Windows.Forms.Label assignCompNamelbl;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button bckBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Topic;
+        private System.Windows.Forms.BindingSource competitionBindingSource;
+        private System.Windows.Forms.BindingSource swimmingclubdbDataSetBindingSource;
+        private swimmingclubdbDataSet swimmingclubdbDataSet;
+        private System.Windows.Forms.BindingSource competitionBindingSource1;
+        private swimmingclubdbDataSetTableAdapters.CompetitionTableAdapter competitionTableAdapter;
+        private System.Windows.Forms.Label recordMemberName;
+        private System.Windows.Forms.Label recordMemberRank;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox recordRankTxt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button updateBtn;
     }
 }

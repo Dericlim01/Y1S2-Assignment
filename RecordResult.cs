@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Y1S2
 {
@@ -19,7 +20,6 @@ namespace Y1S2
 
         private void competitionListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
             if (competitionListBox.SelectedIndex != -1)
             {
                 compMemberListBox.Items.Clear();
@@ -27,29 +27,17 @@ namespace Y1S2
                 string selected_competition = competitionListBox.SelectedItem.ToString();
                 Competition details = new Competition();
                 var data = details.findCompetition(selected_competition);
-                viewCompIdlbl.Text = data.Item1;
-                viewComNamelbl.Text = data.Item2;
-                viewCompDatelbl.Text = data.Item3;
-                viewCompVenuelbl.Text = data.Item4;
+                recordResultIdlbl.Text = data.Item1;
+                recordCompNamelbl.Text = data.Item2;
 
-                Competition comp6 = new Competition(viewCompIdlbl.Text);
+
+                Competition comp6 = new Competition(recordResultIdlbl.Text);
                 foreach (string comp in comp6.compMemberList())
                 {
                     compMemberListBox.Items.Add(comp);
                 }
 
 
-            }
-            
-        }
-
-        private void RecordResult_Load(object sender, EventArgs e)
-        {
-            
-            Competition comp5 = new Competition();
-            foreach (string comp in comp5.compList())
-            {
-                competitionListBox.Items.Add(comp);
             }
         }
 
@@ -60,24 +48,44 @@ namespace Y1S2
                 // Retrieve the selected item from the list box
                 string selected_member = compMemberListBox.SelectedItem.ToString();
                 Member_c details = new Member_c();
-                var data = details.findMember(selected_member, viewCompIdlbl.Text);
-                viewCompMemberName.Text = "Member Name:" + data.Item1;
-                viewCompMemberAge.Text = "Member Age:" + data.Item2;
-                viewCompMemberLvl.Text = "Member Level:" + data.Item3;
+                var data = details.findMember(selected_member, recordResultIdlbl.Text);
+                recordMemberName.Text = data.Item1;
                 if (data.Item4 == "")
                 {
-                    viewCompMemberRank.Text = "";
+                    recordMemberRank.Text = "Not Available";
                 }
                 else
                 {
-                    viewCompMemberRank.Text = "Ranking:" + data.Item4;
+                    recordMemberRank.Text = data.Item4;
                 }
-                
+            }
+        }
 
+        private void RecordResult_Load(object sender, EventArgs e)
+        {
+            Competition comp5 = new Competition();
+            foreach (string comp in comp5.compList())
+            {
+                competitionListBox.Items.Add(comp);
+            }
+        }
 
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            int ranking;
+            if (int.TryParse(recordRankTxt.Text, out ranking))
+            {
+                // Conversion successful, 'number' contains the integer value
+                Competition comp6 = new Competition(recordResultIdlbl.Text, recordMemberName.Text, ranking);
+                MessageBox.Show(comp6.recordCompResult());
+
+            }
+            else
+            {
+                // Conversion failed, invalid input
+                MessageBox.Show("Invalid input! Please enter a valid integer.");
 
             }
         }
     }
-    
 }

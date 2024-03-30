@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bckBtn = new System.Windows.Forms.Button();
             this.Topic = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.competitionView = new System.Windows.Forms.DataGridView();
@@ -53,7 +54,6 @@
             this.lblDueDate = new System.Windows.Forms.Label();
             this.AddBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
-            this.bckBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionView)).BeginInit();
@@ -85,6 +85,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(821, 90);
             this.panel1.TabIndex = 11;
+            // 
+            // bckBtn
+            // 
+            this.bckBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.bckBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.bckBtn.Location = new System.Drawing.Point(682, 30);
+            this.bckBtn.Name = "bckBtn";
+            this.bckBtn.Size = new System.Drawing.Size(89, 37);
+            this.bckBtn.TabIndex = 22;
+            this.bckBtn.Text = "Back";
+            this.bckBtn.UseVisualStyleBackColor = false;
+            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
             // 
             // Topic
             // 
@@ -124,6 +136,7 @@
             this.competitionView.Size = new System.Drawing.Size(338, 290);
             this.competitionView.TabIndex = 12;
             this.competitionView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.competitionView_CellClick);
+            this.competitionView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.competitionView_CellContentClick);
             // 
             // competitionidDataGridViewTextBoxColumn
             // 
@@ -275,18 +288,6 @@
             this.editBtn.Text = "Edit";
             this.editBtn.UseVisualStyleBackColor = false;
             this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
-            // 
-            // bckBtn
-            // 
-            this.bckBtn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.bckBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bckBtn.Location = new System.Drawing.Point(682, 30);
-            this.bckBtn.Name = "bckBtn";
-            this.bckBtn.Size = new System.Drawing.Size(89, 37);
-            this.bckBtn.TabIndex = 22;
-            this.bckBtn.Text = "Back";
-            this.bckBtn.UseVisualStyleBackColor = false;
-            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
             // 
             // ManagerCompetition
             // 
