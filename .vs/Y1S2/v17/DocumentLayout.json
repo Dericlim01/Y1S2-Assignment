@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Github\\Assignment\\Y1S2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|d:\\github\\assignment\\y1s2\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|D:\\Github\\Assignment\\Y1S2\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E7FC2591-49C6-44F0-B3C3-8F7DF6DF7A6F}|Y1S2.csproj|solutionrelative:loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",

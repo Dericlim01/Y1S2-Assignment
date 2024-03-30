@@ -48,12 +48,13 @@
             // 
             // btnRegister
             // 
+            this.btnRegister.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRegister.Location = new System.Drawing.Point(344, 313);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.Size = new System.Drawing.Size(99, 40);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // txtPhone
@@ -117,7 +118,7 @@
             // 
             this.back_btn.Location = new System.Drawing.Point(479, 313);
             this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(75, 23);
+            this.back_btn.Size = new System.Drawing.Size(99, 40);
             this.back_btn.TabIndex = 17;
             this.back_btn.Text = "Back";
             this.back_btn.UseVisualStyleBackColor = true;
