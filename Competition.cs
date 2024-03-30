@@ -249,28 +249,20 @@ namespace Y1S2
 
         return status;
         }
-
-        public (string, string, string) findCompMember(string name,string id)
+        public IEnumerable<string> compMemberList()
         {
             con.Open();
-            string query = $"select * from member where name = @name";
+            string query = $"select member_name from competition_attend WHERE competition_id = @id";
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@name", name);
-            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@id", competitionId);
             SqlDataReader rd = cmd.ExecuteReader();
-            string n = "", lvl = "", age = "";
             while (rd.Read())
             {
-                n = rd.GetString(1);
-                lvl = rd.GetString(4);
-                age = rd.GetString(3);
+                yield return rd.GetString(0);
             }
             con.Close();
-            return (n, lvl, age);
-
         }
 
 
-
     } 
-}
+}           

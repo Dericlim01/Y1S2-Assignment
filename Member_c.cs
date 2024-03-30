@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Y1S2
 {
@@ -141,25 +142,42 @@ namespace Y1S2
             }
             connect.Close();
         }
-        public (string, string, string) findMember(string name)
+        public (string, string, string, string) findMember(string name,string comp)
         {
             connect.Open();
-            string query = $"select * from member where name = @name";
+            string query = "SELECT * FROM member WHERE name = @name";
             SqlCommand cmd = new SqlCommand(query, connect);
+
             cmd.Parameters.AddWithValue("@name", name);
-            SqlDataReader rd = cmd.ExecuteReader();
-            string n = "", lvl = "", age = "";
-            while (rd.Read())
+            string n = "", lvl = "", age = "", rank = "";
+
+            using (SqlDataReader rd = cmd.ExecuteReader())
             {
-                n = rd.GetString(1);
-                lvl = rd.GetString(4);
-                age = rd.GetString(3);
+                if (rd.Read()) // Assuming you're interested in the first row only
+                {
+                    n = rd.GetString(1);  // Using indexer with column name for clarity
+                    lvl = rd.GetString(4); // Assuming 'level' is the column name for lvl
+                    age = rd.GetString(3); // Adjust according to your actual column name
+                }
+            } // DataReader is closed here
+
+            string query2 = "SELECT ranking FROM competition_attend WHERE member_name = @name AND competition_id = @comp";
+            SqlCommand cmd2 = new SqlCommand(query2, connect);
+            cmd2.Parameters.AddWithValue("@name", name);
+            cmd2.Parameters.AddWithValue("@comp", comp);
+            object result = cmd2.ExecuteScalar(); // ExecuteScalar returns an object
+
+            // Check if result is not null before casting
+            if (result != null)
+            {
+                rank = result.ToString();
             }
-            connect.Close();
-            return (n, lvl, age);
-
+            else
+            {
+                rank = "";
+            }
+                connect.Close();
+            return (n, lvl, age, rank);
+            }
         }
-
-
-    }
 }

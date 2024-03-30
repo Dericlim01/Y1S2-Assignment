@@ -25,13 +25,11 @@ namespace Y1S2
                 // Retrieve the selected item from the list box
                 string selected_member = memberListBox.SelectedItem.ToString();
                 Member_c details = new Member_c();
-                var data = details.findMember(selected_member);
+                var data = details.findMember(selected_member, assignCompIdlbl.Text);
                 assignMembNamelbl.Text = data.Item1;
                 assignMembLevellbl.Text =  data.Item2;
                 assignMembAgelbl.Text =  data.Item3;
-
             }
-
         }
 
         private void AssignCompetition_Load(object sender, EventArgs e)
@@ -67,13 +65,6 @@ namespace Y1S2
         {
             Competition comp5 = new Competition(assignCompIdlbl.Text, assignMembNamelbl.Text);
             MessageBox.Show(comp5.assign_member());
-
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

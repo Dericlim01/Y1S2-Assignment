@@ -22,6 +22,7 @@ namespace Y1S2
            
             if (competitionListBox.SelectedIndex != -1)
             {
+                compMemberListBox.Items.Clear();
                 // Retrieve the selected item from the list box
                 string selected_competition = competitionListBox.SelectedItem.ToString();
                 Competition details = new Competition();
@@ -31,6 +32,12 @@ namespace Y1S2
                 viewCompDatelbl.Text = data.Item3;
                 viewCompVenuelbl.Text = data.Item4;
 
+                Competition comp6 = new Competition(viewCompIdlbl.Text);
+                foreach (string comp in comp6.compMemberList())
+                {
+                    compMemberListBox.Items.Add(comp);
+                }
+
 
             }
             
@@ -38,15 +45,37 @@ namespace Y1S2
 
         private void RecordResult_Load(object sender, EventArgs e)
         {
-            Member_c memb4 = new Member_c();
+            
             Competition comp5 = new Competition();
-            foreach (string member in memb4.memberlist())
-            {
-                memberListBox.Items.Add(member);
-            }
             foreach (string comp in comp5.compList())
             {
                 competitionListBox.Items.Add(comp);
+            }
+        }
+
+        private void compMemberListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (compMemberListBox.SelectedIndex != -1)
+            {
+                // Retrieve the selected item from the list box
+                string selected_member = compMemberListBox.SelectedItem.ToString();
+                Member_c details = new Member_c();
+                var data = details.findMember(selected_member, viewCompIdlbl.Text);
+                viewCompMemberName.Text = "Member Name:" + data.Item1;
+                viewCompMemberAge.Text = "Member Age:" + data.Item2;
+                viewCompMemberLvl.Text = "Member Level:" + data.Item3;
+                if (data.Item4 == "")
+                {
+                    viewCompMemberRank.Text = "";
+                }
+                else
+                {
+                    viewCompMemberRank.Text = "Ranking:" + data.Item4;
+                }
+                
+
+
+
             }
         }
     }

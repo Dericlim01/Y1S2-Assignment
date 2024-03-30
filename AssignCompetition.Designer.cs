@@ -340,7 +340,6 @@
             this.groupBox2.TabIndex = 74;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Competition Info";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // AssignCompetition
             // 
