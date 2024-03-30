@@ -29,12 +29,24 @@ namespace Y1S2
             if (status == null)
             {
                 MessageBox.Show(status);
+                Show();
             }
-            this.Show();
 
             // Set textbox to empty
             username_txtbx.Text = String.Empty;
             password_txtbx.Text = String.Empty;
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void register_btn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Enroll enroll = new Enroll();
+            enroll.ShowDialog();
         }
     }
 }

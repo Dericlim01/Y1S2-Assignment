@@ -10,7 +10,7 @@ namespace Y1S2
 {
     internal class Suggestions
     {
-        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
         public Suggestions()
         {

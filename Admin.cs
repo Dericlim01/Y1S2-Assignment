@@ -14,6 +14,7 @@ namespace Y1S2
     {
         public static string name;
         public static string role;
+        public static string a;
 
         public Admin(string n, string r)
         {
@@ -24,22 +25,31 @@ namespace Y1S2
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            lblidentity.Text = $"Hello, {name}";
+            lblname.Text = $"Name : {name}";
+            lbltype.Text = $"Type : {role}";
         }
 
         // Add Student
         private void btnAdd_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddMember ad = new AddMember();
+            AddMember ad = new AddMember(name, role);
             ad.ShowDialog();
+        }
+
+        // Add Manager
+        private void manager_add_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddManager add = new AddManager(name, role);
+            add.ShowDialog();
         }
 
         // Add Couch
         private void couch_add_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddCoach add = new AddCoach();
+            AddCoach add = new AddCoach(name, role);
             add.ShowDialog();
         }
 
@@ -55,15 +65,22 @@ namespace Y1S2
         private void coach_p_edit_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Edit_Profile edit_couch = new Edit_Profile();
+            Edit_Profile edit_couch = new Edit_Profile(name, role, a);
             edit_couch.ShowDialog();
         }
 
         private void manage_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Delete_User delete_user = new Delete_User();
+            Delete_User delete_user = new Delete_User(name, role);
             delete_user.ShowDialog();
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.ShowDialog();
         }
     }
 }

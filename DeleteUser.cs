@@ -10,7 +10,7 @@ namespace Y1S2
 {
     internal class DeleteUser
     {
-        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
         public DeleteUser()
         {

@@ -17,9 +17,18 @@ namespace Y1S2
             InitializeComponent();
         }
 
+        string name;
+        string role;
+        public AddCoach(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
+        }
+
         private void addcouch_btn_Click(object sender, EventArgs e)
         {
-            Coach addcouch = new Coach(name_txtbx.Text, pass_txtbx.Text, email_txtbx.Text, phoneNum_txtbx.Text, lvl_txtbx.Text);
+            Coach_c addcouch = new Coach_c(name_txtbx.Text, pass_txtbx.Text, email_txtbx.Text, phoneNum_txtbx.Text, lvl_txtbx.Text);
             MessageBox.Show(addcouch.addCoach());
 
             if (addcouch.addCoach() == "This account already exist, pls create a new one or login instead")
@@ -27,6 +36,14 @@ namespace Y1S2
                 LoginPage login = new LoginPage();
                 login.ShowDialog();
             }
+        }
+
+        // Back Button
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin back = new Admin(name, role);
+            back.ShowDialog();
         }
     }
 }

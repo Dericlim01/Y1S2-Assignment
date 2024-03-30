@@ -44,7 +44,6 @@ namespace Y1S2
             string formattedDueDate = editDueDate.Value.ToString("yyyy-MM-dd");
             Competition comp2 = new Competition(editCompIdLbl.Text, editCompNameTB.Text, formattedCompDate, formattedDueDate, editCompVenueTB.Text, editCompDetailTB.Text);
             MessageBox.Show(comp2.editCompetition());
-
         }
 
         private void bckBtn_Click(object sender, EventArgs e)

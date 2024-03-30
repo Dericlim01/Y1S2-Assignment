@@ -21,6 +21,8 @@ namespace Y1S2
         public Member(string n, string r)
         {
             InitializeComponent();
+            name = n;
+            role = r;
         }
 
         // Constructor for login
@@ -33,8 +35,8 @@ namespace Y1S2
         // Initial display user profile
         private void Member_Load(object sender, EventArgs e)
         {
-            lblname.Text = name;
-            lbltype.Text = "Member";
+            lblname.Text = $"Name : {name}";
+            lbltype.Text = $"Type : {role}";
         }
 
         private void edit_profile_btn_Click(object sender, EventArgs e)

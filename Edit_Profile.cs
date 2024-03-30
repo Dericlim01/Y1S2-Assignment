@@ -14,6 +14,7 @@ namespace Y1S2
     {
         private string name;
         private string role;
+        private string abc;
         public Edit_Profile(string n, string r)
         {
             InitializeComponent();
@@ -52,12 +53,15 @@ namespace Y1S2
         }
 
         // List Box
-        public Edit_Profile()
+        public Edit_Profile(string n, string r, string a)
         {
             InitializeComponent();
+            name = n;
+            role = r;
+            abc = a;
 
             EditProfile c_lsbox = new EditProfile();
-            foreach (string item in c_lsbox.Couch_listbx())
+            foreach (string item in c_lsbox.Coach_listbx())
             {
                 Coach_listbx.Items.Add(item);
             }
@@ -78,6 +82,31 @@ namespace Y1S2
                 phoneNum_txtbx.Text = data.Item3;
                 level_txtbx.Text = data.Item4;
                 salary_txtbx.Text = data.Item5;
+            }
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            if (role == "admin")
+            {
+                Admin back = new Admin(name, role);
+                back.ShowDialog();
+            }
+            else if (role == "coach")
+            {
+                Coach back = new Coach();
+                back.ShowDialog();
+            }
+            else if (role == "manager")
+            {
+                Manager back = new Manager(name, role);
+                back.ShowDialog();
+            }
+            else if (role == "member")
+            {
+                Member back = new Member(name, role);
+                back.ShowDialog();
             }
         }
     }

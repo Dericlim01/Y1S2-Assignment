@@ -19,7 +19,6 @@ namespace Y1S2
 
         private void memberListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (memberListBox.SelectedIndex != -1)
             {
                 // Retrieve the selected item from the list box

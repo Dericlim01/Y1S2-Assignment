@@ -36,7 +36,7 @@
             this.compBtn = new System.Windows.Forms.Button();
             this.assBtn = new System.Windows.Forms.Button();
             this.profileBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -51,7 +51,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 28.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label1.Location = new System.Drawing.Point(24, 109);
+            this.label1.Location = new System.Drawing.Point(26, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(237, 55);
             this.label1.TabIndex = 9;
@@ -67,9 +67,9 @@
             this.groupBox1.Controls.Add(this.compBtn);
             this.groupBox1.Controls.Add(this.assBtn);
             this.groupBox1.Controls.Add(this.profileBtn);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.logout_btn);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-2, 216);
+            this.groupBox1.Location = new System.Drawing.Point(0, 225);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -158,21 +158,22 @@
             this.profileBtn.UseVisualStyleBackColor = false;
             this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
-            // button1
+            // logout_btn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(725, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.logout_btn.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
+            this.logout_btn.Location = new System.Drawing.Point(725, 194);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 25);
+            this.logout_btn.TabIndex = 1;
+            this.logout_btn.Text = "Log Out";
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Y1S2.Properties.Resources.logo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 34);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(227, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,7 +183,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::Y1S2.Properties.Resources.profile3;
-            this.pictureBox3.Location = new System.Drawing.Point(300, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(302, 20);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(181, 183);
@@ -193,7 +194,7 @@
             // 
             this.lbltype.AutoSize = true;
             this.lbltype.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltype.Location = new System.Drawing.Point(462, 104);
+            this.lbltype.Location = new System.Drawing.Point(464, 113);
             this.lbltype.Name = "lbltype";
             this.lbltype.Size = new System.Drawing.Size(65, 23);
             this.lbltype.TabIndex = 10;
@@ -203,7 +204,7 @@
             // 
             this.lblname.AutoSize = true;
             this.lblname.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(462, 47);
+            this.lblname.Location = new System.Drawing.Point(464, 56);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(65, 23);
             this.lblname.TabIndex = 12;
@@ -213,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -222,6 +224,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Name = "Manager";
             this.Text = "Manager";
+            this.Load += new System.EventHandler(this.Manager_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -241,7 +244,7 @@
         private System.Windows.Forms.Button compBtn;
         private System.Windows.Forms.Button assBtn;
         private System.Windows.Forms.Button profileBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logout_btn;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lbltype;

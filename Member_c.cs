@@ -15,6 +15,7 @@ namespace Y1S2
     {
         // Create three private member field
         private string memName;
+        private string password;
         private string email;
         private string phoneNum;
         private string lvl;
@@ -24,18 +25,13 @@ namespace Y1S2
         public string PhoneNum { get => phoneNum; set => phoneNum = value; }
 
         // Create a constructor
-        public Member_c(string membername, string emailadd, string phonenumber, string level)
+        public Member_c(string membername, string pass, string emailadd, string phonenumber, string level)
         {
             memName = membername;
+            password = pass;
             email = emailadd;
             phoneNum = phonenumber;
             lvl = level;
-        }
-
-        // Create a constructor for login
-        public Member_c(string membername)
-        {
-            memName = membername;
         }
 
         public Member_c()
@@ -47,28 +43,40 @@ namespace Y1S2
         {
             string status;
             connect.Open();
-            // Insert data into student
-            string query = "insert into member (name, email, phoneNumber, level) values (@name, @em, @num, @lvl)";
-            SqlCommand cmd = new SqlCommand(query, connect);
-            cmd.Parameters.AddWithValue("@name", memName);
-            cmd.Parameters.AddWithValue("@em", email);
-            cmd.Parameters.AddWithValue("@num", phoneNum);
-            cmd.Parameters.AddWithValue("@lvl", lvl);
-
-            // Insert data into users
-            string query2 = "insert into users (username, password, role) values (@name, '123', 'member')";
-            SqlCommand cmd2 = new SqlCommand(query2, connect);
-            cmd2.Parameters.AddWithValue("@name", memName);
-
-            int i = cmd.ExecuteNonQuery();
-            int j = cmd2.ExecuteNonQuery();
-            if (i + j == 2)
+            string query = "select count(*) from users where username = @name";
+            SqlCommand check = new SqlCommand(query, connect);
+            check.Parameters.AddWithValue("@name", memName);
+            int count = Convert.ToInt32(check.ExecuteScalar());
+            if (count > 0)
             {
-                status = "Registration Successful.";
+                status = "This account already exist, pls create a new one or login instead";
             }
             else
             {
-                status = "Unable to register.";
+                // Insert data into student
+                string query2 = "insert into member (name, email, phoneNumber, level) values (@name, @em, @num, @lvl)";
+                SqlCommand cmd = new SqlCommand(query2, connect);
+                cmd.Parameters.AddWithValue("@name", memName);
+                cmd.Parameters.AddWithValue("@em", email);
+                cmd.Parameters.AddWithValue("@num", phoneNum);
+                cmd.Parameters.AddWithValue("@lvl", lvl);
+
+                // Insert data into users
+                string query3 = "insert into users (username, password, role) values (@name, @password, 'member')";
+                SqlCommand cmd2 = new SqlCommand(query3, connect);
+                cmd2.Parameters.AddWithValue("@name", memName);
+                cmd2.Parameters.AddWithValue("@password", password);
+
+                int i = cmd.ExecuteNonQuery();
+                int j = cmd2.ExecuteNonQuery();
+                if (i + j == 2)
+                {
+                    status = "Registration Successful.";
+                }
+                else
+                {
+                    status = "Unable to register.";
+                }
             }
             connect.Close();
             return status;
@@ -87,47 +95,6 @@ namespace Y1S2
             }
             connect.Close();
             return nm;
-        }
-
-        // View Member Profile
-        public static void viewProfile(Member_c o1) // object as parameter
-        {
-            connect.Open();
-            string query = "select * from member where name = @a";
-            SqlCommand cmd = new SqlCommand(query, connect);
-            cmd.Parameters.AddWithValue("@a", o1.memName);
-
-            SqlDataReader rd = cmd.ExecuteReader();
-            while (rd.Read())
-            {
-                o1.email = rd.GetString(2);
-                o1.phoneNum = rd.GetString(3);
-            }
-            connect.Close();
-        }
-
-        // Update Member Profile
-        public string updateProfile(string em, string num)
-        {
-            string status;
-            connect.Open();
-            string query = "update member set email = @e, phoneNumber = @p where name = @nm";
-            SqlCommand cmd = new SqlCommand(query, connect);
-            cmd.Parameters.AddWithValue("@e", em);
-            cmd.Parameters.AddWithValue("@p", num);
-            cmd.Parameters.AddWithValue("@nm", memName);
-
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
-            {
-                status = "update successfully.";
-            }
-            else
-            {
-                status = "unable to update.";
-            }
-            connect.Close();
-            return status;
         }
 
         public IEnumerable<string> memberlist()

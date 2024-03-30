@@ -33,8 +33,8 @@
             this.username_txtbx = new System.Windows.Forms.TextBox();
             this.password_txtbx = new System.Windows.Forms.TextBox();
             this.login_btn = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.register_btn = new System.Windows.Forms.LinkLabel();
+            this.exit_btn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -98,27 +98,29 @@
             this.login_btn.UseVisualStyleBackColor = true;
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
-            // linkLabel1
+            // register_btn
             // 
-            this.linkLabel1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.linkLabel1.Location = new System.Drawing.Point(519, 362);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(132, 15);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot Password?";
+            this.register_btn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.register_btn.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.register_btn.Location = new System.Drawing.Point(508, 362);
+            this.register_btn.Name = "register_btn";
+            this.register_btn.Size = new System.Drawing.Size(147, 15);
+            this.register_btn.TabIndex = 4;
+            this.register_btn.TabStop = true;
+            this.register_btn.Text = "No Account? Register";
+            this.register_btn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.register_btn_LinkClicked);
             // 
-            // button2
+            // exit_btn
             // 
-            this.button2.Font = new System.Drawing.Font("Consolas", 12.25F);
-            this.button2.Location = new System.Drawing.Point(640, 387);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 39);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Exit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.exit_btn.Font = new System.Drawing.Font("Consolas", 12.25F);
+            this.exit_btn.Location = new System.Drawing.Point(640, 387);
+            this.exit_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(89, 39);
+            this.exit_btn.TabIndex = 5;
+            this.exit_btn.Text = "Exit";
+            this.exit_btn.UseVisualStyleBackColor = true;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
             // label4
             // 
@@ -168,8 +170,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.exit_btn);
+            this.Controls.Add(this.register_btn);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.password_txtbx);
             this.Controls.Add(this.username_txtbx);
@@ -194,8 +196,8 @@
         private System.Windows.Forms.TextBox username_txtbx;
         private System.Windows.Forms.TextBox password_txtbx;
         private System.Windows.Forms.Button login_btn;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.LinkLabel register_btn;
+        private System.Windows.Forms.Button exit_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;

@@ -41,7 +41,6 @@ namespace Y1S2
             competitionId = c_id;
             memberName = mN;
             ranking = rank;
-          
         }
 
         public Competition() { }
@@ -61,8 +60,9 @@ namespace Y1S2
             string status;
             try
             {
-                con.Open(); 
-                SqlCommand cmd = new SqlCommand("INSERT INTO competition(competition_id,competition_name,due_date,competition_date,venue,details) VALUES(@id,@name,@cdate,@ddate,@ven,@dt)", con);
+                con.Open();
+                string query = "INSERT INTO competition (competition_id, competition_name, due_date, competition_date, venue,details) VALUES (@id, @name, @cdate, @ddate, @ven, @dt)";
+                SqlCommand cmd = new SqlCommand(query, con);
 
                 cmd.Parameters.AddWithValue("@id", competitionId);
                 cmd.Parameters.AddWithValue("@name", competitionName);
@@ -106,7 +106,7 @@ namespace Y1S2
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("UPDATE Competition  SET competition_name = @name, due_date = @ddate, competition_date = @cdate,venue=@ven,details = @dt   WHERE competition_id = @id ", con);
+                SqlCommand cmd = new SqlCommand("UPDATE Competition SET competition_name = @name, due_date = @ddate, competition_date = @cdate,venue=@ven,details = @dt WHERE competition_id = @id ", con);
                 cmd.Parameters.AddWithValue("@id", competitionId);
                 cmd.Parameters.AddWithValue("@name", competitionName);
                 cmd.Parameters.AddWithValue("@cdate", competitionDate);
@@ -303,7 +303,5 @@ namespace Y1S2
             }
             return status;
         }
-
-
     } 
 }           

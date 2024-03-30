@@ -13,6 +13,8 @@ namespace Y1S2
         private string username;
         private string password;
 
+        SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
+
         public User(string un, string ps)
         {
             username = un;
@@ -23,7 +25,6 @@ namespace Y1S2
         {
             string status = null;
 
-            SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
             connect.Open();
 
             // SQL command match user
@@ -51,7 +52,7 @@ namespace Y1S2
                 else if (user_role == "coach") // Login as coach
                 {
                     // Redirect to Coach Page
-                    Coach coach = new Coach();
+                    Coach coach = new Coach(un, user_role);
                     coach.ShowDialog();
                 }
                 else if (user_role == "manager") // Login as manager

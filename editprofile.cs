@@ -10,7 +10,7 @@ namespace Y1S2
 {
     internal class EditProfile
     {
-        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["myDB"].ToString());
+        static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
         public EditProfile()
         {
@@ -53,10 +53,10 @@ namespace Y1S2
         }
 
         // Load List Box
-        public IEnumerable<string> Couch_listbx()
+        public IEnumerable<string> Coach_listbx()
         {
             connect.Open();
-            string query = "select name from couch";
+            string query = "select name from coach";
             SqlCommand cmd = new SqlCommand(query, connect);
             SqlDataReader rd = cmd.ExecuteReader();
             while (rd.Read())

@@ -25,8 +25,15 @@ namespace Y1S2
             InitializeComponent();
         }
 
+        private void Manager_Load(object sender, EventArgs e)
+        {
+            lblname.Text = $"Name : {name}";
+            lbltype.Text = $"Type : {role}";
+        }
+
         private void profileBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Edit_Profile edit_p = new Edit_Profile(name, role);
             edit_p.ShowDialog();
         }
@@ -37,6 +44,14 @@ namespace Y1S2
             Comp.Show();
             this.Hide();
             Comp.FormClosed += (s, args) => this.Close();
+        }
+
+        // Logout Button
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.ShowDialog();
         }
     }
 }
