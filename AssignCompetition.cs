@@ -19,29 +19,56 @@ namespace Y1S2
 
         private void memberListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
             if (memberListBox.SelectedIndex != -1)
             {
                 // Retrieve the selected item from the list box
-                string selected_data = memberListBox.SelectedItem.ToString();
-
-                Competition details = new Competition();
-                var data = details.findmember(selected_data);
+                string selected_member = memberListBox.SelectedItem.ToString();
+                Member_c details = new Member_c();
+                var data = details.findMember(selected_member);
                 assignMembNamelbl.Text = data.Item1;
-                assignMembLevellbl.Text = data.Item2;
-                assignMembAgelbl.Text = data.Item3;
-                
+                assignMembLevellbl.Text =  data.Item2;
+                assignMembAgelbl.Text =  data.Item3;
+
             }
-            
+
         }
 
         private void AssignCompetition_Load(object sender, EventArgs e)
         {
+            Member_c memb4 = new Member_c();
             Competition comp4 = new Competition();
-            foreach (string user in comp4.memberlist()) 
+            foreach (string member in memb4.memberlist())
             {
-                memberListBox.Items.Add(user);
-            } 
+                memberListBox.Items.Add(member);
+            }
+            foreach (string comp in comp4.compList())
+            {
+                competitionListBox.Items.Add(comp);
+            }
+        }
+
+        private void competitionListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (competitionListBox.SelectedIndex != -1)
+            {
+                // Retrieve the selected item from the list box
+                string selected_competition = competitionListBox.SelectedItem.ToString();
+                Competition details = new Competition();
+                var data = details.findCompetition(selected_competition);
+                assignCompIdlbl.Text = data.Item1;
+                assignCompNamelbl.Text =  data.Item2;
+                assignCompDatelbl.Text =  data.Item3;
+                assignCompVenuelbl.Text = data.Item4;
+            }
+        }
+
+        private void assignMemberbtn_Click(object sender, EventArgs e)
+        {
+            Competition comp5 = new Competition(assignCompIdlbl.Text, assignMembNamelbl.Text);
+            MessageBox.Show(comp5.assign_member());
+
+
         }
     }
 }
