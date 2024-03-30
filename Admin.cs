@@ -65,7 +65,5 @@ namespace Y1S2
             Delete_User delete_user = new Delete_User();
             delete_user.ShowDialog();
         }
-
-
     }
 }

@@ -48,33 +48,4 @@ D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\ob
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Delete_User.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Edit_Profile.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Member_Suggestion.resources
-<<<<<<< Updated upstream
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.AssignCompetition.resources
-=======
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\bin\Debug\swimmingclubdb.mdf
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\bin\Debug\swimmingclubdb_log.ldf
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\bin\Debug\Y1S2.exe.config
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\bin\Debug\Y1S2.exe
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\bin\Debug\Y1S2.pdb
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.csproj.AssemblyReference.cache
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.AddCoach.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.AddCompetition.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.AddMember.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Admin_Suggestion.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.AssignCompetition.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Coach.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Delete_User.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Edit_Competition.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Edit_Profile.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.ManagerCompetition.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Admin.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.LoginPage.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Manager.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Member.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Member_Suggestion.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.Properties.Resources.resources
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.csproj.GenerateResource.cache
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.csproj.CoreCompileInputs.cache
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.exe
-C:\Users\Xuan\Documents\Xuan APU\Year 1 Sem 2\(OOP) Object-Oriented Programming (C#)\Assignment\Y1S2-Assignment\obj\Debug\Y1S2.pdb
->>>>>>> Stashed changes
