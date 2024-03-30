@@ -40,17 +40,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dlt_btn
             // 
-            this.dlt_btn.Location = new System.Drawing.Point(151, 274);
+            this.dlt_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.dlt_btn.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dlt_btn.Location = new System.Drawing.Point(376, 398);
+            this.dlt_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dlt_btn.Name = "dlt_btn";
-            this.dlt_btn.Size = new System.Drawing.Size(75, 23);
+            this.dlt_btn.Size = new System.Drawing.Size(264, 44);
             this.dlt_btn.TabIndex = 21;
             this.dlt_btn.Text = "Delete";
-            this.dlt_btn.UseVisualStyleBackColor = true;
+            this.dlt_btn.UseVisualStyleBackColor = false;
             this.dlt_btn.Click += new System.EventHandler(this.dlt_btn_Click);
             // 
             // groupBox1
@@ -58,19 +62,23 @@
             this.groupBox1.Controls.Add(this.coach_rdbtn);
             this.groupBox1.Controls.Add(this.manager_rdbtn);
             this.groupBox1.Controls.Add(this.member_rdbtn);
-            this.groupBox1.Location = new System.Drawing.Point(485, 85);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(386, 137);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(120, 100);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(329, 180);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Role";
+            this.groupBox1.Text = "Please choose your Role";
             // 
             // coach_rdbtn
             // 
             this.coach_rdbtn.AutoSize = true;
-            this.coach_rdbtn.Location = new System.Drawing.Point(18, 67);
+            this.coach_rdbtn.Location = new System.Drawing.Point(24, 82);
+            this.coach_rdbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.coach_rdbtn.Name = "coach_rdbtn";
-            this.coach_rdbtn.Size = new System.Drawing.Size(56, 17);
+            this.coach_rdbtn.Size = new System.Drawing.Size(84, 27);
             this.coach_rdbtn.TabIndex = 2;
             this.coach_rdbtn.TabStop = true;
             this.coach_rdbtn.Text = "Coach";
@@ -80,9 +88,10 @@
             // manager_rdbtn
             // 
             this.manager_rdbtn.AutoSize = true;
-            this.manager_rdbtn.Location = new System.Drawing.Point(18, 43);
+            this.manager_rdbtn.Location = new System.Drawing.Point(24, 53);
+            this.manager_rdbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.manager_rdbtn.Name = "manager_rdbtn";
-            this.manager_rdbtn.Size = new System.Drawing.Size(67, 17);
+            this.manager_rdbtn.Size = new System.Drawing.Size(107, 27);
             this.manager_rdbtn.TabIndex = 1;
             this.manager_rdbtn.TabStop = true;
             this.manager_rdbtn.Text = "Manager";
@@ -92,9 +101,10 @@
             // member_rdbtn
             // 
             this.member_rdbtn.AutoSize = true;
-            this.member_rdbtn.Location = new System.Drawing.Point(18, 19);
+            this.member_rdbtn.Location = new System.Drawing.Point(24, 23);
+            this.member_rdbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.member_rdbtn.Name = "member_rdbtn";
-            this.member_rdbtn.Size = new System.Drawing.Size(63, 17);
+            this.member_rdbtn.Size = new System.Drawing.Size(102, 27);
             this.member_rdbtn.TabIndex = 0;
             this.member_rdbtn.TabStop = true;
             this.member_rdbtn.Text = "Member";
@@ -104,71 +114,93 @@
             // user_listbx
             // 
             this.user_listbx.FormattingEnabled = true;
-            this.user_listbx.Location = new System.Drawing.Point(485, 202);
+            this.user_listbx.ItemHeight = 16;
+            this.user_listbx.Location = new System.Drawing.Point(735, 137);
+            this.user_listbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.user_listbx.Name = "user_listbx";
-            this.user_listbx.Size = new System.Drawing.Size(120, 95);
+            this.user_listbx.Size = new System.Drawing.Size(296, 180);
             this.user_listbx.TabIndex = 19;
             this.user_listbx.SelectedIndexChanged += new System.EventHandler(this.user_listbx_SelectedIndexChanged);
             // 
             // phonenum_lbl
             // 
             this.phonenum_lbl.AutoSize = true;
-            this.phonenum_lbl.Location = new System.Drawing.Point(229, 158);
+            this.phonenum_lbl.Location = new System.Drawing.Point(295, 262);
+            this.phonenum_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.phonenum_lbl.Name = "phonenum_lbl";
-            this.phonenum_lbl.Size = new System.Drawing.Size(13, 13);
+            this.phonenum_lbl.Size = new System.Drawing.Size(14, 16);
             this.phonenum_lbl.TabIndex = 18;
             this.phonenum_lbl.Text = "_";
             // 
             // email_lbl
             // 
             this.email_lbl.AutoSize = true;
-            this.email_lbl.Location = new System.Drawing.Point(229, 123);
+            this.email_lbl.Location = new System.Drawing.Point(295, 201);
+            this.email_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.email_lbl.Name = "email_lbl";
-            this.email_lbl.Size = new System.Drawing.Size(13, 13);
+            this.email_lbl.Size = new System.Drawing.Size(14, 16);
             this.email_lbl.TabIndex = 17;
             this.email_lbl.Text = "_";
             // 
             // name_lbl
             // 
             this.name_lbl.AutoSize = true;
-            this.name_lbl.Location = new System.Drawing.Point(229, 86);
+            this.name_lbl.Location = new System.Drawing.Point(295, 137);
+            this.name_lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Size = new System.Drawing.Size(13, 13);
+            this.name_lbl.Size = new System.Drawing.Size(14, 16);
             this.name_lbl.TabIndex = 16;
             this.name_lbl.Text = "_";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(101, 158);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(80, 262);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.Size = new System.Drawing.Size(179, 25);
             this.label3.TabIndex = 15;
             this.label3.Text = "Phone Number :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 123);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(80, 201);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "Email :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 86);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(77, 138);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(85, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "Name :";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(402, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(218, 45);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Delete User";
+            // 
             // Delete_User
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dlt_btn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.user_listbx);
@@ -178,6 +210,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Delete_User";
             this.Text = "Delete_User";
             this.groupBox1.ResumeLayout(false);
@@ -201,5 +234,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }
