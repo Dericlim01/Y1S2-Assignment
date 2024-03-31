@@ -107,7 +107,7 @@
             this.groupBox1.Size = new System.Drawing.Size(805, 224);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Quick Access";
+            this.groupBox1.Text = "Features";
             // 
             // send_suggest
             // 
@@ -162,6 +162,7 @@
             this.all_comp_btn.TabIndex = 4;
             this.all_comp_btn.Text = "Competition";
             this.all_comp_btn.UseVisualStyleBackColor = false;
+            this.all_comp_btn.Click += new System.EventHandler(this.all_comp_btn_Click);
             // 
             // enunroll_btn
             // 

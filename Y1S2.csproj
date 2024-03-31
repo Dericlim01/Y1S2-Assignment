@@ -217,6 +217,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>swimmingclubdbDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="swimmingclubdbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>swimmingclubdbDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TrainingSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -378,6 +383,17 @@
     </None>
     <None Include="swimmingclubdbDataSet1.xss">
       <DependentUpon>swimmingclubdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="swimmingclubdbDataSet2.xsc">
+      <DependentUpon>swimmingclubdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="swimmingclubdbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>swimmingclubdbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="swimmingclubdbDataSet2.xss">
+      <DependentUpon>swimmingclubdbDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

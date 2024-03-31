@@ -230,6 +230,7 @@
             this.bckBtn.TabIndex = 22;
             this.bckBtn.Text = "Back";
             this.bckBtn.UseVisualStyleBackColor = false;
+            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
             // 
             // Topic
             // 

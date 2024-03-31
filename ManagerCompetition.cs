@@ -68,7 +68,7 @@ namespace Y1S2
             {
                 this.Hide();
                 Edit_Competition edit = new Edit_Competition(name, role, comp_id, comp_name, comp_date, comp_due_date,comp_venue,comp_details);
-                edit.Show();
+                edit.ShowDialog();
             }
             else
             {
@@ -78,20 +78,20 @@ namespace Y1S2
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             AddCompetition add = new AddCompetition(name, role);
-            add.Show();
+            add.ShowDialog();
         }
 
         private void dltBtn_Click(object sender, EventArgs e)
         {
             if (comp_id != null)
             {
-                this.Close();
+                this.Hide();
                 Competition comp3 = new Competition(comp_id);
                 MessageBox.Show(comp3.deleteCompetition());
                 ManagerCompetition Comp = new ManagerCompetition(name, role);
-                Comp.Show();
+                Comp.ShowDialog();
             }
             else
             {
@@ -101,9 +101,9 @@ namespace Y1S2
 
         private void bckBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Manager back = new Manager(name, role);
-            back.Show();
+            back.ShowDialog();
         }
 
         private void competitionView_CellContentClick(object sender, DataGridViewCellEventArgs e)

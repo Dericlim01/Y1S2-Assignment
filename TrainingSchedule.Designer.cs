@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnDA = new System.Windows.Forms.Button();
             this.scheduleDataGridView = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +42,17 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.DTPickerFrom = new System.Windows.Forms.DateTimePicker();
+            this.swimmingclubdbDataSet2 = new Y1S2.swimmingclubdbDataSet2();
+            this.scheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.scheduleTableAdapter = new Y1S2.swimmingclubdbDataSet2TableAdapters.ScheduleTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.levelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.remarksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.scheduleDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDA
@@ -57,8 +68,16 @@
             // 
             // scheduleDataGridView
             // 
+            this.scheduleDataGridView.AutoGenerateColumns = false;
             this.scheduleDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.scheduleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.scheduleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.dateDataGridViewTextBoxColumn,
+            this.timeDataGridViewTextBoxColumn,
+            this.levelDataGridViewTextBoxColumn,
+            this.remarksDataGridViewTextBoxColumn});
+            this.scheduleDataGridView.DataSource = this.scheduleBindingSource;
             this.scheduleDataGridView.Location = new System.Drawing.Point(111, 214);
             this.scheduleDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.scheduleDataGridView.Name = "scheduleDataGridView";
@@ -66,6 +85,7 @@
             this.scheduleDataGridView.RowTemplate.Height = 24;
             this.scheduleDataGridView.Size = new System.Drawing.Size(548, 133);
             this.scheduleDataGridView.TabIndex = 50;
+            this.scheduleDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.scheduleDataGridView_CellContentClick);
             // 
             // label3
             // 
@@ -184,6 +204,51 @@
             this.DTPickerFrom.Size = new System.Drawing.Size(92, 20);
             this.DTPickerFrom.TabIndex = 39;
             // 
+            // swimmingclubdbDataSet2
+            // 
+            this.swimmingclubdbDataSet2.DataSetName = "swimmingclubdbDataSet2";
+            this.swimmingclubdbDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // scheduleBindingSource
+            // 
+            this.scheduleBindingSource.DataMember = "Schedule";
+            this.scheduleBindingSource.DataSource = this.swimmingclubdbDataSet2;
+            // 
+            // scheduleTableAdapter
+            // 
+            this.scheduleTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            // 
+            // levelDataGridViewTextBoxColumn
+            // 
+            this.levelDataGridViewTextBoxColumn.DataPropertyName = "Level";
+            this.levelDataGridViewTextBoxColumn.HeaderText = "Level";
+            this.levelDataGridViewTextBoxColumn.Name = "levelDataGridViewTextBoxColumn";
+            // 
+            // remarksDataGridViewTextBoxColumn
+            // 
+            this.remarksDataGridViewTextBoxColumn.DataPropertyName = "Remarks";
+            this.remarksDataGridViewTextBoxColumn.HeaderText = "Remarks";
+            this.remarksDataGridViewTextBoxColumn.Name = "remarksDataGridViewTextBoxColumn";
+            // 
             // TrainingSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +271,8 @@
             this.Text = "TrainingSchedule";
             this.Load += new System.EventHandler(this.TrainingSchedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.scheduleDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +293,13 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DateTimePicker DTPickerFrom;
+        private swimmingclubdbDataSet2 swimmingclubdbDataSet2;
+        private System.Windows.Forms.BindingSource scheduleBindingSource;
+        private swimmingclubdbDataSet2TableAdapters.ScheduleTableAdapter scheduleTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn levelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn remarksDataGridViewTextBoxColumn;
     }
 }

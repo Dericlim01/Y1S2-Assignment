@@ -97,5 +97,12 @@ namespace Y1S2
 
             }
         }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Manager back = new Manager(name, role);
+            back.ShowDialog();
+        }
     }
 }

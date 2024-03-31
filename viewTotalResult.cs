@@ -12,10 +12,20 @@ namespace Y1S2
 {
     public partial class viewTotalResult : Form
     {
+        private string name;
+        private string role;
+
         public viewTotalResult()
         {
             InitializeComponent();
         }
+        public viewTotalResult(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
+        }
+        
 
         private void viewTotalResult_Load(object sender, EventArgs e)
         {
@@ -25,6 +35,14 @@ namespace Y1S2
             silverLbl.Text = counts[1].ToString();
             bronzeLbl.Text = counts[2].ToString();
             othersLbl.Text = counts[3].ToString();
+        }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin admin = new Admin(name, role);
+            admin.ShowDialog();
+
         }
     }
 }

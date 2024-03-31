@@ -12,22 +12,30 @@ namespace Y1S2
 {
     public partial class ViewCompetition : Form
     {
+        public string name;
+        public string role;
+
         string comp_id;
         string comp_date;
         string comp_name;
         string comp_due_date;
         string comp_venue;
         string comp_details;
+
         public ViewCompetition()
         {
             InitializeComponent();
         }
 
+        public ViewCompetition(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
+        }
+
         private void competitionView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-            
-            
         }
 
         private void competitionView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -56,6 +64,13 @@ namespace Y1S2
             // TODO: This line of code loads data into the 'swimmingclubdbDataSet1.Competition' table. You can move, or remove it, as needed.
             this.competitionTableAdapter1.Fill(this.swimmingclubdbDataSet1.Competition);
 
+        }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Member back = new Member(name, role);
+            back.ShowDialog();
         }
     }
 }

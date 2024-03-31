@@ -30,8 +30,9 @@ namespace Y1S2
 
         private void TrainingSchedule_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'swimmingClubDataSet.Schedule' table. You can move, or remove it, as needed.
-            this.scheduleTableAdapter.Fill(this.swimmingClubDataSet.Schedule);
+            // TODO: This line of code loads data into the 'swimmingclubdbDataSet2.Schedule' table. You can move, or remove it, as needed.
+            this.scheduleTableAdapter.Fill(this.swimmingclubdbDataSet2.Schedule);
+           
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -119,6 +120,11 @@ namespace Y1S2
             this.Hide();
             Coach back = new Coach(name, role);
             back.ShowDialog();
+        }
+
+        private void scheduleDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

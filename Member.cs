@@ -71,5 +71,12 @@ namespace Y1S2
         {
 
         }
+
+        private void all_comp_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewCompetition comp = new ViewCompetition(name, role);
+            comp.ShowDialog();
+        }
     }
 }

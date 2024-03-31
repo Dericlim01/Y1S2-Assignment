@@ -82,5 +82,12 @@ namespace Y1S2
             LoginPage login = new LoginPage();
             login.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewTotalResult viewcomp = new viewTotalResult(name, role);
+            viewcomp.ShowDialog();
+        }
     }
 }

@@ -32,9 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPfm = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnTrainSch = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnRcmd = new System.Windows.Forms.Button();
             this.edit_profile_btn = new System.Windows.Forms.Button();
             this.logout_btn = new System.Windows.Forms.Button();
@@ -71,9 +69,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox1.Controls.Add(this.btnPfm);
-            this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.btnTrainSch);
-            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.btnRcmd);
             this.groupBox1.Controls.Add(this.edit_profile_btn);
             this.groupBox1.Controls.Add(this.logout_btn);
@@ -85,71 +81,45 @@
             this.groupBox1.Size = new System.Drawing.Size(805, 224);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Quick Access";
+            this.groupBox1.Text = "Features";
             // 
             // btnPfm
             // 
             this.btnPfm.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnPfm.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnPfm.FlatAppearance.BorderSize = 3;
-            this.btnPfm.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPfm.Location = new System.Drawing.Point(60, 129);
+            this.btnPfm.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPfm.Location = new System.Drawing.Point(144, 129);
             this.btnPfm.Name = "btnPfm";
-            this.btnPfm.Size = new System.Drawing.Size(184, 58);
+            this.btnPfm.Size = new System.Drawing.Size(184, 72);
             this.btnPfm.TabIndex = 7;
             this.btnPfm.Text = "Performance";
             this.btnPfm.UseVisualStyleBackColor = false;
             this.btnPfm.Click += new System.EventHandler(this.btnPfm_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button6.FlatAppearance.BorderSize = 3;
-            this.button6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(526, 129);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(184, 58);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "More";
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // btnTrainSch
             // 
             this.btnTrainSch.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnTrainSch.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnTrainSch.FlatAppearance.BorderSize = 3;
-            this.btnTrainSch.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrainSch.Location = new System.Drawing.Point(526, 50);
+            this.btnTrainSch.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrainSch.Location = new System.Drawing.Point(468, 43);
             this.btnTrainSch.Name = "btnTrainSch";
-            this.btnTrainSch.Size = new System.Drawing.Size(184, 58);
+            this.btnTrainSch.Size = new System.Drawing.Size(200, 73);
             this.btnTrainSch.TabIndex = 5;
             this.btnTrainSch.Text = "Training Schedule";
             this.btnTrainSch.UseVisualStyleBackColor = false;
             this.btnTrainSch.Click += new System.EventHandler(this.btnTrainSch_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatAppearance.BorderSize = 3;
-            this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(297, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 58);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "View Member Payment";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // btnRcmd
             // 
             this.btnRcmd.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRcmd.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.btnRcmd.FlatAppearance.BorderSize = 3;
-            this.btnRcmd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRcmd.Location = new System.Drawing.Point(297, 129);
+            this.btnRcmd.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.btnRcmd.Location = new System.Drawing.Point(468, 129);
             this.btnRcmd.Name = "btnRcmd";
-            this.btnRcmd.Size = new System.Drawing.Size(184, 58);
+            this.btnRcmd.Size = new System.Drawing.Size(200, 72);
             this.btnRcmd.TabIndex = 3;
             this.btnRcmd.Text = "Recommendation";
             this.btnRcmd.UseVisualStyleBackColor = false;
@@ -160,10 +130,10 @@
             this.edit_profile_btn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.edit_profile_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.edit_profile_btn.FlatAppearance.BorderSize = 3;
-            this.edit_profile_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edit_profile_btn.Location = new System.Drawing.Point(60, 50);
+            this.edit_profile_btn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_profile_btn.Location = new System.Drawing.Point(144, 43);
             this.edit_profile_btn.Name = "edit_profile_btn";
-            this.edit_profile_btn.Size = new System.Drawing.Size(184, 58);
+            this.edit_profile_btn.Size = new System.Drawing.Size(184, 73);
             this.edit_profile_btn.TabIndex = 2;
             this.edit_profile_btn.Text = "Edit Profile";
             this.edit_profile_btn.UseVisualStyleBackColor = false;
@@ -239,9 +209,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPfm;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnTrainSch;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnRcmd;
         private System.Windows.Forms.Button edit_profile_btn;
         private System.Windows.Forms.Button logout_btn;

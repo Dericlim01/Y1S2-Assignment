@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.detailTxtBox = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.memberListBox = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Topic = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.competitionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.swimmingclubdbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.swimmingclubdbDataSet = new Y1S2.swimmingclubdbDataSet();
@@ -51,17 +53,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.recommendCompNamelbl = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.detailTxtBox = new System.Windows.Forms.RichTextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -74,6 +74,15 @@
             this.groupBox3.TabIndex = 98;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = " Details";
+            // 
+            // detailTxtBox
+            // 
+            this.detailTxtBox.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.detailTxtBox.Location = new System.Drawing.Point(26, 24);
+            this.detailTxtBox.Name = "detailTxtBox";
+            this.detailTxtBox.Size = new System.Drawing.Size(233, 296);
+            this.detailTxtBox.TabIndex = 0;
+            this.detailTxtBox.Text = "";
             // 
             // groupBox1
             // 
@@ -152,6 +161,7 @@
             this.bckBtn.TabIndex = 23;
             this.bckBtn.Text = "Back";
             this.bckBtn.UseVisualStyleBackColor = false;
+            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
             // 
             // label1
             // 
@@ -186,6 +196,17 @@
             this.Topic.Size = new System.Drawing.Size(299, 32);
             this.Topic.TabIndex = 16;
             this.Topic.Text = "Send Recommendation";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Y1S2.Properties.Resources.logo_2;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // competitionBindingSource
             // 
@@ -278,26 +299,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Competition Info";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Y1S2.Properties.Resources.logo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // detailTxtBox
-            // 
-            this.detailTxtBox.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.detailTxtBox.Location = new System.Drawing.Point(26, 24);
-            this.detailTxtBox.Name = "detailTxtBox";
-            this.detailTxtBox.Size = new System.Drawing.Size(233, 296);
-            this.detailTxtBox.TabIndex = 0;
-            this.detailTxtBox.Text = "";
-            // 
             // getRecommendation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,13 +317,13 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

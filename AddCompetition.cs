@@ -37,9 +37,9 @@ namespace Y1S2
 
         private void bckBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             ManagerCompetition back = new ManagerCompetition(name, role);
-            back.Show();
+            back.ShowDialog();
         }
     }
 }

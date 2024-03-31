@@ -74,5 +74,12 @@ namespace Y1S2
             Competition comp5 = new Competition(assignCompIdlbl.Text, assignMembNamelbl.Text);
             MessageBox.Show(comp5.assign_member());
         }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Manager back = new Manager(name, role);
+            back.ShowDialog();
+        }
     }
 }

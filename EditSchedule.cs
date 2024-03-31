@@ -91,5 +91,12 @@ namespace Y1S2
                 txtRemarks.Text = row.Cells[4].Value.ToString();
             }
         }
+
+        private void EditSchedule_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'swimmingclubdbDataSet2.Schedule' table. You can move, or remove it, as needed.
+            this.scheduleTableAdapter.Fill(this.swimmingclubdbDataSet2.Schedule);
+
+        }
     }
 }

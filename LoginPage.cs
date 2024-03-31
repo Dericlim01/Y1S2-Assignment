@@ -26,7 +26,7 @@ namespace Y1S2
             status = login.login(username_txtbx.Text);
 
             // If return status is not empty
-            if (status == null)
+            if (status != null)
             {
                 MessageBox.Show(status);
                 Show();
