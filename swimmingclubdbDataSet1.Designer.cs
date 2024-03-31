@@ -24,6 +24,7 @@ namespace Y1S2 {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class swimmingclubdbDataSet1 : global::System.Data.DataSet {
         
+<<<<<<< Updated upstream
         private adminDataTable tableadmin;
         
         private coachDataTable tablecoach;
@@ -43,6 +44,13 @@ namespace Y1S2 {
         private usersDataTable tableusers;
         
         private global::System.Data.DataRelation relationFK_competition_attend_ToTable;
+=======
+        private PerformanceDataTable tablePerformance;
+        
+        private RecommendationDataTable tableRecommendation;
+        
+        private ScheduleDataTable tableSchedule;
+>>>>>>> Stashed changes
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -72,6 +80,7 @@ namespace Y1S2 {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+<<<<<<< Updated upstream
                 if ((ds.Tables["admin"] != null)) {
                     base.Tables.Add(new adminDataTable(ds.Tables["admin"]));
                 }
@@ -89,15 +98,24 @@ namespace Y1S2 {
                 }
                 if ((ds.Tables["member"] != null)) {
                     base.Tables.Add(new memberDataTable(ds.Tables["member"]));
+=======
+                if ((ds.Tables["Performance"] != null)) {
+                    base.Tables.Add(new PerformanceDataTable(ds.Tables["Performance"]));
+>>>>>>> Stashed changes
                 }
                 if ((ds.Tables["Recommendation"] != null)) {
                     base.Tables.Add(new RecommendationDataTable(ds.Tables["Recommendation"]));
                 }
+<<<<<<< Updated upstream
                 if ((ds.Tables["Table"] != null)) {
                     base.Tables.Add(new TableDataTable(ds.Tables["Table"]));
                 }
                 if ((ds.Tables["users"] != null)) {
                     base.Tables.Add(new usersDataTable(ds.Tables["users"]));
+=======
+                if ((ds.Tables["Schedule"] != null)) {
+                    base.Tables.Add(new ScheduleDataTable(ds.Tables["Schedule"]));
+>>>>>>> Stashed changes
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -121,6 +139,7 @@ namespace Y1S2 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< Updated upstream
         public adminDataTable admin {
             get {
                 return this.tableadmin;
@@ -174,6 +193,11 @@ namespace Y1S2 {
         public memberDataTable member {
             get {
                 return this.tablemember;
+=======
+        public PerformanceDataTable Performance {
+            get {
+                return this.tablePerformance;
+>>>>>>> Stashed changes
             }
         }
         
@@ -191,6 +215,7 @@ namespace Y1S2 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< Updated upstream
         public TableDataTable Table {
             get {
                 return this.tableTable;
@@ -204,6 +229,11 @@ namespace Y1S2 {
         public usersDataTable users {
             get {
                 return this.tableusers;
+=======
+        public ScheduleDataTable Schedule {
+            get {
+                return this.tableSchedule;
+>>>>>>> Stashed changes
             }
         }
         
@@ -274,6 +304,7 @@ namespace Y1S2 {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
+<<<<<<< Updated upstream
                 if ((ds.Tables["admin"] != null)) {
                     base.Tables.Add(new adminDataTable(ds.Tables["admin"]));
                 }
@@ -291,15 +322,24 @@ namespace Y1S2 {
                 }
                 if ((ds.Tables["member"] != null)) {
                     base.Tables.Add(new memberDataTable(ds.Tables["member"]));
+=======
+                if ((ds.Tables["Performance"] != null)) {
+                    base.Tables.Add(new PerformanceDataTable(ds.Tables["Performance"]));
+>>>>>>> Stashed changes
                 }
                 if ((ds.Tables["Recommendation"] != null)) {
                     base.Tables.Add(new RecommendationDataTable(ds.Tables["Recommendation"]));
                 }
+<<<<<<< Updated upstream
                 if ((ds.Tables["Table"] != null)) {
                     base.Tables.Add(new TableDataTable(ds.Tables["Table"]));
                 }
                 if ((ds.Tables["users"] != null)) {
                     base.Tables.Add(new usersDataTable(ds.Tables["users"]));
+=======
+                if ((ds.Tables["Schedule"] != null)) {
+                    base.Tables.Add(new ScheduleDataTable(ds.Tables["Schedule"]));
+>>>>>>> Stashed changes
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -334,6 +374,7 @@ namespace Y1S2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
+<<<<<<< Updated upstream
             this.tableadmin = ((adminDataTable)(base.Tables["admin"]));
             if ((initTable == true)) {
                 if ((this.tableadmin != null)) {
@@ -368,6 +409,12 @@ namespace Y1S2 {
             if ((initTable == true)) {
                 if ((this.tablemember != null)) {
                     this.tablemember.InitVars();
+=======
+            this.tablePerformance = ((PerformanceDataTable)(base.Tables["Performance"]));
+            if ((initTable == true)) {
+                if ((this.tablePerformance != null)) {
+                    this.tablePerformance.InitVars();
+>>>>>>> Stashed changes
                 }
             }
             this.tableRecommendation = ((RecommendationDataTable)(base.Tables["Recommendation"]));
@@ -376,6 +423,7 @@ namespace Y1S2 {
                     this.tableRecommendation.InitVars();
                 }
             }
+<<<<<<< Updated upstream
             this.tableTable = ((TableDataTable)(base.Tables["Table"]));
             if ((initTable == true)) {
                 if ((this.tableTable != null)) {
@@ -389,6 +437,14 @@ namespace Y1S2 {
                 }
             }
             this.relationFK_competition_attend_ToTable = this.Relations["FK_competition_attend_ToTable"];
+=======
+            this.tableSchedule = ((ScheduleDataTable)(base.Tables["Schedule"]));
+            if ((initTable == true)) {
+                if ((this.tableSchedule != null)) {
+                    this.tableSchedule.InitVars();
+                }
+            }
+>>>>>>> Stashed changes
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -399,6 +455,7 @@ namespace Y1S2 {
             this.Namespace = "http://tempuri.org/swimmingclubdbDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+<<<<<<< Updated upstream
             this.tableadmin = new adminDataTable();
             base.Tables.Add(this.tableadmin);
             this.tablecoach = new coachDataTable();
@@ -421,10 +478,19 @@ namespace Y1S2 {
                         this.tableCompetition.competition_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablecompetition_attend.competition_idColumn}, false);
             this.Relations.Add(this.relationFK_competition_attend_ToTable);
+=======
+            this.tablePerformance = new PerformanceDataTable();
+            base.Tables.Add(this.tablePerformance);
+            this.tableRecommendation = new RecommendationDataTable();
+            base.Tables.Add(this.tableRecommendation);
+            this.tableSchedule = new ScheduleDataTable();
+            base.Tables.Add(this.tableSchedule);
+>>>>>>> Stashed changes
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         private bool ShouldSerializeadmin() {
             return false;
         }
@@ -456,6 +522,9 @@ namespace Y1S2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializemember() {
+=======
+        private bool ShouldSerializePerformance() {
+>>>>>>> Stashed changes
             return false;
         }
         
@@ -467,6 +536,7 @@ namespace Y1S2 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         private bool ShouldSerializeTable() {
             return false;
         }
@@ -474,6 +544,9 @@ namespace Y1S2 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeusers() {
+=======
+        private bool ShouldSerializeSchedule() {
+>>>>>>> Stashed changes
             return false;
         }
         
@@ -533,6 +606,7 @@ namespace Y1S2 {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         public delegate void adminRowChangeEventHandler(object sender, adminRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -549,21 +623,29 @@ namespace Y1S2 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void memberRowChangeEventHandler(object sender, memberRowChangeEvent e);
+=======
+        public delegate void PerformanceRowChangeEventHandler(object sender, PerformanceRowChangeEvent e);
+>>>>>>> Stashed changes
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void RecommendationRowChangeEventHandler(object sender, RecommendationRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         public delegate void TableRowChangeEventHandler(object sender, TableRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void usersRowChangeEventHandler(object sender, usersRowChangeEvent e);
+=======
+        public delegate void ScheduleRowChangeEventHandler(object sender, ScheduleRowChangeEvent e);
+>>>>>>> Stashed changes
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< Updated upstream
         public partial class adminDataTable : global::System.Data.TypedTableBase<adminRow> {
             
             private global::System.Data.DataColumn columnId;
@@ -578,6 +660,24 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public adminDataTable() {
                 this.TableName = "admin";
+=======
+        public partial class PerformanceDataTable : global::System.Data.TypedTableBase<PerformanceRow> {
+            
+            private global::System.Data.DataColumn columnId;
+            
+            private global::System.Data.DataColumn columnName;
+            
+            private global::System.Data.DataColumn columnEvent;
+            
+            private global::System.Data.DataColumn columnTime;
+            
+            private global::System.Data.DataColumn columnComments;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public PerformanceDataTable() {
+                this.TableName = "Performance";
+>>>>>>> Stashed changes
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -585,7 +685,11 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             internal adminDataTable(global::System.Data.DataTable table) {
+=======
+            internal PerformanceDataTable(global::System.Data.DataTable table) {
+>>>>>>> Stashed changes
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -602,7 +706,11 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             protected adminDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected PerformanceDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> Stashed changes
                     base(info, context) {
                 this.InitVars();
             }
@@ -617,25 +725,51 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public global::System.Data.DataColumn nameColumn {
                 get {
                     return this.columnname;
+=======
+            public global::System.Data.DataColumn NameColumn {
+                get {
+                    return this.columnName;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public global::System.Data.DataColumn emailColumn {
                 get {
                     return this.columnemail;
+=======
+            public global::System.Data.DataColumn EventColumn {
+                get {
+                    return this.columnEvent;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public global::System.Data.DataColumn phoneNumberColumn {
                 get {
                     return this.columnphoneNumber;
+=======
+            public global::System.Data.DataColumn TimeColumn {
+                get {
+                    return this.columnTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CommentsColumn {
+                get {
+                    return this.columnComments;
+>>>>>>> Stashed changes
                 }
             }
             
@@ -650,13 +784,20 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public adminRow this[int index] {
                 get {
                     return ((adminRow)(this.Rows[index]));
+=======
+            public PerformanceRow this[int index] {
+                get {
+                    return ((PerformanceRow)(this.Rows[index]));
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public event adminRowChangeEventHandler adminRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -671,11 +812,28 @@ namespace Y1S2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void AddadminRow(adminRow row) {
+=======
+            public event PerformanceRowChangeEventHandler PerformanceRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event PerformanceRowChangeEventHandler PerformanceRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event PerformanceRowChangeEventHandler PerformanceRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event PerformanceRowChangeEventHandler PerformanceRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddPerformanceRow(PerformanceRow row) {
+>>>>>>> Stashed changes
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public adminRow AddadminRow(string name, string email, string phoneNumber) {
                 adminRow rowadminRow = ((adminRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -686,19 +844,41 @@ namespace Y1S2 {
                 rowadminRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowadminRow);
                 return rowadminRow;
+=======
+            public PerformanceRow AddPerformanceRow(string Name, string Event, string Time, string Comments) {
+                PerformanceRow rowPerformanceRow = ((PerformanceRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Name,
+                        Event,
+                        Time,
+                        Comments};
+                rowPerformanceRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPerformanceRow);
+                return rowPerformanceRow;
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public adminRow FindById(int Id) {
                 return ((adminRow)(this.Rows.Find(new object[] {
+=======
+            public PerformanceRow FindById(int Id) {
+                return ((PerformanceRow)(this.Rows.Find(new object[] {
+>>>>>>> Stashed changes
                             Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< Updated upstream
                 adminDataTable cln = ((adminDataTable)(base.Clone()));
+=======
+                PerformanceDataTable cln = ((PerformanceDataTable)(base.Clone()));
+>>>>>>> Stashed changes
                 cln.InitVars();
                 return cln;
             }
@@ -706,16 +886,27 @@ namespace Y1S2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< Updated upstream
                 return new adminDataTable();
+=======
+                return new PerformanceDataTable();
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
+<<<<<<< Updated upstream
                 this.columnname = base.Columns["name"];
                 this.columnemail = base.Columns["email"];
                 this.columnphoneNumber = base.Columns["phoneNumber"];
+=======
+                this.columnName = base.Columns["Name"];
+                this.columnEvent = base.Columns["Event"];
+                this.columnTime = base.Columns["Time"];
+                this.columnComments = base.Columns["Comments"];
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -723,12 +914,23 @@ namespace Y1S2 {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
+<<<<<<< Updated upstream
                 this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnname);
                 this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnemail);
                 this.columnphoneNumber = new global::System.Data.DataColumn("phoneNumber", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnphoneNumber);
+=======
+                this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnName);
+                this.columnEvent = new global::System.Data.DataColumn("Event", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEvent);
+                this.columnTime = new global::System.Data.DataColumn("Time", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTime);
+                this.columnComments = new global::System.Data.DataColumn("Comments", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnComments);
+>>>>>>> Stashed changes
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -737,38 +939,66 @@ namespace Y1S2 {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
+<<<<<<< Updated upstream
                 this.columnname.AllowDBNull = false;
                 this.columnname.MaxLength = 50;
                 this.columnemail.AllowDBNull = false;
                 this.columnemail.MaxLength = 50;
                 this.columnphoneNumber.AllowDBNull = false;
                 this.columnphoneNumber.MaxLength = 20;
+=======
+                this.columnName.AllowDBNull = false;
+                this.columnName.MaxLength = 50;
+                this.columnEvent.AllowDBNull = false;
+                this.columnEvent.MaxLength = 50;
+                this.columnTime.AllowDBNull = false;
+                this.columnTime.MaxLength = 50;
+                this.columnComments.MaxLength = 50;
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public adminRow NewadminRow() {
                 return ((adminRow)(this.NewRow()));
+=======
+            public PerformanceRow NewPerformanceRow() {
+                return ((PerformanceRow)(this.NewRow()));
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< Updated upstream
                 return new adminRow(builder);
+=======
+                return new PerformanceRow(builder);
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< Updated upstream
                 return typeof(adminRow);
+=======
+                return typeof(PerformanceRow);
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< Updated upstream
                 if ((this.adminRowChanged != null)) {
                     this.adminRowChanged(this, new adminRowChangeEvent(((adminRow)(e.Row)), e.Action));
+=======
+                if ((this.PerformanceRowChanged != null)) {
+                    this.PerformanceRowChanged(this, new PerformanceRowChangeEvent(((PerformanceRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
@@ -776,8 +1006,13 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< Updated upstream
                 if ((this.adminRowChanging != null)) {
                     this.adminRowChanging(this, new adminRowChangeEvent(((adminRow)(e.Row)), e.Action));
+=======
+                if ((this.PerformanceRowChanging != null)) {
+                    this.PerformanceRowChanging(this, new PerformanceRowChangeEvent(((PerformanceRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
@@ -785,8 +1020,13 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< Updated upstream
                 if ((this.adminRowDeleted != null)) {
                     this.adminRowDeleted(this, new adminRowChangeEvent(((adminRow)(e.Row)), e.Action));
+=======
+                if ((this.PerformanceRowDeleted != null)) {
+                    this.PerformanceRowDeleted(this, new PerformanceRowChangeEvent(((PerformanceRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
@@ -794,14 +1034,23 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< Updated upstream
                 if ((this.adminRowDeleting != null)) {
                     this.adminRowDeleting(this, new adminRowChangeEvent(((adminRow)(e.Row)), e.Action));
+=======
+                if ((this.PerformanceRowDeleting != null)) {
+                    this.PerformanceRowDeleting(this, new PerformanceRowChangeEvent(((PerformanceRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public void RemoveadminRow(adminRow row) {
+=======
+            public void RemovePerformanceRow(PerformanceRow row) {
+>>>>>>> Stashed changes
                 this.Rows.Remove(row);
             }
             
@@ -828,6 +1077,7 @@ namespace Y1S2 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< Updated upstream
                 attribute2.FixedValue = "adminDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
@@ -2441,6 +2691,9 @@ namespace Y1S2 {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "memberDataTable";
+=======
+                attribute2.FixedValue = "PerformanceDataTable";
+>>>>>>> Stashed changes
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2793,6 +3046,7 @@ namespace Y1S2 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< Updated upstream
         public partial class TableDataTable : global::System.Data.TypedTableBase<TableRow> {
             
             private global::System.Data.DataColumn columnId;
@@ -2807,6 +3061,24 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public TableDataTable() {
                 this.TableName = "Table";
+=======
+        public partial class ScheduleDataTable : global::System.Data.TypedTableBase<ScheduleRow> {
+            
+            private global::System.Data.DataColumn columnId;
+            
+            private global::System.Data.DataColumn columnDate;
+            
+            private global::System.Data.DataColumn columnTime;
+            
+            private global::System.Data.DataColumn columnLevel;
+            
+            private global::System.Data.DataColumn columnRemarks;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public ScheduleDataTable() {
+                this.TableName = "Schedule";
+>>>>>>> Stashed changes
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2814,7 +3086,11 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             internal TableDataTable(global::System.Data.DataTable table) {
+=======
+            internal ScheduleDataTable(global::System.Data.DataTable table) {
+>>>>>>> Stashed changes
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2831,7 +3107,11 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             protected TableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected ScheduleDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> Stashed changes
                     base(info, context) {
                 this.InitVars();
             }
@@ -2846,25 +3126,51 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public global::System.Data.DataColumn competitionIdColumn {
                 get {
                     return this.columncompetitionId;
+=======
+            public global::System.Data.DataColumn DateColumn {
+                get {
+                    return this.columnDate;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public global::System.Data.DataColumn member_nameColumn {
                 get {
                     return this.columnmember_name;
+=======
+            public global::System.Data.DataColumn TimeColumn {
+                get {
+                    return this.columnTime;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public global::System.Data.DataColumn detailsColumn {
                 get {
                     return this.columndetails;
+=======
+            public global::System.Data.DataColumn LevelColumn {
+                get {
+                    return this.columnLevel;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RemarksColumn {
+                get {
+                    return this.columnRemarks;
+>>>>>>> Stashed changes
                 }
             }
             
@@ -2879,13 +3185,20 @@ namespace Y1S2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public TableRow this[int index] {
                 get {
                     return ((TableRow)(this.Rows[index]));
+=======
+            public ScheduleRow this[int index] {
+                get {
+                    return ((ScheduleRow)(this.Rows[index]));
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public event TableRowChangeEventHandler TableRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -2900,11 +3213,28 @@ namespace Y1S2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void AddTableRow(TableRow row) {
+=======
+            public event ScheduleRowChangeEventHandler ScheduleRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event ScheduleRowChangeEventHandler ScheduleRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event ScheduleRowChangeEventHandler ScheduleRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event ScheduleRowChangeEventHandler ScheduleRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddScheduleRow(ScheduleRow row) {
+>>>>>>> Stashed changes
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public TableRow AddTableRow(int Id, string competitionId, string member_name, string details) {
                 TableRow rowTableRow = ((TableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -3225,19 +3555,41 @@ namespace Y1S2 {
                 rowusersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowusersRow);
                 return rowusersRow;
+=======
+            public ScheduleRow AddScheduleRow(string Date, string Time, string Level, string Remarks) {
+                ScheduleRow rowScheduleRow = ((ScheduleRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Date,
+                        Time,
+                        Level,
+                        Remarks};
+                rowScheduleRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowScheduleRow);
+                return rowScheduleRow;
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public usersRow FindById(int Id) {
                 return ((usersRow)(this.Rows.Find(new object[] {
+=======
+            public ScheduleRow FindById(int Id) {
+                return ((ScheduleRow)(this.Rows.Find(new object[] {
+>>>>>>> Stashed changes
                             Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< Updated upstream
                 usersDataTable cln = ((usersDataTable)(base.Clone()));
+=======
+                ScheduleDataTable cln = ((ScheduleDataTable)(base.Clone()));
+>>>>>>> Stashed changes
                 cln.InitVars();
                 return cln;
             }
@@ -3245,16 +3597,27 @@ namespace Y1S2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< Updated upstream
                 return new usersDataTable();
+=======
+                return new ScheduleDataTable();
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
+<<<<<<< Updated upstream
                 this.columnusername = base.Columns["username"];
                 this.columnpassword = base.Columns["password"];
                 this.columnrole = base.Columns["role"];
+=======
+                this.columnDate = base.Columns["Date"];
+                this.columnTime = base.Columns["Time"];
+                this.columnLevel = base.Columns["Level"];
+                this.columnRemarks = base.Columns["Remarks"];
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3262,12 +3625,23 @@ namespace Y1S2 {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
+<<<<<<< Updated upstream
                 this.columnusername = new global::System.Data.DataColumn("username", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnusername);
                 this.columnpassword = new global::System.Data.DataColumn("password", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpassword);
                 this.columnrole = new global::System.Data.DataColumn("role", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrole);
+=======
+                this.columnDate = new global::System.Data.DataColumn("Date", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDate);
+                this.columnTime = new global::System.Data.DataColumn("Time", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTime);
+                this.columnLevel = new global::System.Data.DataColumn("Level", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLevel);
+                this.columnRemarks = new global::System.Data.DataColumn("Remarks", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRemarks);
+>>>>>>> Stashed changes
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -3276,38 +3650,66 @@ namespace Y1S2 {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
+<<<<<<< Updated upstream
                 this.columnusername.AllowDBNull = false;
                 this.columnusername.MaxLength = 50;
                 this.columnpassword.AllowDBNull = false;
                 this.columnpassword.MaxLength = 50;
                 this.columnrole.AllowDBNull = false;
                 this.columnrole.MaxLength = 20;
+=======
+                this.columnDate.AllowDBNull = false;
+                this.columnDate.MaxLength = 50;
+                this.columnTime.AllowDBNull = false;
+                this.columnTime.MaxLength = 50;
+                this.columnLevel.AllowDBNull = false;
+                this.columnLevel.MaxLength = 50;
+                this.columnRemarks.MaxLength = 50;
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public usersRow NewusersRow() {
                 return ((usersRow)(this.NewRow()));
+=======
+            public ScheduleRow NewScheduleRow() {
+                return ((ScheduleRow)(this.NewRow()));
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< Updated upstream
                 return new usersRow(builder);
+=======
+                return new ScheduleRow(builder);
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< Updated upstream
                 return typeof(usersRow);
+=======
+                return typeof(ScheduleRow);
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< Updated upstream
                 if ((this.usersRowChanged != null)) {
                     this.usersRowChanged(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
+=======
+                if ((this.ScheduleRowChanged != null)) {
+                    this.ScheduleRowChanged(this, new ScheduleRowChangeEvent(((ScheduleRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
@@ -3315,8 +3717,13 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< Updated upstream
                 if ((this.usersRowChanging != null)) {
                     this.usersRowChanging(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
+=======
+                if ((this.ScheduleRowChanging != null)) {
+                    this.ScheduleRowChanging(this, new ScheduleRowChangeEvent(((ScheduleRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
@@ -3324,8 +3731,13 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< Updated upstream
                 if ((this.usersRowDeleted != null)) {
                     this.usersRowDeleted(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
+=======
+                if ((this.ScheduleRowDeleted != null)) {
+                    this.ScheduleRowDeleted(this, new ScheduleRowChangeEvent(((ScheduleRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
@@ -3333,14 +3745,23 @@ namespace Y1S2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< Updated upstream
                 if ((this.usersRowDeleting != null)) {
                     this.usersRowDeleting(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
+=======
+                if ((this.ScheduleRowDeleting != null)) {
+                    this.ScheduleRowDeleting(this, new ScheduleRowChangeEvent(((ScheduleRow)(e.Row)), e.Action));
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public void RemoveusersRow(usersRow row) {
+=======
+            public void RemoveScheduleRow(ScheduleRow row) {
+>>>>>>> Stashed changes
                 this.Rows.Remove(row);
             }
             
@@ -3367,7 +3788,11 @@ namespace Y1S2 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< Updated upstream
                 attribute2.FixedValue = "usersDataTable";
+=======
+                attribute2.FixedValue = "ScheduleDataTable";
+>>>>>>> Stashed changes
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3411,6 +3836,7 @@ namespace Y1S2 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+<<<<<<< Updated upstream
         public partial class adminRow : global::System.Data.DataRow {
             
             private adminDataTable tableadmin;
@@ -3420,43 +3846,80 @@ namespace Y1S2 {
             internal adminRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableadmin = ((adminDataTable)(this.Table));
+=======
+        public partial class PerformanceRow : global::System.Data.DataRow {
+            
+            private PerformanceDataTable tablePerformance;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal PerformanceRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablePerformance = ((PerformanceDataTable)(this.Table));
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int Id {
                 get {
+<<<<<<< Updated upstream
                     return ((int)(this[this.tableadmin.IdColumn]));
                 }
                 set {
                     this[this.tableadmin.IdColumn] = value;
+=======
+                    return ((int)(this[this.tablePerformance.IdColumn]));
+                }
+                set {
+                    this[this.tablePerformance.IdColumn] = value;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string name {
                 get {
                     return ((string)(this[this.tableadmin.nameColumn]));
                 }
                 set {
                     this[this.tableadmin.nameColumn] = value;
+=======
+            public string Name {
+                get {
+                    return ((string)(this[this.tablePerformance.NameColumn]));
+                }
+                set {
+                    this[this.tablePerformance.NameColumn] = value;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string email {
                 get {
                     return ((string)(this[this.tableadmin.emailColumn]));
                 }
                 set {
                     this[this.tableadmin.emailColumn] = value;
+=======
+            public string Event {
+                get {
+                    return ((string)(this[this.tablePerformance.EventColumn]));
+                }
+                set {
+                    this[this.tablePerformance.EventColumn] = value;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string phoneNumber {
                 get {
                     return ((string)(this[this.tableadmin.phoneNumberColumn]));
@@ -3489,11 +3952,20 @@ namespace Y1S2 {
                 }
                 set {
                     this[this.tablecoach.IdColumn] = value;
+=======
+            public string Time {
+                get {
+                    return ((string)(this[this.tablePerformance.TimeColumn]));
+                }
+                set {
+                    this[this.tablePerformance.TimeColumn] = value;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string name {
                 get {
                     return ((string)(this[this.tablecoach.nameColumn]));
@@ -3586,11 +4058,25 @@ namespace Y1S2 {
                 }
                 set {
                     this[this.tableCompetition.competition_nameColumn] = value;
+=======
+            public string Comments {
+                get {
+                    try {
+                        return ((string)(this[this.tablePerformance.CommentsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Comments\' in table \'Performance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePerformance.CommentsColumn] = value;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public System.DateTime due_date {
                 get {
                     try {
@@ -3603,10 +4089,15 @@ namespace Y1S2 {
                 set {
                     this[this.tableCompetition.due_dateColumn] = value;
                 }
+=======
+            public bool IsCommentsNull() {
+                return this.IsNull(this.tablePerformance.CommentsColumn);
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public System.DateTime competition_date {
                 get {
                     try {
@@ -4006,6 +4497,10 @@ namespace Y1S2 {
                 set {
                     this[this.tablemember.levelColumn] = value;
                 }
+=======
+            public void SetCommentsNull() {
+                this[this.tablePerformance.CommentsColumn] = global::System.Convert.DBNull;
+>>>>>>> Stashed changes
             }
         }
         
@@ -4122,6 +4617,7 @@ namespace Y1S2 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+<<<<<<< Updated upstream
         public partial class TableRow : global::System.Data.DataRow {
             
             private TableDataTable tableTable;
@@ -4131,21 +4627,40 @@ namespace Y1S2 {
             internal TableRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableTable = ((TableDataTable)(this.Table));
+=======
+        public partial class ScheduleRow : global::System.Data.DataRow {
+            
+            private ScheduleDataTable tableSchedule;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal ScheduleRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSchedule = ((ScheduleDataTable)(this.Table));
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int Id {
                 get {
+<<<<<<< Updated upstream
                     return ((int)(this[this.tableTable.IdColumn]));
                 }
                 set {
                     this[this.tableTable.IdColumn] = value;
+=======
+                    return ((int)(this[this.tableSchedule.IdColumn]));
+                }
+                set {
+                    this[this.tableSchedule.IdColumn] = value;
+>>>>>>> Stashed changes
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string competitionId {
                 get {
                     try {
@@ -4157,11 +4672,58 @@ namespace Y1S2 {
                 }
                 set {
                     this[this.tableTable.competitionIdColumn] = value;
+=======
+            public string Date {
+                get {
+                    return ((string)(this[this.tableSchedule.DateColumn]));
+                }
+                set {
+                    this[this.tableSchedule.DateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Time {
+                get {
+                    return ((string)(this[this.tableSchedule.TimeColumn]));
+                }
+                set {
+                    this[this.tableSchedule.TimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Level {
+                get {
+                    return ((string)(this[this.tableSchedule.LevelColumn]));
+                }
+                set {
+                    this[this.tableSchedule.LevelColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Remarks {
+                get {
+                    try {
+                        return ((string)(this[this.tableSchedule.RemarksColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Remarks\' in table \'Schedule\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSchedule.RemarksColumn] = value;
+>>>>>>> Stashed changes
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string member_name {
                 get {
                     try {
@@ -4174,10 +4736,15 @@ namespace Y1S2 {
                 set {
                     this[this.tableTable.member_nameColumn] = value;
                 }
+=======
+            public bool IsRemarksNull() {
+                return this.IsNull(this.tableSchedule.RemarksColumn);
+>>>>>>> Stashed changes
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public string details {
                 get {
                     try {
@@ -4285,6 +4852,10 @@ namespace Y1S2 {
                 set {
                     this[this.tableusers.roleColumn] = value;
                 }
+=======
+            public void SetRemarksNull() {
+                this[this.tableSchedule.RemarksColumn] = global::System.Convert.DBNull;
+>>>>>>> Stashed changes
             }
         }
         
@@ -4292,21 +4863,32 @@ namespace Y1S2 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         public class adminRowChangeEvent : global::System.EventArgs {
             
             private adminRow eventRow;
+=======
+        public class PerformanceRowChangeEvent : global::System.EventArgs {
+            
+            private PerformanceRow eventRow;
+>>>>>>> Stashed changes
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public adminRowChangeEvent(adminRow row, global::System.Data.DataRowAction action) {
+=======
+            public PerformanceRowChangeEvent(PerformanceRow row, global::System.Data.DataRowAction action) {
+>>>>>>> Stashed changes
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public adminRow Row {
                 get {
                     return this.eventRow;
@@ -4478,6 +5060,9 @@ namespace Y1S2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public memberRow Row {
+=======
+            public PerformanceRow Row {
+>>>>>>> Stashed changes
                 get {
                     return this.eventRow;
                 }
@@ -4530,21 +5115,32 @@ namespace Y1S2 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         public class TableRowChangeEvent : global::System.EventArgs {
             
             private TableRow eventRow;
+=======
+        public class ScheduleRowChangeEvent : global::System.EventArgs {
+            
+            private ScheduleRow eventRow;
+>>>>>>> Stashed changes
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public TableRowChangeEvent(TableRow row, global::System.Data.DataRowAction action) {
+=======
+            public ScheduleRowChangeEvent(ScheduleRow row, global::System.Data.DataRowAction action) {
+>>>>>>> Stashed changes
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
             public TableRow Row {
                 get {
                     return this.eventRow;
@@ -4580,6 +5176,9 @@ namespace Y1S2 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public usersRow Row {
+=======
+            public ScheduleRow Row {
+>>>>>>> Stashed changes
                 get {
                     return this.eventRow;
                 }
@@ -4607,7 +5206,11 @@ namespace Y1S2.swimmingclubdbDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< Updated upstream
     public partial class adminTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class PerformanceTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> Stashed changes
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -4621,7 +5224,11 @@ namespace Y1S2.swimmingclubdbDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         public adminTableAdapter() {
+=======
+        public PerformanceTableAdapter() {
+>>>>>>> Stashed changes
             this.ClearBeforeFill = true;
         }
         
@@ -4718,6 +5325,7 @@ namespace Y1S2.swimmingclubdbDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
+<<<<<<< Updated upstream
             tableMapping.DataSetTable = "admin";
             tableMapping.ColumnMappings.Add("Id", "Id");
             tableMapping.ColumnMappings.Add("name", "name");
@@ -4755,6 +5363,53 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_phoneNumber", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phoneNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+=======
+            tableMapping.DataSetTable = "Performance";
+            tableMapping.ColumnMappings.Add("Id", "Id");
+            tableMapping.ColumnMappings.Add("Name", "Name");
+            tableMapping.ColumnMappings.Add("Event", "Event");
+            tableMapping.ColumnMappings.Add("Time", "Time");
+            tableMapping.ColumnMappings.Add("Comments", "Comments");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Performance] WHERE (([Id] = @Original_Id) AND ([Name] = @Origi" +
+                "nal_Name) AND ([Event] = @Original_Event) AND ([Time] = @Original_Time) AND ((@I" +
+                "sNull_Comments = 1 AND [Comments] IS NULL) OR ([Comments] = @Original_Comments))" +
+                ")";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Event", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Event", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Comments", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comments", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Comments", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comments", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Performance] ([Name], [Event], [Time], [Comments]) VALUES (@Na" +
+                "me, @Event, @Time, @Comments);\r\nSELECT Id, Name, Event, Time, Comments FROM Perf" +
+                "ormance WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Event", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Event", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Comments", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comments", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Performance] SET [Name] = @Name, [Event] = @Event, [Time] = @Time, [Comments] = @Comments WHERE (([Id] = @Original_Id) AND ([Name] = @Original_Name) AND ([Event] = @Original_Event) AND ([Time] = @Original_Time) AND ((@IsNull_Comments = 1 AND [Comments] IS NULL) OR ([Comments] = @Original_Comments)));
+SELECT Id, Name, Event, Time, Comments FROM Performance WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Event", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Event", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Comments", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comments", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Event", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Event", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Comments", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comments", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Comments", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comments", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+>>>>>>> Stashed changes
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -4771,7 +5426,11 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< Updated upstream
             this._commandCollection[0].CommandText = "SELECT Id, name, email, phoneNumber FROM dbo.admin";
+=======
+            this._commandCollection[0].CommandText = "SELECT Id, Name, Event, Time, Comments FROM dbo.Performance";
+>>>>>>> Stashed changes
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4779,7 +5438,11 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< Updated upstream
         public virtual int Fill(swimmingclubdbDataSet1.adminDataTable dataTable) {
+=======
+        public virtual int Fill(swimmingclubdbDataSet1.PerformanceDataTable dataTable) {
+>>>>>>> Stashed changes
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4792,9 +5455,15 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< Updated upstream
         public virtual swimmingclubdbDataSet1.adminDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             swimmingclubdbDataSet1.adminDataTable dataTable = new swimmingclubdbDataSet1.adminDataTable();
+=======
+        public virtual swimmingclubdbDataSet1.PerformanceDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            swimmingclubdbDataSet1.PerformanceDataTable dataTable = new swimmingclubdbDataSet1.PerformanceDataTable();
+>>>>>>> Stashed changes
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4802,7 +5471,11 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< Updated upstream
         public virtual int Update(swimmingclubdbDataSet1.adminDataTable dataTable) {
+=======
+        public virtual int Update(swimmingclubdbDataSet1.PerformanceDataTable dataTable) {
+>>>>>>> Stashed changes
             return this.Adapter.Update(dataTable);
         }
         
@@ -4810,7 +5483,11 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(swimmingclubdbDataSet1 dataSet) {
+<<<<<<< Updated upstream
             return this.Adapter.Update(dataSet, "admin");
+=======
+            return this.Adapter.Update(dataSet, "Performance");
+>>>>>>> Stashed changes
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4832,6 +5509,7 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+<<<<<<< Updated upstream
         public virtual int Delete(int Original_Id, string Original_name, string Original_email, string Original_phoneNumber) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_name == null)) {
@@ -4851,6 +5529,35 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_phoneNumber));
+=======
+        public virtual int Delete(int Original_Id, string Original_Name, string Original_Event, string Original_Time, string Original_Comments) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
+            if ((Original_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Name");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Name));
+            }
+            if ((Original_Event == null)) {
+                throw new global::System.ArgumentNullException("Original_Event");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Event));
+            }
+            if ((Original_Time == null)) {
+                throw new global::System.ArgumentNullException("Original_Time");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Time));
+            }
+            if ((Original_Comments == null)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Comments));
+>>>>>>> Stashed changes
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4872,6 +5579,7 @@ SELECT Id, name, email, phoneNumber FROM admin WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+<<<<<<< Updated upstream
         public virtual int Insert(string name, string email, string phoneNumber) {
             if ((name == null)) {
                 throw new global::System.ArgumentNullException("name");
@@ -6546,6 +7254,32 @@ SELECT Id, name, email, phoneNumber FROM manager WHERE (Id = @Id)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(phoneNumber));
+=======
+        public virtual int Insert(string Name, string Event, string Time, string Comments) {
+            if ((Name == null)) {
+                throw new global::System.ArgumentNullException("Name");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Name));
+            }
+            if ((Event == null)) {
+                throw new global::System.ArgumentNullException("Event");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Event));
+            }
+            if ((Time == null)) {
+                throw new global::System.ArgumentNullException("Time");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Time));
+            }
+            if ((Comments == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Comments));
+>>>>>>> Stashed changes
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6567,6 +7301,7 @@ SELECT Id, name, email, phoneNumber FROM manager WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+<<<<<<< Updated upstream
         public virtual int Update(int Id, string name, string email, string phoneNumber, int Original_Id, string Original_name, string Original_email, string Original_phoneNumber) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id));
             if ((name == null)) {
@@ -6612,6 +7347,61 @@ SELECT Id, name, email, phoneNumber FROM manager WHERE (Id = @Id)";
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_phoneNumber));
             }
+=======
+        public virtual int Update(string Name, string Event, string Time, string Comments, int Original_Id, string Original_Name, string Original_Event, string Original_Time, string Original_Comments, int Id) {
+            if ((Name == null)) {
+                throw new global::System.ArgumentNullException("Name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Name));
+            }
+            if ((Event == null)) {
+                throw new global::System.ArgumentNullException("Event");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Event));
+            }
+            if ((Time == null)) {
+                throw new global::System.ArgumentNullException("Time");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Time));
+            }
+            if ((Comments == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Comments));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Id));
+            if ((Original_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_Name));
+            }
+            if ((Original_Event == null)) {
+                throw new global::System.ArgumentNullException("Original_Event");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Event));
+            }
+            if ((Original_Time == null)) {
+                throw new global::System.ArgumentNullException("Original_Time");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Time));
+            }
+            if ((Original_Comments == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Comments));
+            }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Id));
+>>>>>>> Stashed changes
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6632,6 +7422,7 @@ SELECT Id, name, email, phoneNumber FROM manager WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+<<<<<<< Updated upstream
         public virtual int Update(string name, string email, string phoneNumber, int Original_Id, string Original_name, string Original_email, string Original_phoneNumber) {
             return this.Update(Original_Id, name, email, phoneNumber, Original_Id, Original_name, Original_email, Original_phoneNumber);
         }
@@ -7040,6 +7831,10 @@ SELECT Id, name, email, phoneNumber, level FROM member WHERE (Id = @Id)";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string name, string email, string phoneNumber, string level, int Original_Id, string Original_name, string Original_email, string Original_phoneNumber, string Original_level) {
             return this.Update(name, email, phoneNumber, level, Original_Id, Original_name, Original_email, Original_phoneNumber, Original_level, Original_Id);
+=======
+        public virtual int Update(string Name, string Event, string Time, string Comments, int Original_Id, string Original_Name, string Original_Event, string Original_Time, string Original_Comments) {
+            return this.Update(Name, Event, Time, Comments, Original_Id, Original_Name, Original_Event, Original_Time, Original_Comments, Original_Id);
+>>>>>>> Stashed changes
         }
     }
     
@@ -7425,7 +8220,11 @@ SELECT Id, competition_id, member_name, details FROM Recommendation WHERE (Id = 
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< Updated upstream
     public partial class TableTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class ScheduleTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> Stashed changes
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -7439,7 +8238,11 @@ SELECT Id, competition_id, member_name, details FROM Recommendation WHERE (Id = 
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< Updated upstream
         public TableTableAdapter() {
+=======
+        public ScheduleTableAdapter() {
+>>>>>>> Stashed changes
             this.ClearBeforeFill = true;
         }
         
@@ -7536,6 +8339,7 @@ SELECT Id, competition_id, member_name, details FROM Recommendation WHERE (Id = 
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
+<<<<<<< Updated upstream
             tableMapping.DataSetTable = "Table";
             tableMapping.ColumnMappings.Add("Id", "Id");
             tableMapping.ColumnMappings.Add("competitionId", "competitionId");
@@ -7948,6 +8752,52 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_role", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "role", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+=======
+            tableMapping.DataSetTable = "Schedule";
+            tableMapping.ColumnMappings.Add("Id", "Id");
+            tableMapping.ColumnMappings.Add("Date", "Date");
+            tableMapping.ColumnMappings.Add("Time", "Time");
+            tableMapping.ColumnMappings.Add("Level", "Level");
+            tableMapping.ColumnMappings.Add("Remarks", "Remarks");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Schedule] WHERE (([Id] = @Original_Id) AND ([Date] = @Original" +
+                "_Date) AND ([Time] = @Original_Time) AND ([Level] = @Original_Level) AND ((@IsNu" +
+                "ll_Remarks = 1 AND [Remarks] IS NULL) OR ([Remarks] = @Original_Remarks)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Level", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Remarks", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Remarks", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Remarks", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Remarks", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Schedule] ([Date], [Time], [Level], [Remarks]) VALUES (@Date, " +
+                "@Time, @Level, @Remarks);\r\nSELECT Id, Date, Time, Level, Remarks FROM Schedule W" +
+                "HERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Level", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Remarks", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Remarks", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Schedule] SET [Date] = @Date, [Time] = @Time, [Level] = @Level, [Remarks] = @Remarks WHERE (([Id] = @Original_Id) AND ([Date] = @Original_Date) AND ([Time] = @Original_Time) AND ([Level] = @Original_Level) AND ((@IsNull_Remarks = 1 AND [Remarks] IS NULL) OR ([Remarks] = @Original_Remarks)));
+SELECT Id, Date, Time, Level, Remarks FROM Schedule WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Level", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Remarks", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Remarks", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Time", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Level", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Remarks", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Remarks", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Remarks", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Remarks", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+>>>>>>> Stashed changes
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -7964,7 +8814,11 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< Updated upstream
             this._commandCollection[0].CommandText = "SELECT Id, username, password, role FROM dbo.users";
+=======
+            this._commandCollection[0].CommandText = "SELECT Id, Date, Time, [Level], Remarks FROM dbo.Schedule";
+>>>>>>> Stashed changes
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7972,7 +8826,11 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< Updated upstream
         public virtual int Fill(swimmingclubdbDataSet1.usersDataTable dataTable) {
+=======
+        public virtual int Fill(swimmingclubdbDataSet1.ScheduleDataTable dataTable) {
+>>>>>>> Stashed changes
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7985,9 +8843,15 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< Updated upstream
         public virtual swimmingclubdbDataSet1.usersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             swimmingclubdbDataSet1.usersDataTable dataTable = new swimmingclubdbDataSet1.usersDataTable();
+=======
+        public virtual swimmingclubdbDataSet1.ScheduleDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            swimmingclubdbDataSet1.ScheduleDataTable dataTable = new swimmingclubdbDataSet1.ScheduleDataTable();
+>>>>>>> Stashed changes
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7995,7 +8859,11 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< Updated upstream
         public virtual int Update(swimmingclubdbDataSet1.usersDataTable dataTable) {
+=======
+        public virtual int Update(swimmingclubdbDataSet1.ScheduleDataTable dataTable) {
+>>>>>>> Stashed changes
             return this.Adapter.Update(dataTable);
         }
         
@@ -8003,7 +8871,11 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(swimmingclubdbDataSet1 dataSet) {
+<<<<<<< Updated upstream
             return this.Adapter.Update(dataSet, "users");
+=======
+            return this.Adapter.Update(dataSet, "Schedule");
+>>>>>>> Stashed changes
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8025,6 +8897,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+<<<<<<< Updated upstream
         public virtual int Delete(int Original_Id, string Original_username, string Original_password, string Original_role) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_username == null)) {
@@ -8044,6 +8917,35 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_role));
+=======
+        public virtual int Delete(int Original_Id, string Original_Date, string Original_Time, string Original_Level, string Original_Remarks) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
+            if ((Original_Date == null)) {
+                throw new global::System.ArgumentNullException("Original_Date");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Date));
+            }
+            if ((Original_Time == null)) {
+                throw new global::System.ArgumentNullException("Original_Time");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Time));
+            }
+            if ((Original_Level == null)) {
+                throw new global::System.ArgumentNullException("Original_Level");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Level));
+            }
+            if ((Original_Remarks == null)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Remarks));
+>>>>>>> Stashed changes
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8065,6 +8967,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+<<<<<<< Updated upstream
         public virtual int Insert(string username, string password, string role) {
             if ((username == null)) {
                 throw new global::System.ArgumentNullException("username");
@@ -8083,6 +8986,32 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(role));
+=======
+        public virtual int Insert(string Date, string Time, string Level, string Remarks) {
+            if ((Date == null)) {
+                throw new global::System.ArgumentNullException("Date");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Date));
+            }
+            if ((Time == null)) {
+                throw new global::System.ArgumentNullException("Time");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Time));
+            }
+            if ((Level == null)) {
+                throw new global::System.ArgumentNullException("Level");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Level));
+            }
+            if ((Remarks == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Remarks));
+>>>>>>> Stashed changes
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8104,6 +9033,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+<<<<<<< Updated upstream
         public virtual int Update(string username, string password, string role, int Original_Id, string Original_username, string Original_password, string Original_role, int Id) {
             if ((username == null)) {
                 throw new global::System.ArgumentNullException("username");
@@ -8143,6 +9073,61 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_role));
             }
             this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Id));
+=======
+        public virtual int Update(string Date, string Time, string Level, string Remarks, int Original_Id, string Original_Date, string Original_Time, string Original_Level, string Original_Remarks, int Id) {
+            if ((Date == null)) {
+                throw new global::System.ArgumentNullException("Date");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Date));
+            }
+            if ((Time == null)) {
+                throw new global::System.ArgumentNullException("Time");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Time));
+            }
+            if ((Level == null)) {
+                throw new global::System.ArgumentNullException("Level");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Level));
+            }
+            if ((Remarks == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Remarks));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_Id));
+            if ((Original_Date == null)) {
+                throw new global::System.ArgumentNullException("Original_Date");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_Date));
+            }
+            if ((Original_Time == null)) {
+                throw new global::System.ArgumentNullException("Original_Time");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Time));
+            }
+            if ((Original_Level == null)) {
+                throw new global::System.ArgumentNullException("Original_Level");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Level));
+            }
+            if ((Original_Remarks == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Remarks));
+            }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Id));
+>>>>>>> Stashed changes
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -8163,8 +9148,13 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+<<<<<<< Updated upstream
         public virtual int Update(string username, string password, string role, int Original_Id, string Original_username, string Original_password, string Original_role) {
             return this.Update(username, password, role, Original_Id, Original_username, Original_password, Original_role, Original_Id);
+=======
+        public virtual int Update(string Date, string Time, string Level, string Remarks, int Original_Id, string Original_Date, string Original_Time, string Original_Level, string Original_Remarks) {
+            return this.Update(Date, Time, Level, Remarks, Original_Id, Original_Date, Original_Time, Original_Level, Original_Remarks, Original_Id);
+>>>>>>> Stashed changes
         }
     }
     
@@ -8180,6 +9170,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         
         private UpdateOrderOption _updateOrder;
         
+<<<<<<< Updated upstream
         private adminTableAdapter _adminTableAdapter;
         
         private coachTableAdapter _coachTableAdapter;
@@ -8197,6 +9188,13 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         private TableTableAdapter _tableTableAdapter;
         
         private usersTableAdapter _usersTableAdapter;
+=======
+        private PerformanceTableAdapter _performanceTableAdapter;
+        
+        private RecommendationTableAdapter _recommendationTableAdapter;
+        
+        private ScheduleTableAdapter _scheduleTableAdapter;
+>>>>>>> Stashed changes
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -8218,6 +9216,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
+<<<<<<< Updated upstream
         public adminTableAdapter adminTableAdapter {
             get {
                 return this._adminTableAdapter;
@@ -8294,6 +9293,14 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             }
             set {
                 this._memberTableAdapter = value;
+=======
+        public PerformanceTableAdapter PerformanceTableAdapter {
+            get {
+                return this._performanceTableAdapter;
+            }
+            set {
+                this._performanceTableAdapter = value;
+>>>>>>> Stashed changes
             }
         }
         
@@ -8316,6 +9323,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
+<<<<<<< Updated upstream
         public TableTableAdapter TableTableAdapter {
             get {
                 return this._tableTableAdapter;
@@ -8336,6 +9344,14 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             }
             set {
                 this._usersTableAdapter = value;
+=======
+        public ScheduleTableAdapter ScheduleTableAdapter {
+            get {
+                return this._scheduleTableAdapter;
+            }
+            set {
+                this._scheduleTableAdapter = value;
+>>>>>>> Stashed changes
             }
         }
         
@@ -8358,6 +9374,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+<<<<<<< Updated upstream
                 if (((this._adminTableAdapter != null) 
                             && (this._adminTableAdapter.Connection != null))) {
                     return this._adminTableAdapter.Connection;
@@ -8381,11 +9398,17 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((this._memberTableAdapter != null) 
                             && (this._memberTableAdapter.Connection != null))) {
                     return this._memberTableAdapter.Connection;
+=======
+                if (((this._performanceTableAdapter != null) 
+                            && (this._performanceTableAdapter.Connection != null))) {
+                    return this._performanceTableAdapter.Connection;
+>>>>>>> Stashed changes
                 }
                 if (((this._recommendationTableAdapter != null) 
                             && (this._recommendationTableAdapter.Connection != null))) {
                     return this._recommendationTableAdapter.Connection;
                 }
+<<<<<<< Updated upstream
                 if (((this._tableTableAdapter != null) 
                             && (this._tableTableAdapter.Connection != null))) {
                     return this._tableTableAdapter.Connection;
@@ -8393,6 +9416,11 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((this._usersTableAdapter != null) 
                             && (this._usersTableAdapter.Connection != null))) {
                     return this._usersTableAdapter.Connection;
+=======
+                if (((this._scheduleTableAdapter != null) 
+                            && (this._scheduleTableAdapter.Connection != null))) {
+                    return this._scheduleTableAdapter.Connection;
+>>>>>>> Stashed changes
                 }
                 return null;
             }
@@ -8407,6 +9435,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+<<<<<<< Updated upstream
                 if ((this._adminTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -8423,15 +9452,22 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                     count = (count + 1);
                 }
                 if ((this._memberTableAdapter != null)) {
+=======
+                if ((this._performanceTableAdapter != null)) {
+>>>>>>> Stashed changes
                     count = (count + 1);
                 }
                 if ((this._recommendationTableAdapter != null)) {
                     count = (count + 1);
                 }
+<<<<<<< Updated upstream
                 if ((this._tableTableAdapter != null)) {
                     count = (count + 1);
                 }
                 if ((this._usersTableAdapter != null)) {
+=======
+                if ((this._scheduleTableAdapter != null)) {
+>>>>>>> Stashed changes
                     count = (count + 1);
                 }
                 return count;
@@ -8445,6 +9481,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateUpdatedRows(swimmingclubdbDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+<<<<<<< Updated upstream
             if ((this._competitionTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Competition.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -8496,6 +9533,14 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._memberTableAdapter.Update(updatedRows));
+=======
+            if ((this._performanceTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Performance.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._performanceTableAdapter.Update(updatedRows));
+>>>>>>> Stashed changes
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -8508,6 +9553,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+<<<<<<< Updated upstream
             if ((this._tableTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -8523,6 +9569,14 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(updatedRows));
+=======
+            if ((this._scheduleTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Schedule.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._scheduleTableAdapter.Update(updatedRows));
+>>>>>>> Stashed changes
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -8536,6 +9590,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateInsertedRows(swimmingclubdbDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+<<<<<<< Updated upstream
             if ((this._competitionTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Competition.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -8581,6 +9636,13 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._memberTableAdapter.Update(addedRows));
+=======
+            if ((this._performanceTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Performance.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._performanceTableAdapter.Update(addedRows));
+>>>>>>> Stashed changes
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -8592,6 +9654,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
+<<<<<<< Updated upstream
             if ((this._tableTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -8605,6 +9668,13 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(addedRows));
+=======
+            if ((this._scheduleTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Schedule.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._scheduleTableAdapter.Update(addedRows));
+>>>>>>> Stashed changes
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -8618,6 +9688,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(swimmingclubdbDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+<<<<<<< Updated upstream
             if ((this._usersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.users.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -8631,6 +9702,13 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._tableTableAdapter.Update(deletedRows));
+=======
+            if ((this._scheduleTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Schedule.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._scheduleTableAdapter.Update(deletedRows));
+>>>>>>> Stashed changes
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -8642,6 +9720,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+<<<<<<< Updated upstream
             if ((this._memberTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.member.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -8687,6 +9766,13 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._competitionTableAdapter.Update(deletedRows));
+=======
+            if ((this._performanceTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Performance.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._performanceTableAdapter.Update(deletedRows));
+>>>>>>> Stashed changes
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -8729,6 +9815,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
+<<<<<<< Updated upstream
             if (((this._adminTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._adminTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
@@ -8756,6 +9843,10 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             }
             if (((this._memberTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._memberTableAdapter.Connection) == false))) {
+=======
+            if (((this._performanceTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._performanceTableAdapter.Connection) == false))) {
+>>>>>>> Stashed changes
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -8764,6 +9855,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+<<<<<<< Updated upstream
             if (((this._tableTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tableTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
@@ -8771,6 +9863,10 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             }
             if (((this._usersTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._usersTableAdapter.Connection) == false))) {
+=======
+            if (((this._scheduleTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._scheduleTableAdapter.Connection) == false))) {
+>>>>>>> Stashed changes
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -8806,6 +9902,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
             try {
                 // ---- Prepare for update -----------
                 //
+<<<<<<< Updated upstream
                 if ((this._adminTableAdapter != null)) {
                     revertConnections.Add(this._adminTableAdapter, this._adminTableAdapter.Connection);
                     this._adminTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -8858,6 +9955,15 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                     if (this._memberTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._memberTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._memberTableAdapter.Adapter);
+=======
+                if ((this._performanceTableAdapter != null)) {
+                    revertConnections.Add(this._performanceTableAdapter, this._performanceTableAdapter.Connection);
+                    this._performanceTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._performanceTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._performanceTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._performanceTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._performanceTableAdapter.Adapter);
+>>>>>>> Stashed changes
                     }
                 }
                 if ((this._recommendationTableAdapter != null)) {
@@ -8869,6 +9975,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._recommendationTableAdapter.Adapter);
                     }
                 }
+<<<<<<< Updated upstream
                 if ((this._tableTableAdapter != null)) {
                     revertConnections.Add(this._tableTableAdapter, this._tableTableAdapter.Connection);
                     this._tableTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -8885,6 +9992,15 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                     if (this._usersTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._usersTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._usersTableAdapter.Adapter);
+=======
+                if ((this._scheduleTableAdapter != null)) {
+                    revertConnections.Add(this._scheduleTableAdapter, this._scheduleTableAdapter.Connection);
+                    this._scheduleTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._scheduleTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._scheduleTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._scheduleTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._scheduleTableAdapter.Adapter);
+>>>>>>> Stashed changes
                     }
                 }
                 // 
@@ -8945,6 +10061,7 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if (workConnOpened) {
                     workConnection.Close();
                 }
+<<<<<<< Updated upstream
                 if ((this._adminTableAdapter != null)) {
                     this._adminTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._adminTableAdapter]));
                     this._adminTableAdapter.Transaction = null;
@@ -8968,11 +10085,17 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if ((this._memberTableAdapter != null)) {
                     this._memberTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._memberTableAdapter]));
                     this._memberTableAdapter.Transaction = null;
+=======
+                if ((this._performanceTableAdapter != null)) {
+                    this._performanceTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._performanceTableAdapter]));
+                    this._performanceTableAdapter.Transaction = null;
+>>>>>>> Stashed changes
                 }
                 if ((this._recommendationTableAdapter != null)) {
                     this._recommendationTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._recommendationTableAdapter]));
                     this._recommendationTableAdapter.Transaction = null;
                 }
+<<<<<<< Updated upstream
                 if ((this._tableTableAdapter != null)) {
                     this._tableTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tableTableAdapter]));
                     this._tableTableAdapter.Transaction = null;
@@ -8980,6 +10103,11 @@ SELECT Id, username, password, role FROM users WHERE (Id = @Id)";
                 if ((this._usersTableAdapter != null)) {
                     this._usersTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._usersTableAdapter]));
                     this._usersTableAdapter.Transaction = null;
+=======
+                if ((this._scheduleTableAdapter != null)) {
+                    this._scheduleTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._scheduleTableAdapter]));
+                    this._scheduleTableAdapter.Transaction = null;
+>>>>>>> Stashed changes
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
