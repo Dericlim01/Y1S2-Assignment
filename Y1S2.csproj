@@ -190,7 +190,6 @@
     <Compile Include="Member_Suggestion.Designer.cs">
       <DependentUpon>Member_Suggestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="NextForm.cs" />
     <Compile Include="Performance.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -14,15 +14,19 @@ namespace Y1S2
 {
     public partial class EditSchedule : Form
     {
+        public string name;
+        public string role;
+        int id;
         public EditSchedule()
         {
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        public EditSchedule(string n, string r)
         {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new Coach());
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -30,33 +34,61 @@ namespace Y1S2
             if (scheduleDataGridView.SelectedRows.Count > 0)
             {
                 int rowIndex = scheduleDataGridView.SelectedRows[0].Index;
-                int id = Convert.ToInt32(scheduleDataGridView.Rows[rowIndex].Cells["Id"].Value);
+                id = Convert.ToInt32(scheduleDataGridView.Rows[rowIndex].Cells[0].Value);
 
-                // Assuming you have controls (textboxes, etc.) to allow the user to edit data
-                string newSchedule = txtNewSchedule.Text;
-                // Get other edited data similarly
+                string date = dateTimePicker1.Text;
+                string time = CBTime.Text;
+                string level = CBLevel.Text;
+                string remarks = txtRemarks.Text;
 
-                using (SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["SwimmingClubConnectionString"].ConnectionString))
+                if (string.IsNullOrWhiteSpace(date) || string.IsNullOrWhiteSpace(time) || string.IsNullOrWhiteSpace(level))
+                {
+                    MessageBox.Show("Please fill in all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                using (SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString()))
                 {
                     cn.Open();
 
                     // Update the row in the database
-                    using (SqlCommand updateCmd = new SqlCommand("UPDATE Schedule SET Schedule = @Schedule WHERE Id = @Id", cn))
+                    using (SqlCommand updateCmd = new SqlCommand("UPDATE Schedule SET Date = @Date, Time = @Time, Level = @Level, Remarks = @Remarks WHERE id = @Id", cn))
                     {
-                        updateCmd.Parameters.AddWithValue("@Schedule", newSchedule);
                         updateCmd.Parameters.AddWithValue("@Id", id);
+                        updateCmd.Parameters.AddWithValue("@Date", date);
+                        updateCmd.Parameters.AddWithValue("@Time", time);
+                        updateCmd.Parameters.AddWithValue("@Level", level);
+                        updateCmd.Parameters.AddWithValue("@Remarks", remarks);
                         updateCmd.ExecuteNonQuery();
                     }
 
                     MessageBox.Show("Row updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
-                // Refresh the DataGridView to reflect the changes
-                LoadDataIntoDataGridView(); // Implement this method to reload data into the DataGridView
             }
             else
             {
                 MessageBox.Show("Please select a row to edit.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TrainingSchedule traning_sche = new TrainingSchedule(name, role);
+            traning_sche.ShowDialog();
+        }
+
+        // Data Grid View Content
+        private void scheduleDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.scheduleDataGridView.Rows[e.RowIndex];
+
+                dateTimePicker1.Value = Convert.ToDateTime(row.Cells[1].Value);
+                CBTime.Text = row.Cells[2].Value.ToString();
+                CBLevel.Text = row.Cells[3].Value.ToString();
+                txtRemarks.Text = row.Cells[4].Value.ToString();
             }
         }
     }

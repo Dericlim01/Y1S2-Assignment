@@ -12,9 +12,19 @@ namespace Y1S2
 {
     public partial class sendRecommendation : Form
     {
+        public string name;
+        public string role;
+
         public sendRecommendation()
         {
             InitializeComponent();
+        }
+
+        public sendRecommendation(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void memberListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -27,7 +37,6 @@ namespace Y1S2
                 var data = details.findMember(selected_member, recommendCompIdlbl.Text);
                 recommendMembNamelbl.Text = data.Item1;
                 recommendMembLevellbl.Text = data.Item2;
-
             }
         }
 
@@ -62,8 +71,15 @@ namespace Y1S2
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            Recommendation send1 = new Recommendation( recommendMembNamelbl.Text, recommendCompIdlbl.Text, detailsTxtBox.Text);
+            Recommendation send1 = new Recommendation(recommendMembNamelbl.Text, recommendCompIdlbl.Text, detailsTxtBox.Text);
             MessageBox.Show(send1.sendRecommend());
+        }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Coach back = new Coach(name, role);
+            back.ShowDialog();
         }
     }
 }

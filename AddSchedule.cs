@@ -12,15 +12,25 @@ namespace Y1S2
 {
     public partial class AddSchedule : Form
     {
+        public string name;
+        public string role;
+
         public AddSchedule()
         {
             InitializeComponent();
         }
 
+        public AddSchedule(string n, string r)
+        {
+            InitializeComponent();
+            name = n; role = r;
+        }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new TrainingSchedule());
+            this.Hide();
+            TrainingSchedule training_sche = new TrainingSchedule(name, role);
+            training_sche.ShowDialog();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

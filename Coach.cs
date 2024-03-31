@@ -47,22 +47,32 @@ namespace Y1S2
         // Performance Button
         private void btnPfm_Click(object sender, EventArgs e)
         {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new Performance());
+            this.Hide();
+            Performance performance = new Performance(coach_name, role);
+            performance.ShowDialog();
         }
 
         // Recommendation Button
         private void btnRcmd_Click(object sender, EventArgs e)
         {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new sendRecommendation());
+            this.Hide();
+            sendRecommendation send_rec = new sendRecommendation(coach_name, role);
+            send_rec.ShowDialog();
         }
 
         // Training Schedule Button
         private void btnTrainSch_Click(object sender, EventArgs e)
         {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new TrainingSchedule());
+            this.Hide();
+            TrainingSchedule training_sche = new TrainingSchedule(coach_name, role);
+            training_sche.ShowDialog();
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.ShowDialog();
         }
     }
 }

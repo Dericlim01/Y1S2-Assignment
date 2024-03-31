@@ -39,33 +39,33 @@
             this.Topic = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bckBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.detailsTxtBox = new System.Windows.Forms.RichTextBox();
-            this.sendBtn = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.recommendCompNamelbl = new System.Windows.Forms.Label();
-            this.recommendCompIdlbl = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.memberListBox = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.recommendMembNamelbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.recommendCompNamelbl = new System.Windows.Forms.Label();
+            this.recommendCompIdlbl = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.detailsTxtBox = new System.Windows.Forms.RichTextBox();
+            this.sendBtn = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // recommendMembLevellbl
@@ -146,6 +146,18 @@
             this.bckBtn.TabIndex = 23;
             this.bckBtn.Text = "Back";
             this.bckBtn.UseVisualStyleBackColor = false;
+            this.bckBtn.Click += new System.EventHandler(this.bckBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Y1S2.Properties.Resources.logo_2;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -174,115 +186,6 @@
             this.groupBox1.TabIndex = 91;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member Info";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.recommendCompNamelbl);
-            this.groupBox2.Controls.Add(this.recommendCompIdlbl);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.competitionListBox);
-            this.groupBox2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(10, 101);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(508, 159);
-            this.groupBox2.TabIndex = 92;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Competition Info";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.detailsTxtBox);
-            this.groupBox3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(525, 101);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(263, 158);
-            this.groupBox3.TabIndex = 93;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Type Details Here";
-            // 
-            // detailsTxtBox
-            // 
-            this.detailsTxtBox.Location = new System.Drawing.Point(46, 40);
-            this.detailsTxtBox.Name = "detailsTxtBox";
-            this.detailsTxtBox.Size = new System.Drawing.Size(175, 95);
-            this.detailsTxtBox.TabIndex = 0;
-            this.detailsTxtBox.Text = "";
-            // 
-            // sendBtn
-            // 
-            this.sendBtn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.sendBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.sendBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.sendBtn.Location = new System.Drawing.Point(64, 56);
-            this.sendBtn.Name = "sendBtn";
-            this.sendBtn.Size = new System.Drawing.Size(112, 48);
-            this.sendBtn.TabIndex = 24;
-            this.sendBtn.Text = "Send";
-            this.sendBtn.UseVisualStyleBackColor = false;
-            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.sendBtn);
-            this.groupBox4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(525, 279);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(263, 159);
-            this.groupBox4.TabIndex = 94;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Send To Manager";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Y1S2.Properties.Resources.logo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // recommendCompNamelbl
-            // 
-            this.recommendCompNamelbl.AutoSize = true;
-            this.recommendCompNamelbl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recommendCompNamelbl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.recommendCompNamelbl.Location = new System.Drawing.Point(315, 98);
-            this.recommendCompNamelbl.Name = "recommendCompNamelbl";
-            this.recommendCompNamelbl.Size = new System.Drawing.Size(0, 15);
-            this.recommendCompNamelbl.TabIndex = 91;
-            // 
-            // recommendCompIdlbl
-            // 
-            this.recommendCompIdlbl.AutoSize = true;
-            this.recommendCompIdlbl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.recommendCompIdlbl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.recommendCompIdlbl.Location = new System.Drawing.Point(305, 58);
-            this.recommendCompIdlbl.Name = "recommendCompIdlbl";
-            this.recommendCompIdlbl.Size = new System.Drawing.Size(0, 15);
-            this.recommendCompIdlbl.TabIndex = 94;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(184, 98);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 15);
-            this.label7.TabIndex = 92;
-            this.label7.Text = "Competition Name:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(187, 58);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 15);
-            this.label10.TabIndex = 93;
-            this.label10.Text = "Competition ID:";
             // 
             // memberListBox
             // 
@@ -335,6 +238,104 @@
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 87;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.recommendCompNamelbl);
+            this.groupBox2.Controls.Add(this.recommendCompIdlbl);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.competitionListBox);
+            this.groupBox2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(10, 101);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(508, 159);
+            this.groupBox2.TabIndex = 92;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Competition Info";
+            // 
+            // recommendCompNamelbl
+            // 
+            this.recommendCompNamelbl.AutoSize = true;
+            this.recommendCompNamelbl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recommendCompNamelbl.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recommendCompNamelbl.Location = new System.Drawing.Point(315, 98);
+            this.recommendCompNamelbl.Name = "recommendCompNamelbl";
+            this.recommendCompNamelbl.Size = new System.Drawing.Size(0, 15);
+            this.recommendCompNamelbl.TabIndex = 91;
+            // 
+            // recommendCompIdlbl
+            // 
+            this.recommendCompIdlbl.AutoSize = true;
+            this.recommendCompIdlbl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recommendCompIdlbl.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.recommendCompIdlbl.Location = new System.Drawing.Point(305, 58);
+            this.recommendCompIdlbl.Name = "recommendCompIdlbl";
+            this.recommendCompIdlbl.Size = new System.Drawing.Size(0, 15);
+            this.recommendCompIdlbl.TabIndex = 94;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(184, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 15);
+            this.label7.TabIndex = 92;
+            this.label7.Text = "Competition Name:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(187, 58);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(112, 15);
+            this.label10.TabIndex = 93;
+            this.label10.Text = "Competition ID:";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.detailsTxtBox);
+            this.groupBox3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(525, 101);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(263, 158);
+            this.groupBox3.TabIndex = 93;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Type Details Here";
+            // 
+            // detailsTxtBox
+            // 
+            this.detailsTxtBox.Location = new System.Drawing.Point(46, 40);
+            this.detailsTxtBox.Name = "detailsTxtBox";
+            this.detailsTxtBox.Size = new System.Drawing.Size(175, 95);
+            this.detailsTxtBox.TabIndex = 0;
+            this.detailsTxtBox.Text = "";
+            // 
+            // sendBtn
+            // 
+            this.sendBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.sendBtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.sendBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.sendBtn.Location = new System.Drawing.Point(64, 56);
+            this.sendBtn.Name = "sendBtn";
+            this.sendBtn.Size = new System.Drawing.Size(112, 48);
+            this.sendBtn.TabIndex = 24;
+            this.sendBtn.Text = "Send";
+            this.sendBtn.UseVisualStyleBackColor = false;
+            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.sendBtn);
+            this.groupBox4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(525, 279);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(263, 159);
+            this.groupBox4.TabIndex = 94;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Send To Manager";
+            // 
             // sendRecommendation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,13 +356,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

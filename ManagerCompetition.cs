@@ -12,6 +12,9 @@ namespace Y1S2
 {
     public partial class ManagerCompetition : Form
     {
+        public string name;
+        public string role;
+
         string comp_id;
         string comp_date;
         string comp_name;
@@ -22,6 +25,13 @@ namespace Y1S2
         public ManagerCompetition()
         {
             InitializeComponent();
+        }
+
+        public ManagerCompetition(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void AddCompetition_Load(object sender, EventArgs e)
@@ -56,34 +66,32 @@ namespace Y1S2
         {
             if (comp_id != null && comp_id != "" && comp_id != " ")
             {
-                Edit_Competition edit = new Edit_Competition(comp_id, comp_name, comp_date, comp_due_date,comp_venue,comp_details);
-                edit.Show();
                 this.Hide();
-                edit.FormClosed += (s, args) => this.Close();
+                Edit_Competition edit = new Edit_Competition(name, role, comp_id, comp_name, comp_date, comp_due_date,comp_venue,comp_details);
+                edit.Show();
             }
             else
             {
                 MessageBox.Show("Please Select A Row To Edit");
             }
-                
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            AddCompetition add = new AddCompetition();
-            add.Show();
             this.Close();
+            AddCompetition add = new AddCompetition(name, role);
+            add.Show();
         }
 
         private void dltBtn_Click(object sender, EventArgs e)
         {
             if (comp_id != null)
             {
+                this.Close();
                 Competition comp3 = new Competition(comp_id);
                 MessageBox.Show(comp3.deleteCompetition());
-                ManagerCompetition Comp = new ManagerCompetition();
+                ManagerCompetition Comp = new ManagerCompetition(name, role);
                 Comp.Show();
-                this.Close();
             }
             else
             {
@@ -93,14 +101,13 @@ namespace Y1S2
 
         private void bckBtn_Click(object sender, EventArgs e)
         {
-            Manager back = new Manager();
-            back.Show();
             this.Close();
+            Manager back = new Manager(name, role);
+            back.Show();
         }
 
         private void competitionView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
     }
 }

@@ -41,8 +41,35 @@ namespace Y1S2
 
         private void edit_profile_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Edit_Profile edit = new Edit_Profile(name, role);
             edit.ShowDialog();
+        }
+
+        private void send_suggest_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Member_Suggestion send = new Member_Suggestion(name, role);
+            send.ShowDialog();
+        }
+
+        private void enunroll_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Unenroll dlt = new Unenroll(name, role);
+            dlt.ShowDialog();
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.ShowDialog();
+        }
+
+        private void view_performance_btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

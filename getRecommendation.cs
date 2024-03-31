@@ -12,9 +12,19 @@ namespace Y1S2
 {
     public partial class getRecommendation : Form
     {
+        public string name;
+        public string role;
+
         public getRecommendation()
         {
             InitializeComponent();
+        }
+
+        public getRecommendation(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void getRecommendation_Load(object sender, EventArgs e)

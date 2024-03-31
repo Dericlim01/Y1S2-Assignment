@@ -13,9 +13,19 @@ namespace Y1S2
 {
     public partial class RecordResult : Form
     {
+        public string name;
+        public string role;
+
         public RecordResult()
         {
             InitializeComponent();
+        }
+
+        public RecordResult(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void competitionListBox_SelectedIndexChanged(object sender, EventArgs e)

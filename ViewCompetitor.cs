@@ -12,14 +12,23 @@ namespace Y1S2
 {
     public partial class ViewCompetitor : Form
     {
+        public string name;
+        public string role;
+
         public ViewCompetitor()
         {
             InitializeComponent();
         }
 
+        public ViewCompetitor(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
+        }
+
         private void competitionListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
             if (competitionListBox.SelectedIndex != -1)
             {
                 compMemberListBox.Items.Clear();
@@ -37,15 +46,11 @@ namespace Y1S2
                 {
                     compMemberListBox.Items.Add(comp);
                 }
-
-
             }
-            
         }
 
         private void RecordResult_Load(object sender, EventArgs e)
         {
-            
             Competition comp5 = new Competition();
             foreach (string comp in comp5.compList())
             {
@@ -72,12 +77,7 @@ namespace Y1S2
                 {
                     viewCompMemberRank.Text =  data.Item4;
                 }
-                
-
-
-
             }
         }
     }
-    
 }

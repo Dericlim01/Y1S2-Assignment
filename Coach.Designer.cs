@@ -37,7 +37,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btnRcmd = new System.Windows.Forms.Button();
             this.edit_profile_btn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.lblname = new System.Windows.Forms.Label();
             this.lbltype = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -76,7 +76,7 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.btnRcmd);
             this.groupBox1.Controls.Add(this.edit_profile_btn);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.logout_btn);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 225);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -169,16 +169,17 @@
             this.edit_profile_btn.UseVisualStyleBackColor = false;
             this.edit_profile_btn.Click += new System.EventHandler(this.edit_profile_btn_Click);
             // 
-            // button1
+            // logout_btn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(725, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.logout_btn.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
+            this.logout_btn.Location = new System.Drawing.Point(725, 194);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 25);
+            this.logout_btn.TabIndex = 1;
+            this.logout_btn.Text = "Log Out";
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // lblname
             // 
@@ -243,7 +244,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnRcmd;
         private System.Windows.Forms.Button edit_profile_btn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.PictureBox pictureBox3;

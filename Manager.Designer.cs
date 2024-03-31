@@ -90,6 +90,7 @@
             this.resultBtn.TabIndex = 7;
             this.resultBtn.Text = "Manage Competition Result";
             this.resultBtn.UseVisualStyleBackColor = false;
+            this.resultBtn.Click += new System.EventHandler(this.resultBtn_Click);
             // 
             // listFromCoachBtn
             // 
@@ -103,6 +104,7 @@
             this.listFromCoachBtn.TabIndex = 6;
             this.listFromCoachBtn.Text = "List From Coach";
             this.listFromCoachBtn.UseVisualStyleBackColor = false;
+            this.listFromCoachBtn.Click += new System.EventHandler(this.listFromCoachBtn_Click);
             // 
             // memberListBtn
             // 
@@ -116,6 +118,7 @@
             this.memberListBtn.TabIndex = 5;
             this.memberListBtn.Text = "View Member List";
             this.memberListBtn.UseVisualStyleBackColor = false;
+            this.memberListBtn.Click += new System.EventHandler(this.memberListBtn_Click);
             // 
             // compBtn
             // 
@@ -143,6 +146,7 @@
             this.assBtn.TabIndex = 3;
             this.assBtn.Text = "Assign Member ";
             this.assBtn.UseVisualStyleBackColor = false;
+            this.assBtn.Click += new System.EventHandler(this.assBtn_Click);
             // 
             // profileBtn
             // 

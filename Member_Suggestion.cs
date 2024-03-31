@@ -14,9 +14,18 @@ namespace Y1S2
     public partial class Member_Suggestion : Form
     {
         public string name;
+        public string role;
+
         public Member_Suggestion()
         {
             InitializeComponent();
+        }
+
+        public Member_Suggestion(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void submit_btn_Click(object sender, EventArgs e)

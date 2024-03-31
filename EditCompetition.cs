@@ -16,14 +16,19 @@ namespace Y1S2
 {
     public partial class Edit_Competition : Form
     {
+        public string name;
+        public string role;
+
         public Edit_Competition()
         {
             InitializeComponent();
         }
 
-        public Edit_Competition(string compId, string compName, string compDate, string dueDate, string venue, string details)
+        public Edit_Competition(string n, string r, string compId, string compName, string compDate, string dueDate, string venue, string details)
         {
             InitializeComponent();
+            name = n; role = r;
+
             editCompIdLbl.Text = compId;
             editCompNameTB.Text = compName;
             DateTime dateTime = DateTime.ParseExact(compDate, "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture);
@@ -48,7 +53,7 @@ namespace Y1S2
 
         private void bckBtn_Click(object sender, EventArgs e)
         {
-            ManagerCompetition back = new ManagerCompetition();
+            ManagerCompetition back = new ManagerCompetition(name, role);
             back.Show();
             this.Close();
         }

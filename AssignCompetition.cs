@@ -12,9 +12,18 @@ namespace Y1S2
 {
     public partial class AssignCompetition : Form
     {
+        public string name;
+        public string role;
+
         public AssignCompetition()
         {
             InitializeComponent();
+        }
+
+        public AssignCompetition(string n, string r)
+        {
+            InitializeComponent();
+            name = n; role = r;
         }
 
         private void memberListBox_SelectedIndexChanged(object sender, EventArgs e)

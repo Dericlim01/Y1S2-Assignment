@@ -12,10 +12,20 @@ namespace Y1S2
 {
     public partial class AddCompetition : Form
     {
+        public string name;
+        public string role;
+
         public AddCompetition()
         {
             InitializeComponent();
         }
+
+        public AddCompetition(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
+        } 
 
         private void addCompbtn_Click(object sender, EventArgs e)
         {
@@ -27,9 +37,9 @@ namespace Y1S2
 
         private void bckBtn_Click(object sender, EventArgs e)
         {
-            ManagerCompetition back = new ManagerCompetition();
-            back.Show();
             this.Close();
+            ManagerCompetition back = new ManagerCompetition(name, role);
+            back.Show();
         }
     }
 }

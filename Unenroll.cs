@@ -12,9 +12,14 @@ namespace Y1S2
 {
     public partial class Unenroll : Form
     {
-        public Unenroll()
+        public string name;
+        public string role;
+
+        public Unenroll(string n, string r)
         {
             InitializeComponent();
+            name = n;
+            role = r;
             dlt_btn.Hide();
         }
 

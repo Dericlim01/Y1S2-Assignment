@@ -14,9 +14,19 @@ namespace Y1S2
 {
     public partial class Performance : Form
     {
+        public string name;
+        public string role;
+
         public Performance()
         {
             InitializeComponent();
+        }
+
+        public Performance(string n, string r)
+        {
+            InitializeComponent();
+            name = n;
+            role = r;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -40,12 +50,11 @@ namespace Y1S2
 
         internal class UpdateDB
         {
-
             public string Update(string Name, string Events, string Time, string Comments)
             {
                 string status = "";
 
-                using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SwimmingClubConnectionString"].ToString()))
+                using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString()))
                 {
                     con.Open();
 
@@ -68,21 +77,15 @@ namespace Y1S2
                         }
                     }
                 }
-
                 return status;
             }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new Coach());
-        }
-
-        private void btnBack_Click_1(object sender, EventArgs e)
-        {
-            NextForm nextFormHandler = new NextForm();
-            nextFormHandler.Next(this, new Coach());
+            this.Hide();
+            Coach back = new Coach(name, role);
+            back.ShowDialog();
         }
     }
 }

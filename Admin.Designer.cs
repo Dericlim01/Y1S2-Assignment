@@ -34,13 +34,13 @@
             this.edit_profile_btn = new System.Windows.Forms.Button();
             this.couch_add_btn = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.logout_btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.logout_btn = new System.Windows.Forms.Button();
+            this.manager_add_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbltype = new System.Windows.Forms.Label();
-            this.manager_add_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -59,11 +59,11 @@
             // manage_btn
             // 
             this.manage_btn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.manage_btn.Location = new System.Drawing.Point(526, 50);
+            this.manage_btn.Location = new System.Drawing.Point(526, 129);
             this.manage_btn.Name = "manage_btn";
             this.manage_btn.Size = new System.Drawing.Size(184, 58);
             this.manage_btn.TabIndex = 13;
-            this.manage_btn.Text = "Manage";
+            this.manage_btn.Text = "Manage User";
             this.manage_btn.UseVisualStyleBackColor = false;
             this.manage_btn.Click += new System.EventHandler(this.manage_btn_Click);
             // 
@@ -81,7 +81,7 @@
             // edit_profile_btn
             // 
             this.edit_profile_btn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.edit_profile_btn.Location = new System.Drawing.Point(297, 50);
+            this.edit_profile_btn.Location = new System.Drawing.Point(526, 50);
             this.edit_profile_btn.Name = "edit_profile_btn";
             this.edit_profile_btn.Size = new System.Drawing.Size(184, 58);
             this.edit_profile_btn.TabIndex = 11;
@@ -111,22 +111,11 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // logout_btn
-            // 
-            this.logout_btn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.logout_btn.Location = new System.Drawing.Point(526, 129);
-            this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(184, 58);
-            this.logout_btn.TabIndex = 14;
-            this.logout_btn.Text = "Logout";
-            this.logout_btn.UseVisualStyleBackColor = false;
-            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox1.Controls.Add(this.manager_add_btn);
             this.groupBox1.Controls.Add(this.logout_btn);
+            this.groupBox1.Controls.Add(this.manager_add_btn);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.manage_btn);
             this.groupBox1.Controls.Add(this.couch_add_btn);
@@ -141,6 +130,29 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Features";
+            // 
+            // logout_btn
+            // 
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.logout_btn.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
+            this.logout_btn.Location = new System.Drawing.Point(725, 194);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 25);
+            this.logout_btn.TabIndex = 20;
+            this.logout_btn.Text = "Log Out";
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
+            // manager_add_btn
+            // 
+            this.manager_add_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.manager_add_btn.Location = new System.Drawing.Point(297, 50);
+            this.manager_add_btn.Name = "manager_add_btn";
+            this.manager_add_btn.Size = new System.Drawing.Size(184, 58);
+            this.manager_add_btn.TabIndex = 15;
+            this.manager_add_btn.Text = "Add Manager";
+            this.manager_add_btn.UseVisualStyleBackColor = false;
+            this.manager_add_btn.Click += new System.EventHandler(this.manager_add_btn_Click);
             // 
             // pictureBox1
             // 
@@ -183,17 +195,6 @@
             this.lbltype.TabIndex = 19;
             this.lbltype.Text = "Type:";
             // 
-            // manager_add_btn
-            // 
-            this.manager_add_btn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.manager_add_btn.Location = new System.Drawing.Point(187, 12);
-            this.manager_add_btn.Name = "manager_add_btn";
-            this.manager_add_btn.Size = new System.Drawing.Size(184, 58);
-            this.manager_add_btn.TabIndex = 15;
-            this.manager_add_btn.Text = "Add Manager";
-            this.manager_add_btn.UseVisualStyleBackColor = false;
-            this.manager_add_btn.Click += new System.EventHandler(this.manager_add_btn_Click);
-            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,12 +226,12 @@
         private System.Windows.Forms.Button edit_profile_btn;
         private System.Windows.Forms.Button couch_add_btn;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.Button manager_add_btn;
+        private System.Windows.Forms.Button logout_btn;
     }
 }

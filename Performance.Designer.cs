@@ -78,7 +78,7 @@
             this.btnBack.TabIndex = 25;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtComment
             // 

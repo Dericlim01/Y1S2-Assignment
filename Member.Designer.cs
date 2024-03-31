@@ -30,14 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lbltype = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.lblname = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.send_suggest = new System.Windows.Forms.Button();
+            this.view_performance_btn = new System.Windows.Forms.Button();
+            this.training_sche_btn = new System.Windows.Forms.Button();
+            this.all_comp_btn = new System.Windows.Forms.Button();
+            this.enunroll_btn = new System.Windows.Forms.Button();
             this.edit_profile_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -67,16 +67,17 @@
             this.lbltype.TabIndex = 4;
             this.lbltype.Text = "Type:";
             // 
-            // button1
+            // logout_btn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(725, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Log Out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.logout_btn.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
+            this.logout_btn.Location = new System.Drawing.Point(725, 194);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 25);
+            this.logout_btn.TabIndex = 1;
+            this.logout_btn.Text = "Log Out";
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // lblname
             // 
@@ -91,13 +92,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.send_suggest);
+            this.groupBox1.Controls.Add(this.view_performance_btn);
+            this.groupBox1.Controls.Add(this.training_sche_btn);
+            this.groupBox1.Controls.Add(this.all_comp_btn);
+            this.groupBox1.Controls.Add(this.enunroll_btn);
             this.groupBox1.Controls.Add(this.edit_profile_btn);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.logout_btn);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 225);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -108,70 +109,73 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quick Access";
             // 
-            // button7
+            // send_suggest
             // 
-            this.button7.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button7.FlatAppearance.BorderSize = 3;
-            this.button7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(60, 129);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(184, 58);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.send_suggest.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.send_suggest.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.send_suggest.FlatAppearance.BorderSize = 3;
+            this.send_suggest.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.send_suggest.Location = new System.Drawing.Point(60, 129);
+            this.send_suggest.Name = "send_suggest";
+            this.send_suggest.Size = new System.Drawing.Size(184, 58);
+            this.send_suggest.TabIndex = 7;
+            this.send_suggest.Text = "Send Suggestion";
+            this.send_suggest.UseVisualStyleBackColor = false;
+            this.send_suggest.Click += new System.EventHandler(this.send_suggest_Click);
             // 
-            // button6
+            // view_performance_btn
             // 
-            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button6.FlatAppearance.BorderSize = 3;
-            this.button6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(526, 129);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(184, 58);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "More";
-            this.button6.UseVisualStyleBackColor = false;
+            this.view_performance_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.view_performance_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.view_performance_btn.FlatAppearance.BorderSize = 3;
+            this.view_performance_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.view_performance_btn.Location = new System.Drawing.Point(526, 129);
+            this.view_performance_btn.Name = "view_performance_btn";
+            this.view_performance_btn.Size = new System.Drawing.Size(184, 58);
+            this.view_performance_btn.TabIndex = 6;
+            this.view_performance_btn.Text = "View Performance";
+            this.view_performance_btn.UseVisualStyleBackColor = false;
+            this.view_performance_btn.Click += new System.EventHandler(this.view_performance_btn_Click);
             // 
-            // button5
+            // training_sche_btn
             // 
-            this.button5.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button5.FlatAppearance.BorderSize = 3;
-            this.button5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(526, 50);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 58);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.training_sche_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.training_sche_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.training_sche_btn.FlatAppearance.BorderSize = 3;
+            this.training_sche_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.training_sche_btn.Location = new System.Drawing.Point(526, 50);
+            this.training_sche_btn.Name = "training_sche_btn";
+            this.training_sche_btn.Size = new System.Drawing.Size(184, 58);
+            this.training_sche_btn.TabIndex = 5;
+            this.training_sche_btn.Text = "Training Schedule";
+            this.training_sche_btn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // all_comp_btn
             // 
-            this.button4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatAppearance.BorderSize = 3;
-            this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(297, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 58);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Competition";
-            this.button4.UseVisualStyleBackColor = false;
+            this.all_comp_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.all_comp_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.all_comp_btn.FlatAppearance.BorderSize = 3;
+            this.all_comp_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_comp_btn.Location = new System.Drawing.Point(297, 50);
+            this.all_comp_btn.Name = "all_comp_btn";
+            this.all_comp_btn.Size = new System.Drawing.Size(184, 58);
+            this.all_comp_btn.TabIndex = 4;
+            this.all_comp_btn.Text = "Competition";
+            this.all_comp_btn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // enunroll_btn
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(297, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 58);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.enunroll_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.enunroll_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.enunroll_btn.FlatAppearance.BorderSize = 3;
+            this.enunroll_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enunroll_btn.Location = new System.Drawing.Point(297, 129);
+            this.enunroll_btn.Name = "enunroll_btn";
+            this.enunroll_btn.Size = new System.Drawing.Size(184, 58);
+            this.enunroll_btn.TabIndex = 3;
+            this.enunroll_btn.Text = "Unenroll";
+            this.enunroll_btn.UseVisualStyleBackColor = false;
+            this.enunroll_btn.Click += new System.EventHandler(this.enunroll_btn_Click);
             // 
             // edit_profile_btn
             // 
@@ -234,15 +238,15 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbltype;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button edit_profile_btn;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button send_suggest;
+        private System.Windows.Forms.Button view_performance_btn;
+        private System.Windows.Forms.Button training_sche_btn;
+        private System.Windows.Forms.Button all_comp_btn;
+        private System.Windows.Forms.Button enunroll_btn;
     }
 }

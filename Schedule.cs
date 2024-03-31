@@ -15,7 +15,7 @@ namespace Y1S2
         {
             string status = "";
 
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SwimmingClubConnectionString"].ToString()))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString()))
             {
                 con.Open();
 
@@ -37,33 +37,9 @@ namespace Y1S2
                         status = "Failed to edit schedule.";
                     }
                 }
+                con.Close();
             }
-
             return status;
-        }
-
-        public void LoadDataForEdit(int id, string datetimepicker, Control CBTime, Control CBLevel, string txtRemarks)
-        {
-            using (SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["SwimmingClubConnectionString"].ConnectionString))
-            {
-                cn.Open();
-
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Schedule WHERE Id = @Id", cn))
-                {
-                    cmd.Parameters.AddWithValue("@Id", id);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    if (reader.Read())
-                    {
-                        datetimepicker.Text = reader["date"].ToString();
-                        CBTime.Text = reader["Time"].ToString();
-                        CBLevel.Text = reader["Level"].ToString();
-                        txtRemarks.Text = reader["Remarks"].ToString();
-                    }
-
-                    reader.Close();
-                }
-            }
         }
     }
 }
