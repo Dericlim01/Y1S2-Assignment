@@ -46,8 +46,6 @@ namespace Y1S2
                 {
                     compMemberListBox.Items.Add(comp);
                 }
-
-
             }
         }
 
@@ -94,7 +92,6 @@ namespace Y1S2
             {
                 // Conversion failed, invalid input
                 MessageBox.Show("Invalid input! Please enter a valid integer.");
-
             }
         }
 

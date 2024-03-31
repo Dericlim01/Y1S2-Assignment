@@ -12,10 +12,10 @@ namespace Y1S2
 {
     public partial class Edit_Profile : Form
     {
-
         private string name;
         private string role;
         private string abc;
+
         public Edit_Profile(string n, string r)
         {
             InitializeComponent();

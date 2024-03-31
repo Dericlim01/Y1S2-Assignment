@@ -145,6 +145,6 @@ namespace Y1S2
             }
                 connect.Close();
             return (n, lvl, age, rank);
-            }
         }
+    }
 }

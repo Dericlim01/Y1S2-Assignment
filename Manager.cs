@@ -14,6 +14,7 @@ namespace Y1S2
     {
         public string name;
         public string role;
+
         public Manager(string n, string r)
         {
             InitializeComponent();

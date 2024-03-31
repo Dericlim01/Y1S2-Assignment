@@ -57,6 +57,5 @@ namespace Y1S2
             ManagerCompetition back = new ManagerCompetition(name, role);
             back.ShowDialog();
         }
-
     }
 }

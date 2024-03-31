@@ -63,7 +63,6 @@ namespace Y1S2
         {
             // TODO: This line of code loads data into the 'swimmingclubdbDataSet1.Competition' table. You can move, or remove it, as needed.
             this.competitionTableAdapter1.Fill(this.swimmingclubdbDataSet1.Competition);
-
         }
 
         private void bckBtn_Click(object sender, EventArgs e)

@@ -42,7 +42,6 @@ namespace Y1S2
             this.Hide();
             Admin admin = new Admin(name, role);
             admin.ShowDialog();
-
         }
     }
 }

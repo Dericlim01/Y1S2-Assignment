@@ -40,7 +40,6 @@ namespace Y1S2
             this.competitionTableAdapter.Fill(this.swimmingclubdbDataSet.Competition);
         }
 
-        
         private void competitionView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;

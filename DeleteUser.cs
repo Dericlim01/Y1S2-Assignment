@@ -63,7 +63,6 @@ namespace Y1S2
             int j = cmd2.ExecuteNonQuery();
             connect.Close();
             return i + j;
-
         }
     }
 }

@@ -17,25 +17,23 @@ namespace Y1S2
         private string details;
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["swimmingclubdb"].ToString());
 
-
         public Recommendation(string mN, string iD, string dt)
         {
             memberName = mN;
             competitionId = iD;
             details = dt;
         }
+
         public Recommendation(string mN, string iD)
         {
             memberName = mN;
             competitionId = iD;
         }
+
         public Recommendation(string iD)
         {
             competitionId = iD;
         }
-
-
-
 
         public string sendRecommend()
         {
@@ -92,13 +90,10 @@ namespace Y1S2
             }
             con.Close();
             return status;
-
         }
-
 
         public string getRecommendation()
         {
-
             con.Open();
 
             string query = "SELECT * FROM Recommendation WHERE competition_id = @id AND member_name = @name ";
@@ -133,5 +128,3 @@ namespace Y1S2
         }
     }
 }
-
-    

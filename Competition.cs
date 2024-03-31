@@ -100,7 +100,6 @@ namespace Y1S2
             return status;
         }
 
-
         public string editCompetition()
         {
             string status;
@@ -135,7 +134,6 @@ namespace Y1S2
             con.Close();
             return status;
         }
-
 
         public string deleteCompetition()
         {
@@ -202,8 +200,6 @@ namespace Y1S2
             return (id, n, date, venue);
         }
 
-
-
         public string assign_member()
         {
             string status;
@@ -256,6 +252,7 @@ namespace Y1S2
             con.Close();
             return status;
         }
+
         public IEnumerable<string> compMemberList()
         {
             con.Open();

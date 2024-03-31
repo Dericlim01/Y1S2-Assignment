@@ -32,7 +32,6 @@ namespace Y1S2
         {
             // TODO: This line of code loads data into the 'swimmingclubdbDataSet2.Schedule' table. You can move, or remove it, as needed.
             this.scheduleTableAdapter.Fill(this.swimmingclubdbDataSet2.Schedule);
-           
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -124,7 +123,6 @@ namespace Y1S2
 
         private void scheduleDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
     }
 }

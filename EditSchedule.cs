@@ -96,7 +96,6 @@ namespace Y1S2
         {
             // TODO: This line of code loads data into the 'swimmingclubdbDataSet2.Schedule' table. You can move, or remove it, as needed.
             this.scheduleTableAdapter.Fill(this.swimmingclubdbDataSet2.Schedule);
-
         }
     }
 }
