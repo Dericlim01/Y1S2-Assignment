@@ -36,5 +36,33 @@ namespace Y1S2
             lblname.Text = $"Name : {coach_name}";
             lbltype.Text = $"Type : {role}";
         }
+
+        // Edit Profile Button
+        private void edit_profile_btn_Click(object sender, EventArgs e)
+        {
+            Edit_Profile edit = new Edit_Profile(coach_name, role);
+            edit.ShowDialog();
+        }
+
+        // Performance Button
+        private void btnPfm_Click(object sender, EventArgs e)
+        {
+            NextForm nextFormHandler = new NextForm();
+            nextFormHandler.Next(this, new Performance());
+        }
+
+        // Recommendation Button
+        private void btnRcmd_Click(object sender, EventArgs e)
+        {
+            NextForm nextFormHandler = new NextForm();
+            nextFormHandler.Next(this, new sendRecommendation());
+        }
+
+        // Training Schedule Button
+        private void btnTrainSch_Click(object sender, EventArgs e)
+        {
+            NextForm nextFormHandler = new NextForm();
+            nextFormHandler.Next(this, new TrainingSchedule());
+        }
     }
 }

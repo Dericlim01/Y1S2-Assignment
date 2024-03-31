@@ -59,9 +59,9 @@ namespace Y1S2
         public string addCompetition()
         {
             string status;
+            con.Open();
             try
             {
-                con.Open();
                 string query = "INSERT INTO competition (competition_id, competition_name, due_date, competition_date, venue,details) VALUES (@id, @name, @cdate, @ddate, @ven, @dt)";
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -80,7 +80,6 @@ namespace Y1S2
                 {
                     status = "Adding Competition Fail.";
                 }
-                con.Close();
             }
             catch (SqlException ex)
             {
@@ -97,6 +96,7 @@ namespace Y1S2
             {
                 status = "Adding Competition Fail\nReason:" + ex.Message;
             }
+            con.Close();
             return status;
         }
 
@@ -104,9 +104,9 @@ namespace Y1S2
         public string editCompetition()
         {
             string status;
+            con.Open();
             try
             {
-                con.Open();
                 SqlCommand cmd = new SqlCommand("UPDATE Competition SET competition_name = @name, due_date = @ddate, competition_date = @cdate,venue=@ven,details = @dt WHERE competition_id = @id ", con);
                 cmd.Parameters.AddWithValue("@id", competitionId);
                 cmd.Parameters.AddWithValue("@name", competitionName);
@@ -123,7 +123,6 @@ namespace Y1S2
                 {
                     status = "Edit Competition Fail";
                 }
-                con.Close();
             }
             catch (SqlException ex)
             {
@@ -133,6 +132,7 @@ namespace Y1S2
             {
                 status = "Edit Competition Fail\nReason:" + ex.Message;
             }
+            con.Close();
             return status;
         }
 
@@ -140,9 +140,9 @@ namespace Y1S2
         public string deleteCompetition()
         {
             string status;
+            con.Open();
             try
             {
-                con.Open();
                 SqlCommand cmd = new SqlCommand("DELETE FROM Competition  WHERE competition_id = @id ", con);
                 cmd.Parameters.AddWithValue("@id", competitionId);
 
@@ -155,7 +155,6 @@ namespace Y1S2
                 {
                     status = "Delete Competition Fail";
                 }
-                con.Close();
             }
             catch (SqlException ex)
             {
@@ -165,6 +164,7 @@ namespace Y1S2
             {
                 status = "Delete Competition Fail\nReason:" + ex.Message;
             }
+            con.Close();
             return status;
 
         }
@@ -207,10 +207,9 @@ namespace Y1S2
         public string assign_member()
         {
             string status;
+            con.Open();
             try
             {
-                con.Open();
-
                 string query1 = "SELECT competition_id FROM competition WHERE competition_id = @id ";
                 string query2 = "SELECT name FROM member WHERE name = @name ";
                 string query3 = "INSERT INTO competition_attend(competition_id,member_name) VALUES(@id, @name) ";
@@ -244,19 +243,17 @@ namespace Y1S2
                     {
                         status = "Assign Member Fail";
                     }
-                    con.Close();
                 }
                 else
                 {
                     status = "This Member already Assign in this competition";
                 }
             }
-
             catch (Exception ex)
             {
                 status = "Assign Member Fail\nReason:" + ex.Message;
             }
-
+            con.Close();
             return status;
         }
         public IEnumerable<string> compMemberList()
@@ -276,9 +273,9 @@ namespace Y1S2
         public string recordCompResult()
         {
             string status;
+            con.Open();
             try
             {
-                con.Open();
                 SqlCommand cmd = new SqlCommand("UPDATE competition_attend  SET ranking = @rank WHERE competition_id = @id AND member_name = @name ", con);
                 cmd.Parameters.AddWithValue("@id", competitionId);
                 cmd.Parameters.AddWithValue("@name", memberName);
@@ -292,7 +289,6 @@ namespace Y1S2
                 {
                     status = "Update Result Fail";
                 }
-                con.Close();
             }
             catch (SqlException ex)
             {
@@ -324,9 +320,9 @@ namespace Y1S2
             int bronze = (int)cmdbronze.ExecuteScalar();
             int others = (int)cmdothers.ExecuteScalar();
 
+            con.Close();
             // Return an array containing the counts for gold, silver, bronze, and others
             return new int[] { gold, silver, bronze, others };
-            con.Close();
         }
     }
 }

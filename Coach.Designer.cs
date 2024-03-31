@@ -31,11 +31,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnPfm = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnTrainSch = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnRcmd = new System.Windows.Forms.Button();
             this.edit_profile_btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lblname = new System.Windows.Forms.Label();
@@ -70,11 +70,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.btnPfm);
             this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.btnTrainSch);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnRcmd);
             this.groupBox1.Controls.Add(this.edit_profile_btn);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,18 +87,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quick Access";
             // 
-            // button7
+            // btnPfm
             // 
-            this.button7.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button7.FlatAppearance.BorderSize = 3;
-            this.button7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(60, 129);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(184, 58);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPfm.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnPfm.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnPfm.FlatAppearance.BorderSize = 3;
+            this.btnPfm.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPfm.Location = new System.Drawing.Point(60, 129);
+            this.btnPfm.Name = "btnPfm";
+            this.btnPfm.Size = new System.Drawing.Size(184, 58);
+            this.btnPfm.TabIndex = 7;
+            this.btnPfm.Text = "Performance";
+            this.btnPfm.UseVisualStyleBackColor = false;
+            this.btnPfm.Click += new System.EventHandler(this.btnPfm_Click);
             // 
             // button6
             // 
@@ -113,18 +114,19 @@
             this.button6.Text = "More";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnTrainSch
             // 
-            this.button5.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button5.FlatAppearance.BorderSize = 3;
-            this.button5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(526, 50);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 58);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnTrainSch.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnTrainSch.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnTrainSch.FlatAppearance.BorderSize = 3;
+            this.btnTrainSch.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrainSch.Location = new System.Drawing.Point(526, 50);
+            this.btnTrainSch.Name = "btnTrainSch";
+            this.btnTrainSch.Size = new System.Drawing.Size(184, 58);
+            this.btnTrainSch.TabIndex = 5;
+            this.btnTrainSch.Text = "Training Schedule";
+            this.btnTrainSch.UseVisualStyleBackColor = false;
+            this.btnTrainSch.Click += new System.EventHandler(this.btnTrainSch_Click);
             // 
             // button4
             // 
@@ -136,21 +138,22 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(184, 58);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Competition";
+            this.button4.Text = "View Member Payment";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnRcmd
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(297, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 58);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnRcmd.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnRcmd.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnRcmd.FlatAppearance.BorderSize = 3;
+            this.btnRcmd.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRcmd.Location = new System.Drawing.Point(297, 129);
+            this.btnRcmd.Name = "btnRcmd";
+            this.btnRcmd.Size = new System.Drawing.Size(184, 58);
+            this.btnRcmd.TabIndex = 3;
+            this.btnRcmd.Text = "Recommendation";
+            this.btnRcmd.UseVisualStyleBackColor = false;
+            this.btnRcmd.Click += new System.EventHandler(this.btnRcmd_Click);
             // 
             // edit_profile_btn
             // 
@@ -164,6 +167,7 @@
             this.edit_profile_btn.TabIndex = 2;
             this.edit_profile_btn.Text = "Edit Profile";
             this.edit_profile_btn.UseVisualStyleBackColor = false;
+            this.edit_profile_btn.Click += new System.EventHandler(this.edit_profile_btn_Click);
             // 
             // button1
             // 
@@ -233,11 +237,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnPfm;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnTrainSch;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRcmd;
         private System.Windows.Forms.Button edit_profile_btn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblname;

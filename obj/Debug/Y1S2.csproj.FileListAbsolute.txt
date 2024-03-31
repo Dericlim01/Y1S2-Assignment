@@ -63,3 +63,12 @@ D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\ob
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.getRecommendation.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.ViewCompetition.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.viewTotalResult.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.AddManager.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.AddSchedule.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.EditSchedule.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.getRecommendation.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.Performance.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.sendRecommendation.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.TrainingSchedule.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.ViewCompetition.resources
+D:\Github\Assignment\Y1S2\obj\Debug\Y1S2.viewTotalResult.resources
