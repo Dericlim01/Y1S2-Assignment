@@ -193,11 +193,22 @@
     <Compile Include="sendRecommendation.Designer.cs">
       <DependentUpon>sendRecommendation.cs</DependentUpon>
     </Compile>
+    <Compile Include="swimmingclubdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>swimmingclubdbDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Unenroll.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Unenroll.Designer.cs">
       <DependentUpon>Unenroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCompetition.Designer.cs">
+      <DependentUpon>ViewCompetition.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewCompetitor.cs">
       <SubType>Form</SubType>
@@ -212,6 +223,12 @@
       <DependentUpon>swimmingclubdbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="viewTotalResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewTotalResult.Designer.cs">
+      <DependentUpon>viewTotalResult.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCoach.resx">
       <DependentUpon>AddCoach.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,8 +302,14 @@
     <EmbeddedResource Include="Unenroll.resx">
       <DependentUpon>Unenroll.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewCompetition.resx">
+      <DependentUpon>ViewCompetition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewCompetitor.resx">
       <DependentUpon>ViewCompetitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewTotalResult.resx">
+      <DependentUpon>viewTotalResult.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -307,6 +330,17 @@
     </None>
     <None Include="swimmingclubdbDataSet.xss">
       <DependentUpon>swimmingclubdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="swimmingclubdbDataSet1.xsc">
+      <DependentUpon>swimmingclubdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="swimmingclubdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>swimmingclubdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="swimmingclubdbDataSet1.xss">
+      <DependentUpon>swimmingclubdbDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

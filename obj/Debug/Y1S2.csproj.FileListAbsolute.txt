@@ -61,3 +61,5 @@ D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\ob
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.Unenroll.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.sendRecommendation.resources
 D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.getRecommendation.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.ViewCompetition.resources
+D:\APU\Year1 Sem2\Introduction To Object Oriented Programming\Y1S2-Assignment\obj\Debug\Y1S2.viewTotalResult.resources

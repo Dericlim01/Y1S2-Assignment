@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -49,7 +50,7 @@ namespace Y1S2
             competitionId = c_id;
         }
 
-        public Competition(string c_id,string mN)
+        public Competition(string c_id, string mN)
         {
             competitionId = c_id;
             memberName = mN;
@@ -181,7 +182,7 @@ namespace Y1S2
             con.Close();
         }
 
-        public (string,string, string, string) findCompetition(string compName)
+        public (string, string, string, string) findCompetition(string compName)
         {
             con.Open();
             string query = $"SELECT * FROM competition WHERE competition_name = @name";
@@ -190,7 +191,7 @@ namespace Y1S2
             SqlDataReader rd = cmd.ExecuteReader();
             string id = "", n = "", date = "", venue = "";
             while (rd.Read())
-            {   
+            {
                 id = rd.GetString(0);
                 n = rd.GetString(1);
                 DateTime dateTime = rd.GetDateTime(3);
@@ -198,7 +199,7 @@ namespace Y1S2
                 venue = rd.GetString(4);
             }
             con.Close();
-            return (id,n, date, venue);
+            return (id, n, date, venue);
         }
 
 
@@ -245,7 +246,7 @@ namespace Y1S2
                     }
                     con.Close();
                 }
-                else 
+                else
                 {
                     status = "This Member already Assign in this competition";
                 }
@@ -256,11 +257,11 @@ namespace Y1S2
                 status = "Assign Member Fail\nReason:" + ex.Message;
             }
 
-        return status;
+            return status;
         }
         public IEnumerable<string> compMemberList()
         {
-            con.Open(); 
+            con.Open();
             string query = $"select member_name from competition_attend WHERE competition_id = @id";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@id", competitionId);
@@ -305,6 +306,27 @@ namespace Y1S2
             return status;
         }
 
-        
-    } 
-}           
+        public int[] total()
+        {
+            con.Open ();
+            string queryothers = "SELECT COUNT(ranking) FROM competition_attend WHERE ranking > 3 ";
+            string querybronze = "SELECT COUNT(ranking) FROM competition_attend WHERE ranking = 3 ";
+            string querysilver = "SELECT COUNT(ranking) FROM competition_attend WHERE ranking = 2 ";
+            string querygold = "SELECT COUNT(ranking) FROM competition_attend WHERE ranking = 1 ";
+
+            SqlCommand cmdothers = new SqlCommand(queryothers, con);
+            SqlCommand cmdbronze = new SqlCommand(querybronze, con);
+            SqlCommand cmdsilver = new SqlCommand(querysilver, con);
+            SqlCommand cmdgold = new SqlCommand(querygold, con);
+
+            int gold = (int)cmdgold.ExecuteScalar();
+            int silver = (int)cmdsilver.ExecuteScalar();
+            int bronze = (int)cmdbronze.ExecuteScalar();
+            int others = (int)cmdothers.ExecuteScalar();
+
+            // Return an array containing the counts for gold, silver, bronze, and others
+            return new int[] { gold, silver, bronze, others };
+            con.Close();
+        }
+    }
+}
