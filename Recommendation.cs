@@ -108,15 +108,14 @@ namespace Y1S2
             SqlDataReader rd = cmd.ExecuteReader();
             if (rd.Read())
             {
-                return rd.GetString(3);
                 con.Close();
+                return rd.GetString(3);
             }
             else
             {
-                return null;
                 con.Close();
+                return null;
             }
-
         }
 
         public IEnumerable<string> recommendMemberList()
