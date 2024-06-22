@@ -16,6 +16,7 @@ namespace Y1S2
     {
         public string name;
         public string role;
+        public string ab;
 
         public TrainingSchedule()
         {
@@ -26,6 +27,15 @@ namespace Y1S2
         {
             InitializeComponent();
             name = n; role = r;
+        }
+
+        public TrainingSchedule(string n, string r, string a)
+        {
+            InitializeComponent();
+            name = n; role = r; ab = a;
+            btnAdd.Hide();
+            btnEdit.Hide();
+            btnDelete.Hide();
         }
 
         private void TrainingSchedule_Load(object sender, EventArgs e)

@@ -31,20 +31,19 @@
             this.reenter_pass_txtbx = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pn_txtbx = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.register_btn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.a_rdbtn = new System.Windows.Forms.RadioButton();
             this.i_rdbtn = new System.Windows.Forms.RadioButton();
             this.b_rdbtn = new System.Windows.Forms.RadioButton();
             this.email_txtbx = new System.Windows.Forms.TextBox();
-            this.age_txtbx = new System.Windows.Forms.TextBox();
             this.password_txtbx = new System.Windows.Forms.TextBox();
             this.name_txtbx = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.back_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,12 +52,12 @@
             this.reenter_pass_txtbx.Location = new System.Drawing.Point(250, 145);
             this.reenter_pass_txtbx.Name = "reenter_pass_txtbx";
             this.reenter_pass_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.reenter_pass_txtbx.TabIndex = 27;
+            this.reenter_pass_txtbx.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(138, 232);
+            this.label6.Location = new System.Drawing.Point(138, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 26;
@@ -69,23 +68,14 @@
             this.pn_txtbx.Location = new System.Drawing.Point(250, 174);
             this.pn_txtbx.Name = "pn_txtbx";
             this.pn_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.pn_txtbx.TabIndex = 25;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(138, 202);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Age :";
+            this.pn_txtbx.TabIndex = 4;
             // 
             // register_btn
             // 
-            this.register_btn.Location = new System.Drawing.Point(250, 275);
+            this.register_btn.Location = new System.Drawing.Point(250, 243);
             this.register_btn.Name = "register_btn";
             this.register_btn.Size = new System.Drawing.Size(75, 23);
-            this.register_btn.TabIndex = 23;
+            this.register_btn.TabIndex = 7;
             this.register_btn.Text = "Register";
             this.register_btn.UseVisualStyleBackColor = true;
             this.register_btn.Click += new System.EventHandler(this.register_btn_Click);
@@ -140,31 +130,24 @@
             // 
             // email_txtbx
             // 
-            this.email_txtbx.Location = new System.Drawing.Point(250, 232);
+            this.email_txtbx.Location = new System.Drawing.Point(250, 200);
             this.email_txtbx.Name = "email_txtbx";
             this.email_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.email_txtbx.TabIndex = 21;
-            // 
-            // age_txtbx
-            // 
-            this.age_txtbx.Location = new System.Drawing.Point(250, 202);
-            this.age_txtbx.Name = "age_txtbx";
-            this.age_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.age_txtbx.TabIndex = 20;
+            this.email_txtbx.TabIndex = 6;
             // 
             // password_txtbx
             // 
             this.password_txtbx.Location = new System.Drawing.Point(250, 117);
             this.password_txtbx.Name = "password_txtbx";
             this.password_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.password_txtbx.TabIndex = 19;
+            this.password_txtbx.TabIndex = 2;
             // 
             // name_txtbx
             // 
             this.name_txtbx.Location = new System.Drawing.Point(250, 91);
             this.name_txtbx.Name = "name_txtbx";
             this.name_txtbx.Size = new System.Drawing.Size(100, 20);
-            this.name_txtbx.TabIndex = 18;
+            this.name_txtbx.TabIndex = 1;
             // 
             // label4
             // 
@@ -202,19 +185,28 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Name :";
             // 
+            // back_btn
+            // 
+            this.back_btn.Location = new System.Drawing.Point(383, 243);
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Size = new System.Drawing.Size(75, 23);
+            this.back_btn.TabIndex = 27;
+            this.back_btn.Text = "Back";
+            this.back_btn.UseVisualStyleBackColor = true;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
+            // 
             // Enroll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back_btn);
             this.Controls.Add(this.reenter_pass_txtbx);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pn_txtbx);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.register_btn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.email_txtbx);
-            this.Controls.Add(this.age_txtbx);
             this.Controls.Add(this.password_txtbx);
             this.Controls.Add(this.name_txtbx);
             this.Controls.Add(this.label4);
@@ -235,19 +227,18 @@
         private System.Windows.Forms.TextBox reenter_pass_txtbx;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox pn_txtbx;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button register_btn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton a_rdbtn;
         private System.Windows.Forms.RadioButton i_rdbtn;
         private System.Windows.Forms.RadioButton b_rdbtn;
         private System.Windows.Forms.TextBox email_txtbx;
-        private System.Windows.Forms.TextBox age_txtbx;
         private System.Windows.Forms.TextBox password_txtbx;
         private System.Windows.Forms.TextBox name_txtbx;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button back_btn;
     }
 }

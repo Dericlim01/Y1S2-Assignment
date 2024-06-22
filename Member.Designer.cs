@@ -34,7 +34,6 @@
             this.lblname = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.send_suggest = new System.Windows.Forms.Button();
-            this.view_performance_btn = new System.Windows.Forms.Button();
             this.training_sche_btn = new System.Windows.Forms.Button();
             this.all_comp_btn = new System.Windows.Forms.Button();
             this.enunroll_btn = new System.Windows.Forms.Button();
@@ -93,7 +92,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox1.Controls.Add(this.send_suggest);
-            this.groupBox1.Controls.Add(this.view_performance_btn);
             this.groupBox1.Controls.Add(this.training_sche_btn);
             this.groupBox1.Controls.Add(this.all_comp_btn);
             this.groupBox1.Controls.Add(this.enunroll_btn);
@@ -115,27 +113,13 @@
             this.send_suggest.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.send_suggest.FlatAppearance.BorderSize = 3;
             this.send_suggest.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.send_suggest.Location = new System.Drawing.Point(60, 129);
+            this.send_suggest.Location = new System.Drawing.Point(182, 129);
             this.send_suggest.Name = "send_suggest";
             this.send_suggest.Size = new System.Drawing.Size(184, 58);
             this.send_suggest.TabIndex = 7;
             this.send_suggest.Text = "Send Suggestion";
             this.send_suggest.UseVisualStyleBackColor = false;
             this.send_suggest.Click += new System.EventHandler(this.send_suggest_Click);
-            // 
-            // view_performance_btn
-            // 
-            this.view_performance_btn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.view_performance_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.view_performance_btn.FlatAppearance.BorderSize = 3;
-            this.view_performance_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.view_performance_btn.Location = new System.Drawing.Point(526, 129);
-            this.view_performance_btn.Name = "view_performance_btn";
-            this.view_performance_btn.Size = new System.Drawing.Size(184, 58);
-            this.view_performance_btn.TabIndex = 6;
-            this.view_performance_btn.Text = "View Performance";
-            this.view_performance_btn.UseVisualStyleBackColor = false;
-            this.view_performance_btn.Click += new System.EventHandler(this.view_performance_btn_Click);
             // 
             // training_sche_btn
             // 
@@ -149,6 +133,7 @@
             this.training_sche_btn.TabIndex = 5;
             this.training_sche_btn.Text = "Training Schedule";
             this.training_sche_btn.UseVisualStyleBackColor = false;
+            this.training_sche_btn.Click += new System.EventHandler(this.training_sche_btn_Click);
             // 
             // all_comp_btn
             // 
@@ -170,7 +155,7 @@
             this.enunroll_btn.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.enunroll_btn.FlatAppearance.BorderSize = 3;
             this.enunroll_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enunroll_btn.Location = new System.Drawing.Point(297, 129);
+            this.enunroll_btn.Location = new System.Drawing.Point(412, 129);
             this.enunroll_btn.Name = "enunroll_btn";
             this.enunroll_btn.Size = new System.Drawing.Size(184, 58);
             this.enunroll_btn.TabIndex = 3;
@@ -245,7 +230,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button edit_profile_btn;
         private System.Windows.Forms.Button send_suggest;
-        private System.Windows.Forms.Button view_performance_btn;
         private System.Windows.Forms.Button training_sche_btn;
         private System.Windows.Forms.Button all_comp_btn;
         private System.Windows.Forms.Button enunroll_btn;

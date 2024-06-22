@@ -13,6 +13,7 @@ namespace Y1S2
     public partial class Delete_User : Form
     {
         public string name;
+        public string u_name;
         public string role;
         public string user_role;
         public Delete_User()
@@ -61,7 +62,7 @@ namespace Y1S2
             if (user_listbx.SelectedIndex != -1)
             {
                 string selected_data = user_listbx.SelectedItem.ToString();
-                name = selected_data;
+                u_name = selected_data;
 
                 DeleteUser deleteUser = new DeleteUser();
                 var u_data = deleteUser.u_details(selected_data, user_role);
@@ -75,7 +76,7 @@ namespace Y1S2
         {
             string status;
             DeleteUser deleteUser = new DeleteUser();
-            var num = deleteUser.dlt_user(name, user_role);
+            var num = deleteUser.dlt_user(u_name, user_role);
             if (num > 1)
             {
                 status = "Delete Successfully.";

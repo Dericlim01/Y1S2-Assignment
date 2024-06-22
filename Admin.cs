@@ -69,6 +69,7 @@ namespace Y1S2
             edit_couch.ShowDialog();
         }
 
+        // Delete User
         private void manage_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -76,6 +77,7 @@ namespace Y1S2
             delete_user.ShowDialog();
         }
 
+        // Logout
         private void logout_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -83,6 +85,7 @@ namespace Y1S2
             login.ShowDialog();
         }
 
+        // View total result
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();

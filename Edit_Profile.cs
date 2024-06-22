@@ -16,6 +16,7 @@ namespace Y1S2
         private string role;
         private string abc;
 
+        // Initialized
         public Edit_Profile(string n, string r)
         {
             InitializeComponent();
@@ -53,6 +54,7 @@ namespace Y1S2
             MessageBox.Show(status);
         }
 
+        // ----- Coach -----
         // List Box
         public Edit_Profile(string n, string r, string a)
         {

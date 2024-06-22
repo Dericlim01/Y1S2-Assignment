@@ -78,5 +78,13 @@ namespace Y1S2
             ViewCompetition comp = new ViewCompetition(name, role);
             comp.ShowDialog();
         }
+
+        public string a;
+        private void training_sche_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TrainingSchedule view = new TrainingSchedule(name, role, a);
+            view.ShowDialog();
+        }
     }
 }

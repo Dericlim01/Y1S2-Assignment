@@ -72,7 +72,7 @@ namespace Y1S2
         {
             connect.Open();
             // Selected items
-            string query2 = "select * from couch where name = @name";
+            string query2 = "select * from coach where name = @name";
             SqlCommand cmd2 = new SqlCommand(query2, connect);
             cmd2.Parameters.AddWithValue("@name", c_name);
             SqlDataReader dr = cmd2.ExecuteReader();

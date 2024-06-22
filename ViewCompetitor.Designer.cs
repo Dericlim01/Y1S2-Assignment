@@ -57,15 +57,13 @@
             this.assignMembLevellbl = new System.Windows.Forms.Label();
             this.assignMembNamelbl = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.compMemberListBox = new System.Windows.Forms.ListBox();
             this.viewCompMemberRank = new System.Windows.Forms.Label();
-            this.viewCompMemberAge = new System.Windows.Forms.Label();
-            this.viewCompMemberLvl = new System.Windows.Forms.Label();
             this.viewCompMemberName = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.compMemberListBox = new System.Windows.Forms.ListBox();
+            this.viewCompMemberAge = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.competitionBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.swimmingclubdbDataSet)).BeginInit();
@@ -334,10 +332,8 @@
             // 
             this.groupBox1.Controls.Add(this.viewCompMemberRank);
             this.groupBox1.Controls.Add(this.viewCompMemberAge);
-            this.groupBox1.Controls.Add(this.viewCompMemberLvl);
             this.groupBox1.Controls.Add(this.viewCompMemberName);
             this.groupBox1.Controls.Add(this.label45);
-            this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.compMemberListBox);
@@ -349,18 +345,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member Info";
             // 
-            // compMemberListBox
-            // 
-            this.compMemberListBox.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.compMemberListBox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compMemberListBox.FormattingEnabled = true;
-            this.compMemberListBox.ItemHeight = 18;
-            this.compMemberListBox.Location = new System.Drawing.Point(34, 34);
-            this.compMemberListBox.Name = "compMemberListBox";
-            this.compMemberListBox.Size = new System.Drawing.Size(217, 94);
-            this.compMemberListBox.TabIndex = 55;
-            this.compMemberListBox.SelectedIndexChanged += new System.EventHandler(this.compMemberListBox_SelectedIndexChanged);
-            // 
             // viewCompMemberRank
             // 
             this.viewCompMemberRank.AutoSize = true;
@@ -370,26 +354,6 @@
             this.viewCompMemberRank.Name = "viewCompMemberRank";
             this.viewCompMemberRank.Size = new System.Drawing.Size(0, 18);
             this.viewCompMemberRank.TabIndex = 99;
-            // 
-            // viewCompMemberAge
-            // 
-            this.viewCompMemberAge.AutoSize = true;
-            this.viewCompMemberAge.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompMemberAge.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.viewCompMemberAge.Location = new System.Drawing.Point(136, 216);
-            this.viewCompMemberAge.Name = "viewCompMemberAge";
-            this.viewCompMemberAge.Size = new System.Drawing.Size(0, 18);
-            this.viewCompMemberAge.TabIndex = 98;
-            // 
-            // viewCompMemberLvl
-            // 
-            this.viewCompMemberLvl.AutoSize = true;
-            this.viewCompMemberLvl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCompMemberLvl.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.viewCompMemberLvl.Location = new System.Drawing.Point(150, 181);
-            this.viewCompMemberLvl.Name = "viewCompMemberLvl";
-            this.viewCompMemberLvl.Size = new System.Drawing.Size(0, 18);
-            this.viewCompMemberLvl.TabIndex = 97;
             // 
             // viewCompMemberName
             // 
@@ -411,21 +375,11 @@
             this.label45.TabIndex = 95;
             this.label45.Text = "Member Name:";
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(34, 216);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(96, 18);
-            this.label25.TabIndex = 92;
-            this.label25.Text = "Member Age:";
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(34, 181);
+            this.label35.Location = new System.Drawing.Point(32, 195);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(112, 18);
             this.label35.TabIndex = 93;
@@ -440,6 +394,28 @@
             this.label15.Size = new System.Drawing.Size(72, 18);
             this.label15.TabIndex = 94;
             this.label15.Text = "Ranking:";
+            // 
+            // compMemberListBox
+            // 
+            this.compMemberListBox.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.compMemberListBox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compMemberListBox.FormattingEnabled = true;
+            this.compMemberListBox.ItemHeight = 18;
+            this.compMemberListBox.Location = new System.Drawing.Point(34, 34);
+            this.compMemberListBox.Name = "compMemberListBox";
+            this.compMemberListBox.Size = new System.Drawing.Size(217, 94);
+            this.compMemberListBox.TabIndex = 55;
+            this.compMemberListBox.SelectedIndexChanged += new System.EventHandler(this.compMemberListBox_SelectedIndexChanged);
+            // 
+            // viewCompMemberAge
+            // 
+            this.viewCompMemberAge.AutoSize = true;
+            this.viewCompMemberAge.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewCompMemberAge.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.viewCompMemberAge.Location = new System.Drawing.Point(164, 191);
+            this.viewCompMemberAge.Name = "viewCompMemberAge";
+            this.viewCompMemberAge.Size = new System.Drawing.Size(0, 18);
+            this.viewCompMemberAge.TabIndex = 98;
             // 
             // ViewCompetitor
             // 
@@ -507,12 +483,10 @@
         private System.Windows.Forms.Label viewComNamelbl;
         private System.Windows.Forms.Label viewCompIdlbl;
         private System.Windows.Forms.Label viewCompMemberRank;
-        private System.Windows.Forms.Label viewCompMemberAge;
-        private System.Windows.Forms.Label viewCompMemberLvl;
         private System.Windows.Forms.Label viewCompMemberName;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label viewCompMemberAge;
     }
 }

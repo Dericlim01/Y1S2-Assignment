@@ -68,7 +68,6 @@ namespace Y1S2
                 var data = details.findMember(selected_member, viewCompIdlbl.Text);
                 viewCompMemberName.Text =  data.Item1;
                 viewCompMemberAge.Text =  data.Item2;
-                viewCompMemberLvl.Text =  data.Item3;
                 if (data.Item4 == "")
                 {
                     viewCompMemberRank.Text = "Not Available";
@@ -78,6 +77,13 @@ namespace Y1S2
                     viewCompMemberRank.Text =  data.Item4;
                 }
             }
+        }
+
+        private void bckBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Manager back = new Manager(name, role);
+            back.ShowDialog();
         }
     }
 }

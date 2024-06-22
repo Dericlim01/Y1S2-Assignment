@@ -19,13 +19,12 @@ namespace Y1S2
             InitializeComponent();
         }
 
-        public void load(string name, string password, string re_en_pass, string phoneNumber, string email, string age, string level)
+        public void load(string name, string password, string re_en_pass, string phoneNumber, string email, string level)
         {
             name_txtbx.Text = name;
             password_txtbx.Text = password;
             reenter_pass_txtbx.Text = re_en_pass;
             pn_txtbx.Text = phoneNumber;
-            age_txtbx.Text = age;
             email_txtbx.Text = email;
 
             // Button Check
@@ -46,7 +45,7 @@ namespace Y1S2
         private void register_btn_Click(object sender, EventArgs e)
         {
             Enrollment enrollment = new Enrollment();
-            enrollment.update_profile(name_txtbx.Text, password_txtbx.Text, reenter_pass_txtbx.Text, pn_txtbx.Text, email_txtbx.Text, age_txtbx.Text, level);
+            enrollment.update_profile(name_txtbx.Text, password_txtbx.Text, reenter_pass_txtbx.Text, pn_txtbx.Text, email_txtbx.Text, level);
         }
 
         private void b_rdbtn_CheckedChanged(object sender, EventArgs e)
@@ -62,6 +61,13 @@ namespace Y1S2
         private void a_rdbtn_CheckedChanged(object sender, EventArgs e)
         {
             level = "advance";
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.ShowDialog();
         }
     }
 }

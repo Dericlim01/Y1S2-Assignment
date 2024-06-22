@@ -17,7 +17,7 @@ namespace Y1S2
         {
         }
 
-        public void update_profile(string n, string p, string re_en, string pn, string e, string a, string l)
+        public void update_profile(string n, string p, string re_en, string pn, string e, string l)
         {
             string status;
             connect.Open();
@@ -32,24 +32,23 @@ namespace Y1S2
                 MessageBox.Show("This Username has already taken");
 
                 Enroll enroll = new Enroll();
-                enroll.load(n, p, re_en, pn, e, a, l);
+                enroll.load(n, p, re_en, pn, e, l);
             } // If password not same
             else if (p != re_en)
             {
                 MessageBox.Show("Please confirm your password");
 
                 Enroll enroll = new Enroll();
-                enroll.load(n, p, re_en, pn, e, a, l);
+                enroll.load(n, p, re_en, pn, e, l);
             }
             else // Insert user data
             {
                 // Insert into member
-                string query2 = "insert into member (name, phoneNumber, email, age, level) values (@name, @pn, @email, @age, @lvl)";
+                string query2 = "insert into member (name, phoneNumber, email, level) values (@name, @pn, @email, @lvl)";
                 SqlCommand cmd2 = new SqlCommand(query2, connect);
                 cmd2.Parameters.AddWithValue("@name", n);
                 cmd2.Parameters.AddWithValue("@pn", pn);
                 cmd2.Parameters.AddWithValue("@email", e);
-                cmd2.Parameters.AddWithValue("@age", a);
                 cmd2.Parameters.AddWithValue("@lvl", l);
 
                 // Insert into users
